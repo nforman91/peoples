@@ -1,6 +1,7 @@
 import React from "react";
+import Nav from "./components/Nav";
 import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
   // useLocation 
 
 function App() {
@@ -8,14 +9,13 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <Nav/>
         <Routes 
         // location={location} key={location.pathname}
         >
-          <Route exactpath="/" element={<Home/>}/>
+          <Route exact path="/" element={<Home/>}/>
         </Routes>
         <p>Hello World 2</p>
-      </BrowserRouter>
     </div>
   );
 }
