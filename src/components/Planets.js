@@ -15,7 +15,6 @@ const StyledPlanets = styled.div`
     height: 20vh;
     line-height: 20vh;
     font-size: 50px;
-    /* color: black; */
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
