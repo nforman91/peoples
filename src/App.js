@@ -3,6 +3,8 @@ import React from "react";
 import Home from "./pages/Home";
 import WaterWorks from "./pages/WaterWorks";
 import Services from "./pages/Services";
+import TBD from "./pages/TBD";
+import Festivals from "./pages/Festivals";
 import { Routes, Route } from "react-router-dom";
   // useLocation 
 
@@ -18,6 +20,8 @@ function App() {
           <Route exact path="/" element={<Home/>}/>
           <Route path="/waterworks" element={<WaterWorks/>}/>
           <Route path="/services" element={<Services/>}/>
+          <Route path="/tbd" element={<TBD/>}/>
+          <Route path="/festivals" element={<Festivals/>}/>
         </Routes>
     </div>
   );

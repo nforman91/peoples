@@ -15,9 +15,9 @@ const Home = () => {
                 <StyledHush>HUSH</StyledHush>
             </StyledTwo>
             <StyledThree>
-                <StyledTBD>TBD</StyledTBD>
+                <StyledTBD><Link to="/tbd">TBD</Link></StyledTBD>
                 <StyledPeoplesLogo src={peoples_bw_on_white_logo} alt="People's Productions logo"/>
-                <StyledFestivals>Festivals</StyledFestivals>
+                <StyledFestivals><Link to="/festivals">Festivals</Link></StyledFestivals>
             </StyledThree>
             <StyledTwo>
                 <StyledHuman>Human Foosball</StyledHuman>
