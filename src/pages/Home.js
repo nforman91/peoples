@@ -8,15 +8,21 @@ import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 const Home = () => {
     return (
         <div>
-            <StyledWaterWorks>Water Works Amphitheater</StyledWaterWorks>
+            <StyledOne>Water Works Amphitheater</StyledOne>
             <StyledTwo>
                 <StyledServices>Services</StyledServices>
                 <StyledHush>HUSH</StyledHush>
             </StyledTwo>
-            <StyledTBD>TBD</StyledTBD>
-            <StyledPeoples><img src={peoples_bw_on_white_logo} alt="People's Productions logo"/></StyledPeoples>
-            <StyledFestivals>Festivals</StyledFestivals>
-            
+            <StyledThree>
+                <StyledTBD>TBD</StyledTBD>
+                <StyledPeoplesLogo src={peoples_bw_on_white_logo} alt="People's Productions logo"/>
+                <StyledFestivals>Festivals</StyledFestivals>
+            </StyledThree>
+            <StyledTwo>
+                <StyledHuman>Human Foosball</StyledHuman>
+                <StyledMerch>Merch</StyledMerch>
+            </StyledTwo>
+            <StyledOne>His Story</StyledOne>
             {/* <Planets>HUSH</Planets> */}
             
             {/* <StyledHush><img src={} alt="People's Productions logo"/></StyledHush> */}
@@ -24,7 +30,7 @@ const Home = () => {
     );
 };
 
-const StyledWaterWorks = styled.div`
+const StyledOne = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +48,7 @@ const StyledWaterWorks = styled.div`
 const StyledTwo = styled.div`
     display: flex;
     justify-content: space-between;
-    width: max-content;
+    border: 1px solid black;
 `;
 
 const StyledServices = styled.div`
@@ -73,6 +79,13 @@ const StyledHush = styled.div`
     margin: 5vh 0 0 130vh;
 `;
 
+const StyledThree = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+`;
+
 const StyledTBD = styled.div`
     display: flex;
     justify-content: center;
@@ -81,7 +94,6 @@ const StyledTBD = styled.div`
     height: 10vh;
     line-height: 5vh;
     font-size: 20px;
-    flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
@@ -96,21 +108,46 @@ const StyledFestivals = styled.div`
     height: 10vh;
     line-height: 5vh;
     font-size: 20px;
-    flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 10vh 0 0 150vh;
 `;
 
-const StyledPeoples = styled.div`
+const StyledPeoplesLogo = styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20vh;
-    height: 20vh;
-    border: 1px solid black;
+    width: 50vh;
+    height: 50vh;
     margin: auto;
+`;
+
+const StyledHuman = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 10vh;
+    line-height: 5vh;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5vh 0 0 5vh;
+`;
+
+const StyledMerch = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 10vh;
+    line-height: 5vh;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5vh 0 0 130vh;
 `;
 
 export default Home;
