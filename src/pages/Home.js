@@ -21,9 +21,9 @@ const Home = () => {
             </StyledThree>
             <StyledTwo>
                 <StyledHuman><Link to="/humanfoosball">Human Foosball</Link></StyledHuman>
-                <StyledMerch>Merch</StyledMerch>
+                <StyledMerch><Link to="/merch">Merch</Link></StyledMerch>
             </StyledTwo>
-            <StyledOne>His Story</StyledOne>
+            <StyledOne><Link to="/hisstory">His Story</Link></StyledOne>
             {/* <Planets>HUSH</Planets> */}
             
             {/* <StyledHush><img src={} alt="People's Productions logo"/></StyledHush> */}
