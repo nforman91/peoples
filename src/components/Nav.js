@@ -28,6 +28,10 @@ const StyledNav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
+    a{
+        color: white;
+        text-decoration: none;
+    }
     ul{
         display: flex;
         list-style: none;

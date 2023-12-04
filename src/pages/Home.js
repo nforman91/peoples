@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <StyledOne><Link to="/waterworks">Water Works Amphitheater</Link></StyledOne>
             <StyledTwo>
-                <StyledServices>Services</StyledServices>
+                <StyledServices><Link to="/services">Services</Link></StyledServices>
                 <StyledHush>HUSH</StyledHush>
             </StyledTwo>
             <StyledThree>
