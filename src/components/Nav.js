@@ -12,6 +12,30 @@ const Nav = () => {
                 <li>
                     <Link to="/">Home</Link>
                 </li>
+                <li>
+                    <Link to="/waterworks">Water Works</Link>
+                </li>
+                <li>
+                    <Link to="/services">Services</Link>
+                </li>
+                <li>
+                    <Link to="/hush">HUSH</Link>
+                </li>
+                <li>
+                    <Link to="/tbd">TBD</Link>
+                </li>
+                <li>
+                    <Link to="/festivals">Festivals</Link>
+                </li>
+                <li>
+                    <Link to="/humanfoosball">Human Foosball</Link>
+                </li>
+                <li>
+                    <Link to="/merch">Merch</Link>
+                </li>
+                <li>
+                    <Link to="/hisstory">His Story</Link>
+                </li>
             </ul>
         </StyledNav>
     );
@@ -37,7 +61,7 @@ const StyledNav = styled.nav`
         list-style: none;
     }
     li{
-        padding-left: 10rem;
+        padding-left: 2rem;
         position: relative;
     }
 `;
