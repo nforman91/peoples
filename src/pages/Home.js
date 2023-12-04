@@ -12,7 +12,7 @@ const Home = () => {
             <StyledOne><Link to="/waterworks">Water Works Amphitheater</Link></StyledOne>
             <StyledTwo>
                 <StyledServices><Link to="/services">Services</Link></StyledServices>
-                <StyledHush>HUSH</StyledHush>
+                <StyledHush><Link to="/hush">HUSH</Link></StyledHush>
             </StyledTwo>
             <StyledThree>
                 <StyledTBD><Link to="/tbd">TBD</Link></StyledTBD>
@@ -20,7 +20,7 @@ const Home = () => {
                 <StyledFestivals><Link to="/festivals">Festivals</Link></StyledFestivals>
             </StyledThree>
             <StyledTwo>
-                <StyledHuman>Human Foosball</StyledHuman>
+                <StyledHuman><Link to="/humanfoosball">Human Foosball</Link></StyledHuman>
                 <StyledMerch>Merch</StyledMerch>
             </StyledTwo>
             <StyledOne>His Story</StyledOne>

@@ -5,7 +5,10 @@ import WaterWorks from "./pages/WaterWorks";
 import Services from "./pages/Services";
 import TBD from "./pages/TBD";
 import Festivals from "./pages/Festivals";
+import HUSH from "./pages/HUSH";
+import HumanFoosball from "./pages/HumanFoosball";
 import { Routes, Route } from "react-router-dom";
+
   // useLocation 
 
 function App() {
@@ -22,6 +25,8 @@ function App() {
           <Route path="/services" element={<Services/>}/>
           <Route path="/tbd" element={<TBD/>}/>
           <Route path="/festivals" element={<Festivals/>}/>
+          <Route path="/hush" element={<HUSH/>}/>
+          <Route path="/humanfoosball" element={<HumanFoosball/>}/>
         </Routes>
     </div>
   );
