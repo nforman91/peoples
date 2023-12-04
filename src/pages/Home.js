@@ -53,6 +53,7 @@ const StyledOne = styled.div`
 const StyledTwo = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid black;
     a{
         color: black;
@@ -71,7 +72,7 @@ const StyledServices = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 5vh 0 0 5vh;
+    margin: 0 0 0 5vh;
 `;
 
 const StyledHush = styled.div`
@@ -85,7 +86,7 @@ const StyledHush = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 5vh 0 0 130vh;
+    margin: 0 0 0 130vh;
 `;
 
 const StyledThree = styled.div`
@@ -110,7 +111,7 @@ const StyledTBD = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 5vh 0 0 5vh;
+    margin: 0 0 0 5vh;
 `;
 
 const StyledFestivals = styled.div`
@@ -146,7 +147,7 @@ const StyledHuman = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 5vh 0 0 5vh;
+    margin: 0 0 0 5vh;
 `;
 
 const StyledMerch = styled.div`
@@ -160,7 +161,7 @@ const StyledMerch = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 5vh 0 0 130vh;
+    margin: 0 0 0 130vh;
 `;
 
 export default Home;
