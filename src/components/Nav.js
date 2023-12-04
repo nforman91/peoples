@@ -42,7 +42,7 @@ const Nav = () => {
 };
 
 const StyledNav = styled.nav`
-    min-height: 10vh;
+    min-height: 5vh;
     display: flex;
     margin: auto;
     justify-content: space-between;
