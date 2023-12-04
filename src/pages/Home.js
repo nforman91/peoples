@@ -35,15 +35,15 @@ const StyledWater = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vh;
-    height: 10vh;
-    line-height: 5vh;
+    width: 17vh;
+    height: 17vh;
+    line-height: 3vh;
     font-size: 20px;
     flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 2vh 0 0 80vh;
+    margin: 2vh 0 0 78vh;
     a{
         color: black;
         text-decoration: none;
@@ -65,8 +65,8 @@ const StyledServices = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -78,8 +78,8 @@ const StyledHush = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -102,8 +102,8 @@ const StyledTBD = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -115,8 +115,8 @@ const StyledFestivals = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -136,9 +136,9 @@ const StyledHuman = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vh;
-    height: 10vh;
-    line-height: 5vh;
+    width: 12vh;
+    height: 12vh;
+    line-height: 3vh;
     font-size: 20px;
     border-radius: 50%;
     text-align: center;
@@ -149,8 +149,8 @@ const StyledMerch = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -162,8 +162,8 @@ const StyledStory = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     line-height: 5vh;
     font-size: 20px;
     flex-wrap: wrap;
