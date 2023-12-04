@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
     return (
         <div>
-            <StyledOne><Link to="/waterworks">Water Works Amphitheater</Link></StyledOne>
+            <StyledWater><Link to="/waterworks">Water Works Amphitheater</Link></StyledWater>
             <StyledTwo>
                 <StyledServices><Link to="/services">Services</Link></StyledServices>
                 <StyledHush><Link to="/hush">HUSH</Link></StyledHush>
@@ -23,7 +23,7 @@ const Home = () => {
                 <StyledHuman><Link to="/humanfoosball">Human Foosball</Link></StyledHuman>
                 <StyledMerch><Link to="/merch">Merch</Link></StyledMerch>
             </StyledTwo>
-            <StyledOne><Link to="/hisstory">His Story</Link></StyledOne>
+            <StyledStory><Link to="/hisstory">His Story</Link></StyledStory>
             {/* <Planets>HUSH</Planets> */}
             
             {/* <StyledHush><img src={} alt="People's Productions logo"/></StyledHush> */}
@@ -31,7 +31,7 @@ const Home = () => {
     );
 };
 
-const StyledOne = styled.div`
+const StyledWater = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +52,7 @@ const StyledOne = styled.div`
 
 const StyledTwo = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid black;
     a{
@@ -72,7 +72,6 @@ const StyledServices = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 0 0 0 5vh;
 `;
 
 const StyledHush = styled.div`
@@ -86,12 +85,11 @@ const StyledHush = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 0 0 0 130vh;
 `;
 
 const StyledThree = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid black;
     a{
@@ -111,7 +109,6 @@ const StyledTBD = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 0 0 0 5vh;
 `;
 
 const StyledFestivals = styled.div`
@@ -131,9 +128,8 @@ const StyledPeoplesLogo = styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vh;
-    height: 50vh;
-    margin: auto;
+    width: 40vh;
+    height: 40vh;
 `;
 
 const StyledHuman = styled.div`
@@ -147,7 +143,6 @@ const StyledHuman = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 0 0 0 5vh;
 `;
 
 const StyledMerch = styled.div`
@@ -161,7 +156,25 @@ const StyledMerch = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid black;
-    margin: 0 0 0 130vh;
+`;
+
+const StyledStory = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 10vh;
+    line-height: 5vh;
+    font-size: 20px;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 0 0 80vh;
+    a{
+        color: black;
+        text-decoration: none;
+    }
 `;
 
 export default Home;
