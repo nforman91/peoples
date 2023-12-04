@@ -4,11 +4,12 @@ import styled from "styled-components";
 // import Planets from "../components/Planets";
 import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 // import HUSH_Logo_CMYK from "../img/";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
         <div>
-            <StyledOne>Water Works Amphitheater</StyledOne>
+            <StyledOne><Link to="/waterworks">Water Works Amphitheater</Link></StyledOne>
             <StyledTwo>
                 <StyledServices>Services</StyledServices>
                 <StyledHush>HUSH</StyledHush>
@@ -43,12 +44,20 @@ const StyledOne = styled.div`
     text-align: center;
     border: 1px solid black;
     margin: 2vh 0 0 80vh;
+    a{
+        color: black;
+        text-decoration: none;
+    }
 `;
 
 const StyledTwo = styled.div`
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
+    a{
+        color: black;
+        text-decoration: none;
+    }
 `;
 
 const StyledServices = styled.div`
@@ -84,6 +93,10 @@ const StyledThree = styled.div`
     justify-content: space-between;
     align-items: center;
     border: 1px solid black;
+    a{
+        color: black;
+        text-decoration: none;
+    }
 `;
 
 const StyledTBD = styled.div`
