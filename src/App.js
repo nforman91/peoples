@@ -1,5 +1,6 @@
 import React from "react";
 // import Nav from "./components/Nav";
+import GlobalStyle from "./components/GlobalStyle";
 import Home from "./pages/Home";
 import WaterWorks from "./pages/WaterWorks";
 import Services from "./pages/Services";
@@ -18,20 +19,21 @@ function App() {
 
   return (
     <div className="App">
+      <GlobalStyle/>
       {/* <Nav/> */}
-        <Routes 
-        // location={location} key={location.pathname}
-        >
-          <Route exact path="/" element={<Home/>}/>
-          <Route path="/waterworks" element={<WaterWorks/>}/>
-          <Route path="/services" element={<Services/>}/>
-          <Route path="/tbd" element={<TBD/>}/>
-          <Route path="/festivals" element={<Festivals/>}/>
-          <Route path="/hush" element={<HUSH/>}/>
-          <Route path="/humanfoosball" element={<HumanFoosball/>}/>
-          <Route path="/merch" element={<Merch/>}/>
-          <Route path="/hisstory" element={<HisStory/>}/>
-        </Routes>
+          <Routes 
+          // location={location} key={location.pathname}
+          >
+            <Route exact path="/" element={<Home/>}/>
+            <Route path="/waterworks" element={<WaterWorks/>}/>
+            <Route path="/services" element={<Services/>}/>
+            <Route path="/tbd" element={<TBD/>}/>
+            <Route path="/festivals" element={<Festivals/>}/>
+            <Route path="/hush" element={<HUSH/>}/>
+            <Route path="/humanfoosball" element={<HumanFoosball/>}/>
+            <Route path="/merch" element={<Merch/>}/>
+            <Route path="/hisstory" element={<HisStory/>}/>
+          </Routes>
     </div>
   );
 }

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
-        <StyledHome>
+        <>
             <StyledOne>
                 <StyledWater className="planet"><Link to="/waterworks"><h4>Water Works Amphitheater</h4></Link></StyledWater>
             </StyledOne>
@@ -32,13 +32,9 @@ const Home = () => {
             {/* <Planets>HUSH</Planets> */}
             
             {/* <StyledHush><img src={} alt="People's Productions logo"/></StyledHush> */}
-        </StyledHome>
+        </>
     );
 };
-
-const StyledHome = styled.div`
-    background-color: black;
-`;
 
 const StyledOne = styled.div`
     display: flex;
