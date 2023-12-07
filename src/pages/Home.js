@@ -23,7 +23,7 @@ const Home = () => {
                 <StyledFestivals className="planet"><Link to="/festivals"><h4>Festivals</h4></Link></StyledFestivals>
             </StyledThree>
             <StyledTwo>
-                <StyledHuman className="planet"><Link to="/humanfoosball"><h4>Human Foosball</h4></Link></StyledHuman>
+                <StyledHuman className="planet"><Link to="/humanfoosball"><h4>Human<br/>Foosball</h4></Link></StyledHuman>
                 <StyledMerch className="planet"><Link to="/merch"><h4>Merch</h4></Link></StyledMerch>
             </StyledTwo>
             <StyledOne>
@@ -36,9 +36,9 @@ const Home = () => {
     );
 };
 
-const StyledUniverse = styled.img`
-    opacity: 10%;
-`;
+// const StyledUniverse = styled.img`
+//     opacity: 10%;
+// `;
 
 const StyledOne = styled.div`
     display: flex;
@@ -171,6 +171,7 @@ const StyledHuman = styled.div`
     height: 17vh;
     line-height: 3vh;
     font-size: 20px;
+    flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
     border: 1px solid white;
