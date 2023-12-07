@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 // import Planets from "../components/Planets";
 import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
-// import HUSH_Logo_CMYK from "../img/";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -48,6 +47,9 @@ const StyledOne = styled.div`
         color: black;
         text-decoration: none;
     }
+    .planet:hover{
+        margin-top: 1vh;
+    }
 `;
 
 const StyledWater = styled.div`
@@ -62,16 +64,9 @@ const StyledWater = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid white;
-    h4{
-        color: white
-    };
-    .planet:hover{
+    /* .planet:hover{
         margin-top: -1vh;
-    }
-    a{
-        color: black;
-        text-decoration: none;
-    }
+    } */
 `;
 
 const StyledTwo = styled.div`
@@ -92,8 +87,8 @@ const StyledServices = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vh;
-    height: 12vh;
+    width: 17vh;
+    height: 17vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -105,8 +100,8 @@ const StyledHush = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vh;
-    height: 12vh;
+    width: 17vh;
+    height: 17vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -132,8 +127,8 @@ const StyledTBD = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vh;
-    height: 12vh;
+    width: 17vh;
+    height: 17vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -145,8 +140,8 @@ const StyledFestivals = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vh;
-    height: 12vh;
+    width: 17vh;
+    height: 17vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -160,14 +155,15 @@ const StyledPeoplesLogo = styled.img`
     align-items: center;
     width: 40vh;
     height: 40vh;
+    border-radius: 50%;
 `;
 
 const StyledHuman = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vh;
-    height: 12vh;
+    width: 17vh;
+    height: 17vh;
     line-height: 3vh;
     font-size: 20px;
     border-radius: 50%;
@@ -179,8 +175,8 @@ const StyledMerch = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vh;
-    height: 12vh;
+    width: 17vh;
+    height: 17vh;
     line-height: 5vh;
     font-size: 20px;
     border-radius: 50%;
@@ -192,18 +188,14 @@ const StyledStory = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vh;
-    height: 12vh;
+    width: 17vh;
+    height: 17vh;
     line-height: 5vh;
     font-size: 20px;
     flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
     border: 1px solid white;
-    a{
-        color: black;
-        text-decoration: none;
-    }
 `;
 
 export default Home;
