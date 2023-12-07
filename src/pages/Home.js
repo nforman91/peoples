@@ -8,28 +8,51 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
-        <div>
-            <StyledWater><Link to="/waterworks">Water Works Amphitheater</Link></StyledWater>
+        <StyledHome>
+            <StyledOne>
+                <StyledWater className="planet"><Link to="/waterworks"><h4>Water Works Amphitheater</h4></Link></StyledWater>
+            </StyledOne>
             <StyledTwo>
-                <StyledServices><Link to="/services">Services</Link></StyledServices>
-                <StyledHush><Link to="/hush">HUSH</Link></StyledHush>
+                <StyledServices className="planet"><Link to="/services"><h4>Services</h4></Link></StyledServices>
+                <StyledHush className="planet"><Link to="/hush"><h4>HUSH</h4></Link></StyledHush>
             </StyledTwo>
             <StyledThree>
-                <StyledTBD><Link to="/tbd">TBD</Link></StyledTBD>
+                <StyledTBD className="planet"><Link to="/tbd"><h4>TBD</h4></Link></StyledTBD>
                 <StyledPeoplesLogo src={peoples_bw_on_white_logo} alt="People's Productions logo"/>
-                <StyledFestivals><Link to="/festivals">Festivals</Link></StyledFestivals>
+                <StyledFestivals className="planet"><Link to="/festivals"><h4>Festivals</h4></Link></StyledFestivals>
             </StyledThree>
             <StyledTwo>
-                <StyledHuman><Link to="/humanfoosball">Human Foosball</Link></StyledHuman>
-                <StyledMerch><Link to="/merch">Merch</Link></StyledMerch>
+                <StyledHuman className="planet"><Link to="/humanfoosball"><h4>Human Foosball</h4></Link></StyledHuman>
+                <StyledMerch className="planet"><Link to="/merch"><h4>Merch</h4></Link></StyledMerch>
             </StyledTwo>
-            <StyledStory><Link to="/hisstory">His Story</Link></StyledStory>
+            <StyledOne>
+                <StyledStory><Link to="/hisstory"><h4>His Story</h4></Link></StyledStory>
+            </StyledOne>
+            
             {/* <Planets>HUSH</Planets> */}
             
             {/* <StyledHush><img src={} alt="People's Productions logo"/></StyledHush> */}
-        </div>
+        </StyledHome>
     );
 };
+
+const StyledHome = styled.div`
+    background-color: black;
+`;
+
+const StyledOne = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    h4{
+        color: white;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+`;
 
 const StyledWater = styled.div`
     display: flex;
@@ -42,8 +65,13 @@ const StyledWater = styled.div`
     flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid black;
-    margin: 2vh 0 0 78vh;
+    border: 1px solid white;
+    h4{
+        color: white
+    };
+    .planet:hover{
+        margin-top: -1vh;
+    }
     a{
         color: black;
         text-decoration: none;
@@ -54,7 +82,10 @@ const StyledTwo = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid white;
+    h4{
+        color: white;
+    }
     a{
         color: black;
         text-decoration: none;
@@ -71,7 +102,7 @@ const StyledServices = styled.div`
     font-size: 20px;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid white;
 `;
 
 const StyledHush = styled.div`
@@ -84,14 +115,17 @@ const StyledHush = styled.div`
     font-size: 20px;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid white;
 `;
 
 const StyledThree = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid white;
+    h4{
+        color: white;
+    }
     a{
         color: black;
         text-decoration: none;
@@ -108,7 +142,7 @@ const StyledTBD = styled.div`
     font-size: 20px;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid white;
 `;
 
 const StyledFestivals = styled.div`
@@ -121,7 +155,7 @@ const StyledFestivals = styled.div`
     font-size: 20px;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid white;
 `;
 
 const StyledPeoplesLogo = styled.img`
@@ -142,7 +176,7 @@ const StyledHuman = styled.div`
     font-size: 20px;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid white;
 `;
 
 const StyledMerch = styled.div`
@@ -155,7 +189,7 @@ const StyledMerch = styled.div`
     font-size: 20px;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid white;
 `;
 
 const StyledStory = styled.div`
@@ -169,8 +203,7 @@ const StyledStory = styled.div`
     flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid black;
-    margin: 0 0 0 80vh;
+    border: 1px solid white;
     a{
         color: black;
         text-decoration: none;
