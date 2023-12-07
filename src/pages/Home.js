@@ -2,12 +2,14 @@ import React from "react";
 // { useEffect }
 import styled from "styled-components";
 // import Planets from "../components/Planets";
+// import guillermo_ferla from "../img/guillermo_ferla_Oze6U2m1oYU_unsplash.jpg";
 import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
         <>
+        {/* <StyledUniverse src={guillermo_ferla} alt="picture of a galaxy"/> */}
             <StyledOne>
                 <StyledWater className="planet"><Link to="/waterworks"><h4>Water Works Amphitheater</h4></Link></StyledWater>
             </StyledOne>
@@ -29,11 +31,14 @@ const Home = () => {
             </StyledOne>
             
             {/* <Planets>HUSH</Planets> */}
-            
             {/* <StyledHush><img src={} alt="People's Productions logo"/></StyledHush> */}
-        </>
+        </>    
     );
 };
+
+const StyledUniverse = styled.img`
+    opacity: 10%;
+`;
 
 const StyledOne = styled.div`
     display: flex;
