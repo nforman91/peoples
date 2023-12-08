@@ -1,37 +1,48 @@
-import React from "react";
-// { useEffect }
+import React, { useState } from "react";
 import styled from "styled-components";
-// import Planets from "../components/Planets";
 import galaxy from "../img/galaxy.jpg";
 import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
-import { Link } from "react-router-dom";
 
 const Home = () => {
+    const [modal, setModal] = useState(false);
+
+    const showModal = () => {
+        setModal(!modal)
+    }
+
     return (
         <>
         <StyledUniverse id="a" src={galaxy} alt="picture of a galaxy"></StyledUniverse>
             <StyledOne>
-                <StyledWater className="planet"><Link to="/waterworks"><h4>Water Works Amphitheater</h4></Link></StyledWater>
+                <StyledWater className="planet"><h4>Water Works Amphitheater</h4></StyledWater>
+                <StyledOnButton onClick={showModal}>Add Modal</StyledOnButton>
+                {modal && (
+                    <StyledModal>
+                        <StyledOverlay onClick={showModal}/>
+                        <StyledModalContent>
+                            <h2>Hello Modal!</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+                            <StyledCloseButton onClick={showModal}>CLOSE</StyledCloseButton>
+                        </StyledModalContent>
+                    </StyledModal>
+                )}
             </StyledOne>
             <StyledTwo>
-                <StyledServices className="planet"><Link to="/services"><h4>Services</h4></Link></StyledServices>
-                <StyledHush className="planet"><Link to="/hush"><h4>HUSH</h4></Link></StyledHush>
+                <StyledServices className="planet"><h4>Services</h4></StyledServices>
+                <StyledHush className="planet"><h4>HUSH</h4></StyledHush>
             </StyledTwo>
             <StyledThree>
-                <StyledTBD className="planet"><Link to="/tbd"><h4>TBD</h4></Link></StyledTBD>
+                <StyledTBD className="planet"><h4>TBD</h4></StyledTBD>
                 <StyledPeoplesLogo src={peoples_bw_on_white_logo} alt="People's Productions logo"/>
-                <StyledFestivals className="planet"><Link to="/festivals"><h4>Festivals</h4></Link></StyledFestivals>
+                <StyledFestivals className="planet"><h4>Festivals</h4></StyledFestivals>
             </StyledThree>
             <StyledTwo>
-                <StyledHuman className="planet"><Link to="/humanfoosball"><h4>Human<br/>Foosball</h4></Link></StyledHuman>
-                <StyledMerch className="planet"><Link to="/merch"><h4>Merch</h4></Link></StyledMerch>
+                <StyledHuman className="planet"><h4>Human<br/>Foosball</h4></StyledHuman>
+                <StyledMerch className="planet"><h4>Merch</h4></StyledMerch>
             </StyledTwo>
             <StyledOne>
-                <StyledStory><Link to="/hisstory"><h4>His Story</h4></Link></StyledStory>
+                <StyledStory><h4>His Story</h4></StyledStory>
             </StyledOne>
-            
-            {/* <Planets>HUSH</Planets> */}
-            {/* <StyledHush><img src={} alt="People's Productions logo"/></StyledHush> */}
         </>    
     );
 };
@@ -59,9 +70,9 @@ const StyledOne = styled.div`
         color: black;
         text-decoration: none;
     }
-    .planet:hover{
+    /* .planet:hover{
         margin-top: 1vh;
-    }
+    } */
 `;
 
 const StyledWater = styled.div`
@@ -76,9 +87,55 @@ const StyledWater = styled.div`
     border-radius: 50%;
     text-align: center;
     border: 1px solid white;
-    /* .planet:hover{
-        margin-top: -1vh;
-    } */
+    .planet:hover{
+        cursor: pointer;
+        /* margin-top: -1vh; */
+    }
+`;
+
+const StyledOnButton = styled.button`
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+`;
+
+const StyledModal = styled.div`
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+`;
+
+const StyledOverlay = styled.div`
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+`;
+
+const StyledModalContent = styled.div`
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    line-height: 1.4;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+`;
+
+const StyledCloseButton = styled.button`
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
 `;
 
 const StyledTwo = styled.div`
