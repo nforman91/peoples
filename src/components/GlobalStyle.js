@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-// import guillermo_ferla from "../img/guillermo_ferla_Oze6U2m1oYU_unsplash.jpg";
+import galaxy from "../img/galaxy.jpg";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -7,8 +7,10 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
     body{
-        background-color: black;
-        /* background-image: url("../img/guillermo_ferla_Oze6U2m1oYU_unsplash.jpg"); */
+        /* background-color: yellow; */
+        background-image: url("../img/galaxy.jpg");
+        width: 100%;
+        height: 100%;
     }
 `;
 

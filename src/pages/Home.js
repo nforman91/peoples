@@ -2,14 +2,14 @@ import React from "react";
 // { useEffect }
 import styled from "styled-components";
 // import Planets from "../components/Planets";
-// import guillermo_ferla from "../img/guillermo_ferla_Oze6U2m1oYU_unsplash.jpg";
+import galaxy from "../img/galaxy.jpg";
 import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
         <>
-        {/* <StyledUniverse src={guillermo_ferla} alt="picture of a galaxy"/> */}
+        <StyledUniverse id="a" src={galaxy} alt="picture of a galaxy"></StyledUniverse>
             <StyledOne>
                 <StyledWater className="planet"><Link to="/waterworks"><h4>Water Works Amphitheater</h4></Link></StyledWater>
             </StyledOne>
@@ -36,15 +36,22 @@ const Home = () => {
     );
 };
 
-// const StyledUniverse = styled.img`
-//     opacity: 10%;
-// `;
+const StyledUniverse = styled.img`
+    background-image: url("../img/galaxy.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    /* opacity: 10%; */
+`;
 
 const StyledOne = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid white;
+    position: relative;
+    z-index: 2;
     h4{
         color: white;
     }
@@ -79,6 +86,8 @@ const StyledTwo = styled.div`
     justify-content: space-around;
     align-items: center;
     border: 1px solid white;
+    position: relative;
+    z-index: 2;
     h4{
         color: white;
     }
@@ -119,6 +128,8 @@ const StyledThree = styled.div`
     justify-content: space-around;
     align-items: center;
     border: 1px solid white;
+    position: relative;
+    z-index: 2;
     h4{
         color: white;
     }
@@ -158,8 +169,8 @@ const StyledPeoplesLogo = styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vh;
-    height: 40vh;
+    width: 30vh;
+    height: 30vh;
     border-radius: 50%;
 `;
 
