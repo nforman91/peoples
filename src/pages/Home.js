@@ -14,8 +14,9 @@ const Home = () => {
         <>
         <StyledUniverse id="a" src={galaxy} alt="picture of a galaxy"></StyledUniverse>
             <StyledOne>
-                <StyledWater className="planet"><h4>Water Works Amphitheater</h4></StyledWater>
-                <StyledOnButton onClick={showModal}>Add Modal</StyledOnButton>
+                <StyledWater className="planet">
+                {/* <h4>Water Works Amphitheater</h4> */}
+                <StyledOnButton onClick={showModal}>Water Works Amphitheater</StyledOnButton>
                 {modal && (
                     <StyledModal>
                         <StyledOverlay onClick={showModal}/>
@@ -26,6 +27,8 @@ const Home = () => {
                         </StyledModalContent>
                     </StyledModal>
                 )}
+                </StyledWater>
+                
             </StyledOne>
             <StyledTwo>
                 <StyledServices className="planet"><h4>Services</h4></StyledServices>
@@ -94,20 +97,23 @@ const StyledWater = styled.div`
 `;
 
 const StyledOnButton = styled.button`
-    padding: 10px 20px;
     display: block;
-    margin: 100px auto 0;
     font-size: 18px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 `;
 
 const StyledModal = styled.div`
-    width: 100vw;
+    width: 100vh;
     height: 100vh;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     position: fixed;
+    border: 1px solid white;
 `;
 
 const StyledOverlay = styled.div`
