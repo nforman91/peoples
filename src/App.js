@@ -1,5 +1,4 @@
 import React from "react";
-// import Nav from "./components/Nav";
 import GlobalStyle from "./components/GlobalStyle";
 import Home from "./pages/Home";
 import WaterWorks from "./pages/WaterWorks";
@@ -20,7 +19,6 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle/>
-      {/* <Nav/> */}
           <Routes 
           // location={location} key={location.pathname}
           >
