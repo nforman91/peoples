@@ -71,7 +71,6 @@ const Home = () => {
                 {/* {planetsInfo &&
                     <Info planetsInfo={planetsInfo} setPlanetsInfo={setPlanetsInfo}/>
                 } */}
-                {/* <h4>Water Works Amphitheater</h4> */}
                 <StyledWaterOnButton onClick={toggleWaterModal}>Water Works Amphitheater</StyledWaterOnButton>
                 {waterModal && (
                     <StyledWaterModal>
@@ -88,7 +87,6 @@ const Home = () => {
             </StyledOne>
             <StyledTwo>
                 <StyledServices className="planet">
-                    {/* <h4>Services</h4> */}
                     <StyledServicesOnButton onClick={toggleServicesModal}>Services</StyledServicesOnButton>
                     {servicesModal && (
                         <StyledServicesModal>
@@ -102,7 +100,6 @@ const Home = () => {
                     )}
                 </StyledServices>
                 <StyledHush className="planet">
-                    {/* <h4>HUSH</h4> */}
                     <StyledHushOnButton onClick={toggleHushModal}>Hush</StyledHushOnButton>
                     {hushModal && (
                         <StyledHushModal>
@@ -118,7 +115,6 @@ const Home = () => {
             </StyledTwo>
             <StyledThree>
                 <StyledTBD className="planet">
-                    {/* <h4>TBD</h4> */}
                     <StyledTbdOnButton onClick={toggleTbdModal}>Tbd</StyledTbdOnButton>
                     {tbdModal && (
                         <StyledTbdModal>
@@ -133,7 +129,6 @@ const Home = () => {
                     </StyledTBD>
                 <StyledPeoplesLogo src={peoples_bw_on_white_logo} alt="People's Productions logo"/>
                 <StyledFestivals className="planet">
-                    {/* <h4>Festivals</h4> */}
                         <StyledFestivalsOnButton onClick={toggleFestivalsModal}>Festivals</StyledFestivalsOnButton>
                     {festivalsModal && (
                         <StyledFestivalsModal>
@@ -149,8 +144,7 @@ const Home = () => {
             </StyledThree>
             <StyledTwo>
                 <StyledHuman className="planet">
-                    {/* <h4>Human<br/>Foosball</h4> */}
-                    <StyledHumanOnButton onClick={toggleHumanModal}>Human Foosball</StyledHumanOnButton>
+                    <StyledHumanOnButton onClick={toggleHumanModal}>Human<br/>Foosball</StyledHumanOnButton>
                     {humanModal && (
                         <StyledHumanModal>
                             <StyledHumanOverlay onClick={toggleHumanModal}/>
@@ -163,7 +157,6 @@ const Home = () => {
                     )}
                     </StyledHuman>
                 <StyledMerch className="planet">
-                    {/* <h4>Merch</h4> */}
                     <StyledMerchOnButton onClick={toggleMerchModal}>Merch</StyledMerchOnButton>
                     {merchModal && (
                         <StyledMerchModal>
@@ -179,8 +172,7 @@ const Home = () => {
             </StyledTwo>
             <StyledOne>
                 <StyledStory>
-                    {/* <h4>His Story</h4> */}
-                    <StyledStoryOnButton onClick={toggleStoryModal}>Story</StyledStoryOnButton>
+                    <StyledStoryOnButton onClick={toggleStoryModal}>His Story</StyledStoryOnButton>
                     {storyModal && (
                         <StyledStoryModal>
                             <StyledStoryOverlay onClick={toggleStoryModal}/>
@@ -263,6 +255,7 @@ const StyledWaterModal = styled.div`
     background-color: white;
     padding: 5vh;
     margin: 70vh 0 0 0;
+    z-index: 3;
 `;
 
 const StyledWaterOverlay = styled.div`
@@ -278,9 +271,7 @@ const StyledWaterOverlay = styled.div`
 const StyledWaterModalContent = styled.div`
     position: absolute;
     top: 40%;
-    /* left: 50%; */
     line-height: 1.4;
-    /* padding: 14px 28px; */
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
@@ -341,7 +332,7 @@ const StyledServicesModal = styled.div`
     justify-content: center;
     background-color: white;
     padding: 5vh;
-    margin: 70vh 0 0 0;
+    margin: 70vh 0 30vh 60vh;
 `;
 
 const StyledServicesOverlay = styled.div`
@@ -357,9 +348,7 @@ const StyledServicesOverlay = styled.div`
 const StyledServicesModalContent = styled.div`
     position: absolute;
     top: 40%;
-    left: 50%;
     line-height: 1.4;
-    padding: 14px 28px;
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
@@ -399,14 +388,9 @@ const StyledHushOnButton = styled.button`
 const StyledHushModal = styled.div`
     width: 100vh;
     height: 100vh;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     position: fixed;
-    border: 1px solid white;
     background-color: white;
-    margin: 5vh 0 0 0;
+    margin: 60vh 70vh 0 0;
 `;
 
 const StyledHushOverlay = styled.div`
@@ -421,13 +405,12 @@ const StyledHushOverlay = styled.div`
 
 const StyledHushModalContent = styled.div`
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 20%;
     line-height: 1.4;
-    padding: 14px 28px;
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
+    padding: 5vh;
 `;
 
 const StyledHushCloseButton = styled.button`
@@ -583,6 +566,8 @@ const StyledFestivalsCloseButton = styled.button`
     padding: 5px 7px;
 `;
 
+
+// PEOPLE'S LOGO
 const StyledPeoplesLogo = styled.img`
     display: flex;
     justify-content: center;
@@ -590,6 +575,8 @@ const StyledPeoplesLogo = styled.img`
     width: 30vh;
     height: 30vh;
     border-radius: 50%;
+    position: relative;
+    z-index: -1;
 `;
 
 
@@ -620,12 +607,7 @@ const StyledHumanOnButton = styled.button`
 const StyledHumanModal = styled.div`
     width: 100vh;
     height: 100vh;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     position: fixed;
-    border: 1px solid white;
     background-color: white;
     margin: 5vh 0 0 0;
 `;
@@ -685,12 +667,7 @@ const StyledMerchOnButton = styled.button`
 const StyledMerchModal = styled.div`
     width: 100vh;
     height: 100vh;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     position: fixed;
-    border: 1px solid white;
     background-color: white;
     margin: 5vh 0 0 0;
 `;
@@ -751,12 +728,7 @@ const StyledStoryOnButton = styled.button`
 const StyledStoryModal = styled.div`
     width: 100vh;
     height: 100vh;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     position: fixed;
-    border: 1px solid white;
     background-color: white;
     margin: 5vh 0 0 0;
 `;

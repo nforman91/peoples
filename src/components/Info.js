@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 const Info = (props) => {
-    const { planetInfo, setPlanetInfo } = props;
+    // const { planetInfo, setPlanetInfo } = props;
 
 
 }
