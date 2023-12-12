@@ -4,6 +4,7 @@ import galaxy from "../img/galaxy.jpg";
 import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 // import planets from "../planets/Planets";
 // import Info from "../components/Info";
+import blue_planet from "../img/blue_planet.jpg";
 
 const Home = () => {
     const [waterModal, setWaterModal] = useState(false);
@@ -206,7 +207,7 @@ const StyledOne = styled.div`
     position: relative;
     z-index: 2;
     h4{
-        color: white;
+        color: black;
     }
     a{
         color: black;
@@ -225,6 +226,9 @@ const StyledWater = styled.div`
     align-items: center;
     width: 17vh;
     height: 17vh;
+    /* background-color: white; */
+    background-image: url("../img/blue_planet.jpg");
+    /* filter: blur(1rem); */
     line-height: 3vh;
     font-size: 20px;
     flex-wrap: wrap;
@@ -332,12 +336,12 @@ const StyledServicesModal = styled.div`
     justify-content: center;
     background-color: white;
     padding: 5vh;
-    margin: 70vh 0 30vh 60vh;
+    margin: 70vh 0 30vh 100vh;
 `;
 
 const StyledServicesOverlay = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     top: 0;
     left: 0;
     right: 0;
@@ -347,11 +351,12 @@ const StyledServicesOverlay = styled.div`
 
 const StyledServicesModalContent = styled.div`
     position: absolute;
-    top: 40%;
+    top: 20%;
     line-height: 1.4;
     border-radius: 3px;
     max-width: 600px;
-    min-width: 300px;
+    /* min-width: 300px; */
+    /* padding: 5vh; */
 `;
 
 const StyledServicesCloseButton = styled.button`
@@ -387,7 +392,7 @@ const StyledHushOnButton = styled.button`
 
 const StyledHushModal = styled.div`
     width: 100vh;
-    height: 100vh;
+    height: 60vh;
     position: fixed;
     background-color: white;
     margin: 60vh 70vh 0 0;
@@ -463,14 +468,12 @@ const StyledTbdOnButton = styled.button`
 const StyledTbdModal = styled.div`
     width: 100vh;
     height: 100vh;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     position: fixed;
+    display: flex;
+    justify-content: center;
     border: 1px solid white;
     background-color: white;
-    margin: 5vh 0 0 0;
+    margin: 5vh 0 0 140vh;
 `;
 
 const StyledTbdOverlay = styled.div`
@@ -528,10 +531,6 @@ const StyledFestivalsOnButton = styled.button`
 const StyledFestivalsModal = styled.div`
     width: 100vh;
     height: 100vh;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     position: fixed;
     border: 1px solid white;
     background-color: white;
@@ -575,7 +574,7 @@ const StyledPeoplesLogo = styled.img`
     width: 30vh;
     height: 30vh;
     border-radius: 50%;
-    position: relative;
+    /* position: relative; */
     z-index: -1;
 `;
 

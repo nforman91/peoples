@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-// import galaxy from "../img/galaxy.jpg";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -7,7 +6,6 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
     body{
-        /* background-color: yellow; */
         background-image: url("../img/galaxy.jpg");
         width: 100%;
         height: 100%;
