@@ -5,6 +5,9 @@ import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 // import planets from "../planets/Planets";
 // import Info from "../components/Info";
 import blue_planet from "../img/blue_planet.jpg";
+import YouTube from "react-youtube";
+import ReactPlayer from "react-player";
+import ButtonMailTo from "../components/ButtonMailTo";
 
 const Home = () => {
     const [waterModal, setWaterModal] = useState(false);
@@ -109,8 +112,14 @@ const Home = () => {
                         <StyledHushModal>
                             <StyledHushOverlay onClick={toggleHushModal}/>
                             <StyledHushModalContent>
-                                <h2>Hello Modal!</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+                                <h4>HUSH</h4>
+                                <p>HUSH – SILENT DISCO’S are the entertainment / party events sweeping the globe. This new sensation is a dance party with 3 DJ’s at the same time who are playing to a packed crowd in what appears to be total silence.  Participants all wear high-quality noise cancelling headphones and can choose between which DJ they like the best at any given moment.  It’s a spectacle to witness and an even bigger experience to participate in.  Think a packed room of people all grooving to their own beat or singing their favorite song at the top of their lungs with absolutely NO SOUND being played over amplified speakers.  This revolution started in Europe when creative rave organizers needed a solution to their late night parties being constantly shut down due to noise problems.  So they came up with this amazing idea of being able to throw dance parties with no amplified sound and it was an immediate smash hit.  It came to the United States via the festival circuit and it is now a staple part of many many music festivals around the county. We are very excited that we are now able to bring this technology to you at any location.  We do everything from large 15,000 person festivals to back yard / basement or office parties and everything in between.  We have never experienced anything so satisfying that is always a 100% home run with guests and neither will you.<br/><br/>Contact us at 
+                                <ButtonMailTo label=" HUSHDSM " mailto="HUSHDSM@GMAIL.COM"/> 
+                                for more details or a quote for your next unforgettable party.<br/><br/>Enough words …  Silent Discos are best described with video evidence</p>
+                                <br/>
+                                {/* <iframe src="https://www.youtube.com/watch?v=elAWsTOl0kM" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen title="video"/> */}
+                                {/* <YouTube videoId="elAWsTOl0kM"/> */}
+                                <ReactPlayer url="https://www.youtube.com/watch?v=elAWsTOl0kM"/>
                                 <StyledHushCloseButton onClick={toggleHushModal}>CLOSE</StyledHushCloseButton>
                             </StyledHushModalContent>
                         </StyledHushModal>
@@ -253,7 +262,7 @@ const StyledBluePlanet = styled.img`
 
 const StyledWaterOnButton = styled.button`
     display: block;
-    font-family: 'Lato';
+    font-family: 'Rubik Bubbles';
     font-size: 18px;
     background: none;
     border: none;
@@ -307,7 +316,7 @@ const StyledTwo = styled.div`
     position: relative;
     z-index: 2;
     h4{
-        color: white;
+        /* color: white; */
     }
     a{
         color: black;
@@ -332,7 +341,7 @@ const StyledServices = styled.div`
 
 const StyledServicesOnButton = styled.button`
     display: block;
-    font-family: 'Roboto';
+    font-family: 'Silkscreen';
     font-size: 18px;
     background: none;
     border: none;
@@ -395,7 +404,7 @@ const StyledHush = styled.div`
 
 const StyledHushOnButton = styled.button`
     display: block;
-    font-family: 'Varela';
+    font-family: 'Permanent Marker';
     font-size: 18px;
     background: none;
     border: none;
@@ -404,11 +413,14 @@ const StyledHushOnButton = styled.button`
 `;
 
 const StyledHushModal = styled.div`
-    width: 100vh;
-    height: 60vh;
+    width: 170vh;
+    height: 80vh;
     position: fixed;
     background-color: white;
-    margin: 60vh 70vh 0 0;
+    margin: 40vh 90vh 0 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center;  */
 `;
 
 const StyledHushOverlay = styled.div`
@@ -423,10 +435,12 @@ const StyledHushOverlay = styled.div`
 
 const StyledHushModalContent = styled.div`
     position: absolute;
-    top: 20%;
+    /* top: 20%; */
+    /* display: flex; */
+    /* justify-content: center; */
     line-height: 1.4;
     border-radius: 3px;
-    max-width: 600px;
+    /* max-width: 600px; */
     min-width: 300px;
     padding: 5vh;
 `;
