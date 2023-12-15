@@ -147,8 +147,38 @@ const Home = () => {
                         <StyledFestivalsModal>
                             <StyledFestivalsOverlay onClick={toggleFestivalsModal}/>
                             <StyledFestivalsModalContent>
-                                <h2>Hello Modal!</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+                                <h4>FESTIVALS</h4>
+                                <p>FESTIVALS – Festival Season is our FAVORITE Season !!!  And People’s Productions has their hand in SO Many great festivals here in the Midwest.  We are the festival management Guru’s of Central Iowa.  We have a managing role in 10 different festivals over the course of the year.  We are here to promote the ones that we currently work with and fill you in our services for the ones that we don’t yet.  We are the experts in the field and bring a full staff for whatever is needed to facilitate the success of your event.  Whether you just need help with a couple of aspects of your event or need a managing director our crack staff is on top of everything in the Festie world and can bring you everything from talent procurement and production management to cost savings due to our large volume of events that we produce.  
+Some of the services that we provide for various festivals : 
+Talent Buying
+Staging Operations
+Production Management (Sound & Lights)
+Vendor Coordination 
+Infrastructure Procurement and Supervision 
+Security Consultation
+Entertainment Services
+Volunteer Program Development 
+Ticketing Oversight and Crowd Control 
+Trash and Clean-Up Services
+Marketing and Media Management 
+Sponsorship Procurement
+Stage Management 
+Parking Services
+Venue Liaison 
+
+Some of the Festivals that we work with : 
+Blue Ribbon Bacon Festival 
+Hinterland Music Festival 
+515 Alive Music Festival 
+80-35 Music Festival 
+Greenbelt Music Festival 
+Iowa Craft Beer Festival
+Oktoberfest DSM 
+Field Daze Music Series
+Ragbrai 
+Truckin’ Food Truck Festival 
+Des Moines Arts Festival
+</p>
                                 <StyledFestivalsCloseButton onClick={toggleFestivalsModal}>CLOSE</StyledFestivalsCloseButton>
                             </StyledFestivalsModalContent>
                         </StyledFestivalsModal>
@@ -162,8 +192,10 @@ const Home = () => {
                         <StyledHumanModal>
                             <StyledHumanOverlay onClick={toggleHumanModal}/>
                             <StyledHumanModalContent>
-                                <h2>Hello Modal!</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+                                <h4>HUMAN FOOSBALL</h4>
+                                <p>HUMAN FOOSBALL – Yep !  Its just like it sounds …  put a bunch of humans in a giant foosball table and let them kick their way to a championship !  If was only that simple …  but now it IS !  We have built the perfect mousetrap for your backyard party or company event.  Our giant foosball table is an exact replica of a standard foosball table but human sized.  It’s a 6 on 6 battle royale but there’s a no spinning your players rule because the players are all your family / friends / co-workers.  The 2 teams strap themselves into their respective poles and slide back and forth as a team “kicking” their way back and forth to score goals. It is a great activity for all ages …   We have been invited to everything from backyard birthday parties to middle school church functions and corporate team building retreats to St Patrick’s Day festivals and of course the World’s largest Bacon Festival.   We operate our Human Foosball Arena in a couple of different ways.  We can come set it up in your back yard / driveway / indoor gym or really anywhere that you have a 90’ x 40’ area for our layout.  It works on both grass or concrete or any inside surface.  We can either just set it up and let you enjoy at your leisure or we will come and manage it as a tournament complete with referee’s and a bracket system if you want to promote a competition.  Both options are crazy fun and enjoyable and something that your guests will be talking about for years to come.  
+NEW IN 2024 !!! – We will be hosting a traveling bar league this fall !!! Contact us if you want to be a part of the fun with your team of 6 or if you want us to include your establishment as part of our traveling competition   HUMANFOOSBALL@GMAIL.COM 
+</p>
                                 <StyledHumanCloseButton onClick={toggleHumanModal}>CLOSE</StyledHumanCloseButton>
                             </StyledHumanModalContent>
                         </StyledHumanModal>
@@ -631,11 +663,11 @@ const StyledHumanOnButton = styled.button`
 `;
 
 const StyledHumanModal = styled.div`
-    width: 100vh;
-    height: 100vh;
+    width: 150vh;
+    height: 50vh;
     position: fixed;
     background-color: white;
-    margin: 5vh 0 0 0;
+    margin: 0 0 50vh 80vh;
 `;
 
 const StyledHumanOverlay = styled.div`
@@ -650,12 +682,12 @@ const StyledHumanOverlay = styled.div`
 
 const StyledHumanModalContent = styled.div`
     position: absolute;
-    top: 40%;
-    left: 50%;
+    /* top: 40%; */
+    /* left: 50%; */
     line-height: 1.4;
-    padding: 14px 28px;
+    padding: 5vh;
     border-radius: 3px;
-    max-width: 600px;
+    /* max-width: 600px; */
     min-width: 300px;
 `;
 
