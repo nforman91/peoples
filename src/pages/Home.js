@@ -69,6 +69,9 @@ const Home = () => {
                     {}
                 </div>
                 <StyledWater className="planet">
+                <StyledBluePlanet 
+                    // src={blue_planet} alt="blue planet"
+                />
                 {/* {planetsInfo &&
                     <Info planetsInfo={planetsInfo} setPlanetsInfo={setPlanetsInfo}/>
                 } */}
@@ -203,7 +206,7 @@ const StyledOne = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     position: relative;
     z-index: 2;
     h4{
@@ -227,7 +230,7 @@ const StyledWater = styled.div`
     width: 17vh;
     height: 17vh;
     /* background-color: white; */
-    background-image: url("../img/blue_planet.jpg");
+    /* background-image: url("../img/blue_planet.jpg"); */
     /* filter: blur(1rem); */
     line-height: 3vh;
     font-size: 20px;
@@ -241,8 +244,16 @@ const StyledWater = styled.div`
     }
 `;
 
+const StyledBluePlanet = styled.img`
+    width: 17vh;
+    height: 17vh;
+    background-image: url("../img/blue_planet.jpg");
+    border-radius: 50%;
+`;
+
 const StyledWaterOnButton = styled.button`
     display: block;
+    font-family: 'Lato';
     font-size: 18px;
     background: none;
     border: none;
@@ -292,7 +303,7 @@ const StyledTwo = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     position: relative;
     z-index: 2;
     h4{
@@ -321,6 +332,7 @@ const StyledServices = styled.div`
 
 const StyledServicesOnButton = styled.button`
     display: block;
+    font-family: 'Roboto';
     font-size: 18px;
     background: none;
     border: none;
@@ -383,6 +395,7 @@ const StyledHush = styled.div`
 
 const StyledHushOnButton = styled.button`
     display: block;
+    font-family: 'Varela';
     font-size: 18px;
     background: none;
     border: none;
@@ -429,7 +442,7 @@ const StyledThree = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     position: relative;
     z-index: 2;
     h4{
