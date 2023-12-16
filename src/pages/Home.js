@@ -114,7 +114,11 @@ const Home = () => {
                             <StyledHushModalContent>
                                 <h4>HUSH</h4>
                                 <p>HUSH – SILENT DISCO’S are the entertainment / party events sweeping the globe. This new sensation is a dance party with 3 DJ’s at the same time who are playing to a packed crowd in what appears to be total silence.  Participants all wear high-quality noise cancelling headphones and can choose between which DJ they like the best at any given moment.  It’s a spectacle to witness and an even bigger experience to participate in.  Think a packed room of people all grooving to their own beat or singing their favorite song at the top of their lungs with absolutely NO SOUND being played over amplified speakers.  This revolution started in Europe when creative rave organizers needed a solution to their late night parties being constantly shut down due to noise problems.  So they came up with this amazing idea of being able to throw dance parties with no amplified sound and it was an immediate smash hit.  It came to the United States via the festival circuit and it is now a staple part of many many music festivals around the county. We are very excited that we are now able to bring this technology to you at any location.  We do everything from large 15,000 person festivals to back yard / basement or office parties and everything in between.  We have never experienced anything so satisfying that is always a 100% home run with guests and neither will you.<br/><br/>Contact us at 
-                                <ButtonMailTo label=" HUSHDSM " mailto="HUSHDSM@GMAIL.COM"/> 
+                                
+                                {/* <ButtonMailTo label=" HUSHDSM " mailto="HUSHDSM@GMAIL.COM"/>  */}
+                                <br/>
+                                <a href="mailto:HUSHDSM@GMAIL.COM">hushdsm@gmail.com</a>
+                                <br/>
                                 for more details or a quote for your next unforgettable party.<br/><br/>Enough words …  Silent Discos are best described with video evidence</p>
                                 <br/>
                                 {/* <iframe src="https://www.youtube.com/watch?v=elAWsTOl0kM" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen title="video"/> */}
@@ -179,6 +183,7 @@ Ragbrai
 Truckin’ Food Truck Festival 
 Des Moines Arts Festival
 </p>
+                                {/* <ReactPlayer url=""/> */}
                                 <StyledFestivalsCloseButton onClick={toggleFestivalsModal}>CLOSE</StyledFestivalsCloseButton>
                             </StyledFestivalsModalContent>
                         </StyledFestivalsModal>
@@ -194,8 +199,12 @@ Des Moines Arts Festival
                             <StyledHumanModalContent>
                                 <h4>HUMAN FOOSBALL</h4>
                                 <p>HUMAN FOOSBALL – Yep !  Its just like it sounds …  put a bunch of humans in a giant foosball table and let them kick their way to a championship !  If was only that simple …  but now it IS !  We have built the perfect mousetrap for your backyard party or company event.  Our giant foosball table is an exact replica of a standard foosball table but human sized.  It’s a 6 on 6 battle royale but there’s a no spinning your players rule because the players are all your family / friends / co-workers.  The 2 teams strap themselves into their respective poles and slide back and forth as a team “kicking” their way back and forth to score goals. It is a great activity for all ages …   We have been invited to everything from backyard birthday parties to middle school church functions and corporate team building retreats to St Patrick’s Day festivals and of course the World’s largest Bacon Festival.   We operate our Human Foosball Arena in a couple of different ways.  We can come set it up in your back yard / driveway / indoor gym or really anywhere that you have a 90’ x 40’ area for our layout.  It works on both grass or concrete or any inside surface.  We can either just set it up and let you enjoy at your leisure or we will come and manage it as a tournament complete with referee’s and a bracket system if you want to promote a competition.  Both options are crazy fun and enjoyable and something that your guests will be talking about for years to come.  
-NEW IN 2024 !!! – We will be hosting a traveling bar league this fall !!! Contact us if you want to be a part of the fun with your team of 6 or if you want us to include your establishment as part of our traveling competition   HUMANFOOSBALL@GMAIL.COM 
-</p>
+<br/><br/>NEW IN 2024 !!! – We will be hosting a traveling bar league this fall !!! Contact us if you want to be a part of the fun with your team of 6 or if you want us to include your establishment as part of our traveling competition<br/><br/>
+                                {/* <ButtonMailTo label="HUMAN FOOSBALL EMAIL" mailto="HUMANFOOSBALL@GMAIL.COM"/> */}
+                                <a href="mailto:HUMANFOOSBALL@GMAIL.COM">humanfoosball@gmail.com</a>
+                                </p>
+                                <ReactPlayer url="https://www.youtube.com/watch?v=2hhPGexC_98"/>
+                                <br/>
                                 <StyledHumanCloseButton onClick={toggleHumanModal}>CLOSE</StyledHumanCloseButton>
                             </StyledHumanModalContent>
                         </StyledHumanModal>
@@ -664,7 +673,7 @@ const StyledHumanOnButton = styled.button`
 
 const StyledHumanModal = styled.div`
     width: 150vh;
-    height: 50vh;
+    height: 90vh;
     position: fixed;
     background-color: white;
     margin: 0 0 50vh 80vh;
