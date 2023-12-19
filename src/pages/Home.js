@@ -445,7 +445,7 @@ const StyledHush = styled.div`
 const StyledHushOnButton = styled.button`
     display: block;
     font-family: 'Permanent Marker';
-    font-size: 18px;
+    font-size: 25px;
     background: none;
     border: none;
     color: white;
