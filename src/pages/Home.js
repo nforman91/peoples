@@ -70,9 +70,9 @@ const Home = () => {
                     {}
                 </div>
                 <StyledWater className="planet">
-                <StyledBluePlanet 
-                    // src={blue_planet} alt="blue planet"
-                />
+                {/* <StyledBluePlanet 
+                    src={blue_planet} alt="blue planet"
+                /> */}
                 {/* {planetsInfo &&
                     <Info planetsInfo={planetsInfo} setPlanetsInfo={setPlanetsInfo}/>
                 } */}
@@ -138,7 +138,10 @@ const Home = () => {
                         </StyledTbdModal>
                     )}
                     </StyledTBD>
-                <StyledPeoplesLogo src={peoples_bw_on_white_logo} alt="People's Productions logo"/>
+                {/* <StyledPeoplesLogo1 src={peoples_bw_on_white_logo} alt="People's Productions logo1"/> */}
+                {/* <StyledLogo> */}
+                    <StyledPeoplesLogo2 src={peoples_bw_on_white_logo} alt="People's Productions logo2"/>
+                {/* </StyledLogo> */}
                 <StyledFestivals className="planet">
                         <StyledFestivalsOnButton onClick={toggleFestivalsModal}>Festivals</StyledFestivalsOnButton>
                     {festivalsModal && (
@@ -479,7 +482,10 @@ const StyledHushModalContent = styled.div`
     border-radius: 3px;
     /* max-width: 600px; */
     min-width: 300px;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
     padding: 5vh;
+    font-family: 'Lato';
 `;
 
 const StyledHushCloseButton = styled.button`
@@ -622,6 +628,7 @@ const StyledFestivalsModalContent = styled.div`
     min-width: 300px;
     max-height: calc(100vh - 210px);
     overflow-y: auto;
+    font-family: 'Josefin Sans';
 `;
 
 const StyledFestivalsCloseButton = styled.button`
@@ -633,7 +640,17 @@ const StyledFestivalsCloseButton = styled.button`
 
 
 // PEOPLE'S LOGO
-const StyledPeoplesLogo = styled.img`
+const StyledLogo = styled.div`
+    margin: auto;
+    width: 30vh;
+    height: 30vh;
+    /* border: 1px solid white; */
+    background: inherit;
+    $b: 1.5em;
+    /* position: relative; */
+`;
+
+const StyledPeoplesLogo1 = styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -642,6 +659,29 @@ const StyledPeoplesLogo = styled.img`
     border-radius: 50%;
     /* position: relative; */
     z-index: -1;
+`;
+
+const StyledPeoplesLogo2 = styled.img`
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 100%; */
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    /* position: relative; */
+    z-index: -1;
+    filter: blur(.2rem);
+    /* &before {
+        top: -$b;
+        right: -$b;
+        bottom: -$b;
+        left: -$b;
+        background: inherit;
+        border-color: transparent;
+        background-clip: border-box;
+        content: "";
+        box-shadow: -10px -10px 10px 10px white inset;} */
 `;
 
 
@@ -696,6 +736,7 @@ const StyledHumanModalContent = styled.div`
     border-radius: 3px;
     /* max-width: 600px; */
     min-width: 300px;
+    font-family: 'Varela';
 `;
 
 const StyledHumanCloseButton = styled.button`
