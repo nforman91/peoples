@@ -1,10 +1,21 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+
+// IMAGES
 import galaxy from "../img/galaxy.jpg";
 import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 // import planets from "../planets/Planets";
 // import Info from "../components/Info";
 import blue_planet from "../img/blue_planet.jpg";
+import blue_planet2 from "../img/blue_planet2.jpg";
+import brown_planet from "../img//brown_planet.jpg";
+import brown_planet2 from "../img/brown_planet2.jpg";
+import purple_planet from "../img/purple_planet.jpg";
+import red_planet from "../img/red_planet.jpg";
+import ring_planet from "../img/ring_planet.jpg";
+import white_planet from "../img/white_planet.jpg";
+
+// FESTIVALS
 import ReactPlayer from "react-player";
 import Hinterland from "../festivals/Hinterland";
 import Alive515 from "../festivals/Alive515";
@@ -77,9 +88,7 @@ const Home = () => {
         <>
         <StyledUniverse id="a" src={galaxy} alt="picture of a galaxy"></StyledUniverse>
             <StyledOne>
-                <div className="StyledPlanet">
-                    {}
-                </div>
+                <StyledPlanet src={blue_planet} alt="blue planet"/>
                 <StyledWater className="planet">
                 {/* <StyledBluePlanet 
                     src={blue_planet} alt="blue planet"
@@ -102,6 +111,7 @@ const Home = () => {
                 
             </StyledOne>
             <StyledTwo>
+                <StyledPlanet src={blue_planet2} alt="blue planet"/>
                 <StyledServices className="planet">
                     <StyledServicesOnButton onClick={toggleServicesModal}>Services</StyledServicesOnButton>
                     {servicesModal && (
@@ -166,6 +176,7 @@ const Home = () => {
                                     
                                     <ul>
                                         <p>Some of the services that we provide for various festivals : </p>
+                                        <br/>
                                     <li>Talent Buying</li>
                                     <li>Staging Operations</li>
                                     <li>Production Management (Sound & Lights)</li>
@@ -186,6 +197,7 @@ const Home = () => {
                                     
                                     <ul>
                                         <p>Some of the Festivals that we work with : </p>
+                                        <br/>
                                     {/* <li><Link to="/blueribbon" element={</>}>Blue Ribbon Bacon Festival</Link></li> */}
                                     <li><Link to="/hinterland" element={<Hinterland/>}>Hinterland Music Festival</Link> </li>
                                     <li><Link to="/515alive" element={<Alive515/>}>515 Alive Music Festival</Link> </li>
@@ -285,6 +297,12 @@ const StyledOne = styled.div`
     } */
 `;
 
+// STYLED BLUE PLANET
+const StyledPlanet = styled.img`
+    width: 17vh;
+    height: 17vh;
+    border-radius: 50%;
+`;
 
 // WATER WORKS AMPHITHEATER
 const StyledWater = styled.div`
@@ -308,12 +326,12 @@ const StyledWater = styled.div`
     }
 `;
 
-const StyledBluePlanet = styled.img`
-    width: 17vh;
-    height: 17vh;
-    background-image: url("../img/blue_planet.jpg");
-    border-radius: 50%;
-`;
+// const StyledBluePlanet = styled.img`
+//     width: 17vh;
+//     height: 17vh;
+//     background-image: url("../img/blue_planet.jpg");
+//     border-radius: 50%;
+// `;
 
 const StyledWaterOnButton = styled.button`
     display: block;
