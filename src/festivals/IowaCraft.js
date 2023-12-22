@@ -5,7 +5,7 @@ const IowaCraft = () => {
   return (
     <div>
       <Nav/>
-      <p>Iowa Craft</p>
+      <p>Iowa Craft Beer Festival</p>
     </div>
   );
 };

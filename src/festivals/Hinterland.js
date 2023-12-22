@@ -5,7 +5,7 @@ const Hinterland = () => {
   return (
     <div>
         <Nav/>
-        <p>Hinterland</p>
+        <p>Hinterland Music Festival</p>
     </div>
   );
 };

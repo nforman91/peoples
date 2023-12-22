@@ -5,7 +5,7 @@ const Greenbelt = () => {
   return (
     <div>
       <Nav/>
-      <p>Greenbelt</p>
+      <p>Greenbelt Music Festival</p>
     </div>
   );
 };

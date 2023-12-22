@@ -5,7 +5,7 @@ const Alive515 = () => {
     return (
         <div>
             <Nav/>
-            <p>515Alive</p>
+            <p>515 Alive Music Festival</p>
         </div>
     );
 };

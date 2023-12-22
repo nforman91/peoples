@@ -5,7 +5,7 @@ const FieldDaze = () => {
   return (
     <div>
       <Nav/>
-      <p>Field Daze</p>
+      <p>Field Daze Music Series</p>
     </div>
   );
 };

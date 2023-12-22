@@ -5,7 +5,7 @@ const DesMoinesArts = () => {
   return (
     <div>
       <Nav/>
-      <p>DesMoinesArts</p>
+      <p>Des Moines Arts Festival</p>
     </div>
   );
 };

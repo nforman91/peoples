@@ -5,7 +5,7 @@ const Music8035 = () => {
   return (
     <div>
       <Nav/>
-      <p>80-35 Music</p>
+      <p>80-35 Music Festival</p>
     </div>
   );
 };

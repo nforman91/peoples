@@ -22,7 +22,7 @@ const Home = () => {
     const [waterModal, setWaterModal] = useState(false);
     const [servicesModal, setServicesModal] = useState(false);
     const [hushModal, setHushModal] = useState(false);
-    const [tbdModal, setTbdModal] = useState(false);
+    const [futureModal, setFutureModal] = useState(false);
     const [festivalsModal, setFestivalsModal] = useState(false);
     const [humanModal, setHumanModal] = useState(false);
     const [merchModal, setMerchModal] = useState(false);
@@ -43,8 +43,8 @@ const Home = () => {
         setHushModal(!hushModal)
     }
 
-    const toggleTbdModal = () => {
-        setTbdModal(!tbdModal)
+    const toggleFutureModal = () => {
+        setFutureModal(!futureModal)
     }
 
     const toggleFestivalsModal = () => {
@@ -136,19 +136,19 @@ const Home = () => {
                 </StyledHush>
             </StyledTwo>
             <StyledThree>
-                <StyledTBD className="planet">
-                    <StyledTbdOnButton onClick={toggleTbdModal}>Tbd</StyledTbdOnButton>
-                    {tbdModal && (
-                        <StyledTbdModal>
-                            <StyledTbdOverlay onClick={toggleTbdModal}/>
-                            <StyledTbdModalContent>
+                <StyledFuture className="planet">
+                    <StyledFutureOnButton onClick={toggleFutureModal}>Future Projects</StyledFutureOnButton>
+                    {futureModal && (
+                        <StyledFutureModal>
+                            <StyledFutureOverlay onClick={toggleFutureModal}/>
+                            <StyledFutureModalContent>
                                 <h2>Hello Modal!</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
-                                <StyledTbdCloseButton onClick={toggleTbdModal}>CLOSE</StyledTbdCloseButton>
-                            </StyledTbdModalContent>
-                        </StyledTbdModal>
+                                <StyledFutureCloseButton onClick={toggleFutureModal}>CLOSE</StyledFutureCloseButton>
+                            </StyledFutureModalContent>
+                        </StyledFutureModal>
                     )}
-                    </StyledTBD>
+                    </StyledFuture>
                 {/* <StyledPeoplesLogo1 src={peoples_bw_on_white_logo} alt="People's Productions logo1"/> */}
                 {/* <StyledLogo> */}
                     <StyledPeoplesLogo2 src={peoples_bw_on_white_logo} alt="People's Productions logo2"/>
@@ -161,42 +161,44 @@ const Home = () => {
                             <StyledFestivalsModalContent>
                                 <h4>FESTIVALS</h4>
                                 <p>Festival Season is our FAVORITE Season !!!  And People’s Productions has their hand in SO Many great festivals here in the Midwest.  We are the festival management Guru’s of Central Iowa.  We have a managing role in 10 different festivals over the course of the year.  We are here to promote the ones that we currently work with and fill you in our services for the ones that we don’t yet.  We are the experts in the field and bring a full staff for whatever is needed to facilitate the success of your event.  Whether you just need help with a couple of aspects of your event or need a managing director our crack staff is on top of everything in the Festie world and can bring you everything from talent procurement and production management to cost savings due to our large volume of events that we produce.</p>  
-<br/><br/>
-<p>Some of the services that we provide for various festivals : </p>
-<ul>
-<li>Talent Buying</li>
-<li>Staging Operations</li>
-<li>Production Management (Sound & Lights)</li>
-<li>Vendor Coordination </li>
-<li>Infrastructure Procurement and Supervision </li>
-<li>Security Consultation</li>
-<li>Entertainment Services</li>
-<li>Volunteer Program Development </li>
-<li>Ticketing Oversight and Crowd Control </li>
-<li>Trash and Clean-Up Services</li>
-<li>Marketing and Media Management </li>
-<li>Sponsorship Procurement</li>
-<li>Stage Management </li>
-<li>Parking Services</li>
-<li>Venue Liaison </li>
-</ul>
-<br/><br/>
-<p>Some of the Festivals that we work with : </p>
-<ul>
-{/* <li><Link to="/blueribbon" element={</>}>Blue Ribbon Bacon Festival</Link></li> */}
-<li><Link to="/hinterland" element={<Hinterland/>}>Hinterland Music Festival</Link> </li>
-<li><Link to="/515alive" element={<Alive515/>}>515 Alive Music Festival</Link> </li>
-<li><Link to="/80-35" element={<Music8035/>}>80-35 Music Festival</Link> </li>
-<li>Greenbelt Music Festival </li>
-<li>Iowa Craft Beer Festival</li>
-{/* <li> */}
-    <Link to="/oktoberfest" element={<Oktoberfest/>}>Oktoberfest DSM</Link> 
-{/* </li> */}
-<li>Field Daze Music Series</li>
-<li><Link to="/ragbrai" element={<Ragbrai/>}>Ragbrai</Link> </li>
-<li>Truckin’ Food Truck Festival </li>
-<li><Link to="/desmoinesarts" element={<DesMoinesArts/>}>Des Moines Arts Festival</Link></li>
-</ul>
+                                    <br/><br/>
+                                    <StyledFestivalsLists>
+                                    
+                                    <ul>
+                                        <p>Some of the services that we provide for various festivals : </p>
+                                    <li>Talent Buying</li>
+                                    <li>Staging Operations</li>
+                                    <li>Production Management (Sound & Lights)</li>
+                                    <li>Vendor Coordination </li>
+                                    <li>Infrastructure Procurement and Supervision </li>
+                                    <li>Security Consultation</li>
+                                    <li>Entertainment Services</li>
+                                    <li>Volunteer Program Development </li>
+                                    <li>Ticketing Oversight and Crowd Control </li>
+                                    <li>Trash and Clean-Up Services</li>
+                                    <li>Marketing and Media Management </li>
+                                    <li>Sponsorship Procurement</li>
+                                    <li>Stage Management </li>
+                                    <li>Parking Services</li>
+                                    <li>Venue Liaison </li>
+                                    </ul>
+                                    <br/><br/>
+                                    
+                                    <ul>
+                                        <p>Some of the Festivals that we work with : </p>
+                                    {/* <li><Link to="/blueribbon" element={</>}>Blue Ribbon Bacon Festival</Link></li> */}
+                                    <li><Link to="/hinterland" element={<Hinterland/>}>Hinterland Music Festival</Link> </li>
+                                    <li><Link to="/515alive" element={<Alive515/>}>515 Alive Music Festival</Link> </li>
+                                    <li><Link to="/80-35" element={<Music8035/>}>80-35 Music Festival</Link> </li>
+                                    <li><Link to="/greenbelt" element={<Greenbelt/>}>Greenbelt Music Festival</Link> </li>
+                                    <li><Link to="/iowacraft" element={<IowaCraft/>}>Iowa Craft Beer Festival</Link></li>
+                                    <li><Link to="/oktoberfest" element={<Oktoberfest/>}>Oktoberfest DSM</Link> </li>
+                                    <li><Link to="/fielddaze" element={<FieldDaze/>}>Field Daze Music Series</Link></li>
+                                    <li><Link to="/ragbrai" element={<Ragbrai/>}>Ragbrai</Link> </li>
+                                    <li><Link to="/truckin" element={<Truckin/>}>Truckin’ Food Truck Festival</Link> </li>
+                                    <li><Link to="/desmoinesarts" element={<DesMoinesArts/>}>Des Moines Arts Festival</Link></li>
+                                    </ul>
+                                    </StyledFestivalsLists>
                                 <StyledFestivalsCloseButton onClick={toggleFestivalsModal}>CLOSE</StyledFestivalsCloseButton>
                             </StyledFestivalsModalContent>
                         </StyledFestivalsModal>
@@ -259,7 +261,7 @@ const StyledUniverse = styled.img`
     background-image: url("../img/galaxy.jpg");
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     /* opacity: 10%; */
 `;
@@ -315,7 +317,7 @@ const StyledBluePlanet = styled.img`
 
 const StyledWaterOnButton = styled.button`
     display: block;
-    font-family: 'Rubik Bubbles';
+    font-family: 'Permanent Marker';
     font-size: 18px;
     background: none;
     border: none;
@@ -394,8 +396,8 @@ const StyledServices = styled.div`
 
 const StyledServicesOnButton = styled.button`
     display: block;
-    font-family: 'Silkscreen';
-    font-size: 18px;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
     background: none;
     border: none;
     color: white;
@@ -466,6 +468,9 @@ const StyledHushOnButton = styled.button`
 `;
 
 const StyledHushModal = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170vh;
     height: 80vh;
     position: fixed;
@@ -525,8 +530,8 @@ const StyledThree = styled.div`
 `;
 
 
-// TBD
-const StyledTBD = styled.div`
+// FUTURE PROJECTS
+const StyledFuture = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -539,16 +544,17 @@ const StyledTBD = styled.div`
     border: 1px solid white;
 `;
 
-const StyledTbdOnButton = styled.button`
+const StyledFutureOnButton = styled.button`
     display: block;
-    font-size: 18px;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
 `;
 
-const StyledTbdModal = styled.div`
+const StyledFutureModal = styled.div`
     width: 100vh;
     height: 100vh;
     position: fixed;
@@ -559,7 +565,7 @@ const StyledTbdModal = styled.div`
     margin: 5vh 0 0 140vh;
 `;
 
-const StyledTbdOverlay = styled.div`
+const StyledFutureOverlay = styled.div`
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -569,7 +575,7 @@ const StyledTbdOverlay = styled.div`
     position: fixed;
 `;
 
-const StyledTbdModalContent = styled.div`
+const StyledFutureModalContent = styled.div`
     position: absolute;
     top: 40%;
     left: 50%;
@@ -580,7 +586,7 @@ const StyledTbdModalContent = styled.div`
     min-width: 300px;
 `;
 
-const StyledTbdCloseButton = styled.button`
+const StyledFutureCloseButton = styled.button`
     position: absolute;
     top: 10px;
     right: 10px;
@@ -604,7 +610,8 @@ const StyledFestivals = styled.div`
 
 const StyledFestivalsOnButton = styled.button`
     display: block;
-    font-size: 18px;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
     background: none;
     border: none;
     color: white;
@@ -612,7 +619,10 @@ const StyledFestivalsOnButton = styled.button`
 `;
 
 const StyledFestivalsModal = styled.div`
-    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150vh;
     height: 90vh;
     position: fixed;
     border: 1px solid white;
@@ -642,6 +652,14 @@ const StyledFestivalsModalContent = styled.div`
     max-height: calc(100vh - 210px);
     overflow-y: auto;
     font-family: 'Josefin Sans';
+`;
+
+const StyledFestivalsLists = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin: 0 0 0 2vh;
 `;
 
 const StyledFestivalsCloseButton = styled.button`
@@ -724,6 +742,9 @@ const StyledHumanOnButton = styled.button`
 `;
 
 const StyledHumanModal = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150vh;
     height: 90vh;
     position: fixed;
@@ -742,6 +763,9 @@ const StyledHumanOverlay = styled.div`
 `;
 
 const StyledHumanModalContent = styled.div`
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     position: absolute;
     /* top: 40%; */
     /* left: 50%; */
@@ -750,6 +774,8 @@ const StyledHumanModalContent = styled.div`
     border-radius: 3px;
     /* max-width: 600px; */
     min-width: 300px;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
     font-family: 'Varela';
 `;
 
@@ -777,7 +803,8 @@ const StyledMerch = styled.div`
 
 const StyledMerchOnButton = styled.button`
     display: block;
-    font-size: 18px;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
     background: none;
     border: none;
     color: white;
@@ -838,7 +865,8 @@ const StyledStory = styled.div`
 
 const StyledStoryOnButton = styled.button`
     display: block;
-    font-size: 18px;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
     background: none;
     border: none;
     color: white;

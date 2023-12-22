@@ -5,7 +5,7 @@ const Truckin = () => {
   return (
     <div>
       <Nav/>
-      <p>Truckin</p>
+      <p>Truckin' Food Truck Festival</p>
     </div>
   );
 };

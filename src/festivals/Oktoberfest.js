@@ -5,7 +5,7 @@ const Oktoberfest = () => {
   return (
     <div>
       <Nav/>
-      <p>Oktoberfest</p>
+      <p>Oktoberfest DSM</p>
     </div>
   );
 };
