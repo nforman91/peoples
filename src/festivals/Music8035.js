@@ -1,13 +1,13 @@
 import React from 'react';
 import Nav from '../components/Nav';
 
-const Oktoberfest = () => {
+const Music8035 = () => {
   return (
     <div>
       <Nav/>
-      <p>Oktoberfest</p>
+      <p>80-35 Music</p>
     </div>
   );
 };
 
-export default Oktoberfest;
+export default Music8035;

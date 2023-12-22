@@ -1,13 +1,13 @@
 import React from 'react';
 import Nav from '../components/Nav';
 
-const Oktoberfest = () => {
+const FieldDaze = () => {
   return (
     <div>
       <Nav/>
-      <p>Oktoberfest</p>
+      <p>Field Daze</p>
     </div>
   );
 };
 
-export default Oktoberfest;
+export default FieldDaze;

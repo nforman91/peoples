@@ -1,13 +1,13 @@
 import React from 'react';
 import Nav from '../components/Nav';
 
-const Oktoberfest = () => {
+const Greenbelt = () => {
   return (
     <div>
       <Nav/>
-      <p>Oktoberfest</p>
+      <p>Greenbelt</p>
     </div>
   );
 };
 
-export default Oktoberfest;
+export default Greenbelt;

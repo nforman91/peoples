@@ -12,9 +12,9 @@ const Nav = () => {
                 <li>
                     <Link to="/">Home</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/blueribbon">Blue Ribbon Bacon Fest</Link>
-                </li>
+                </li> */}
                 <li>
                     <Link to="/hinterland">Hinterland</Link>
                 </li>
@@ -56,7 +56,7 @@ const StyledNav = styled.nav`
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 10rem;
+    padding: 1rem 5rem;
     background: #282828;
     position: sticky;
     top: 0;

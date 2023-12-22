@@ -6,9 +6,16 @@ import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 // import Info from "../components/Info";
 import blue_planet from "../img/blue_planet.jpg";
 import ReactPlayer from "react-player";
+import Hinterland from "../festivals/Hinterland";
+import Alive515 from "../festivals/Alive515";
+import Music8035 from "../festivals/Music8035";
+import Greenbelt from "../festivals/Greenbelt";
+import IowaCraft from "../festivals/IowaCraft";
 import Oktoberfest from "../festivals/Oktoberfest";
-import DesMoinesArts from "../festivals/DesMoinesArts";
+import FieldDaze from "../festivals/FieldDaze";
 import Ragbrai from "../festivals/Ragbrai";
+import Truckin from "../festivals/Truckin";
+import DesMoinesArts from "../festivals/DesMoinesArts";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -177,9 +184,9 @@ const Home = () => {
 <p>Some of the Festivals that we work with : </p>
 <ul>
 {/* <li><Link to="/blueribbon" element={</>}>Blue Ribbon Bacon Festival</Link></li> */}
-<li>Hinterland Music Festival </li>
-<li>515 Alive Music Festival </li>
-<li>80-35 Music Festival </li>
+<li><Link to="/hinterland" element={<Hinterland/>}>Hinterland Music Festival</Link> </li>
+<li><Link to="/515alive" element={<Alive515/>}>515 Alive Music Festival</Link> </li>
+<li><Link to="/80-35" element={<Music8035/>}>80-35 Music Festival</Link> </li>
 <li>Greenbelt Music Festival </li>
 <li>Iowa Craft Beer Festival</li>
 {/* <li> */}
