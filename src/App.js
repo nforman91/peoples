@@ -9,9 +9,9 @@ import HUSH from "./pages/HUSH";
 import HumanFoosball from "./pages/HumanFoosball";
 import Merch from "./pages/Merch";
 import HisStory from "./pages/HisStory";
-import Oktoberfest from "./pages/Oktoberfest";
-import Ragbrai from "./pages/Ragbrai";
-import DesMoinesArts from "./pages/DesMoinesArts";
+import Oktoberfest from "./festivals/Oktoberfest";
+import Ragbrai from "./festivals/Ragbrai";
+import DesMoinesArts from "./festivals/DesMoinesArts";
 import { Routes, Route } from "react-router-dom";
 
   // useLocation 

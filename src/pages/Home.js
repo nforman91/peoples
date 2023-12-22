@@ -6,8 +6,9 @@ import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 // import Info from "../components/Info";
 import blue_planet from "../img/blue_planet.jpg";
 import ReactPlayer from "react-player";
-import Oktoberfest from "./Oktoberfest";
-import DesMoinesArts from "./DesMoinesArts";
+import Oktoberfest from "../festivals/Oktoberfest";
+import DesMoinesArts from "../festivals/DesMoinesArts";
+import Ragbrai from "../festivals/Ragbrai";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -185,7 +186,7 @@ const Home = () => {
     <Link to="/oktoberfest" element={<Oktoberfest/>}>Oktoberfest DSM</Link> 
 {/* </li> */}
 <li>Field Daze Music Series</li>
-<li>Ragbrai </li>
+<li><Link to="/ragbrai" element={<Ragbrai/>}>Ragbrai</Link> </li>
 <li>Truckin’ Food Truck Festival </li>
 <li><Link to="/desmoinesarts" element={<DesMoinesArts/>}>Des Moines Arts Festival</Link></li>
 </ul>
