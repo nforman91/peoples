@@ -6,6 +6,9 @@ import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 // import Info from "../components/Info";
 import blue_planet from "../img/blue_planet.jpg";
 import ReactPlayer from "react-player";
+import Oktoberfest from "./Oktoberfest";
+import DesMoinesArts from "./DesMoinesArts";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     const [waterModal, setWaterModal] = useState(false);
@@ -172,17 +175,19 @@ const Home = () => {
 <br/><br/>
 <p>Some of the Festivals that we work with : </p>
 <ul>
-<li>Blue Ribbon Bacon Festival </li>
+{/* <li><Link to="/blueribbon" element={</>}>Blue Ribbon Bacon Festival</Link></li> */}
 <li>Hinterland Music Festival </li>
 <li>515 Alive Music Festival </li>
 <li>80-35 Music Festival </li>
 <li>Greenbelt Music Festival </li>
 <li>Iowa Craft Beer Festival</li>
-<li>Oktoberfest DSM </li>
+{/* <li> */}
+    <Link to="/oktoberfest" element={<Oktoberfest/>}>Oktoberfest DSM</Link> 
+{/* </li> */}
 <li>Field Daze Music Series</li>
 <li>Ragbrai </li>
 <li>Truckin’ Food Truck Festival </li>
-<li>Des Moines Arts Festival</li>
+<li><Link to="/desmoinesarts" element={<DesMoinesArts/>}>Des Moines Arts Festival</Link></li>
 </ul>
                                 <StyledFestivalsCloseButton onClick={toggleFestivalsModal}>CLOSE</StyledFestivalsCloseButton>
                             </StyledFestivalsModalContent>
@@ -600,7 +605,7 @@ const StyledFestivalsOnButton = styled.button`
 
 const StyledFestivalsModal = styled.div`
     width: 100vh;
-    height: 80vh;
+    height: 90vh;
     position: fixed;
     border: 1px solid white;
     background-color: white;
@@ -622,7 +627,7 @@ const StyledFestivalsModalContent = styled.div`
     /* top: 40%; */
     /* left: 50%; */
     line-height: 1.4;
-    padding: 5vh;
+    padding: 5vh 5vh 10vh 5vh;
     border-radius: 3px;
     /* max-width: 600px; */
     min-width: 300px;
@@ -668,10 +673,10 @@ const StyledPeoplesLogo2 = styled.img`
     /* width: 100%; */
     width: 30vh;
     height: 30vh;
-    border-radius: 50%;
+    border-radius: 30%;
     /* position: relative; */
     z-index: -1;
-    filter: blur(.2rem);
+    /* filter: blur(.2rem); */
     /* &before {
         top: -$b;
         right: -$b;
@@ -702,7 +707,8 @@ const StyledHuman = styled.div`
 
 const StyledHumanOnButton = styled.button`
     display: block;
-    font-size: 18px;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
     background: none;
     border: none;
     color: white;

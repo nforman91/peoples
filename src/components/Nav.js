@@ -13,28 +13,37 @@ const Nav = () => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/waterworks">Water Works</Link>
+                    <Link to="/blueribbon">Blue Ribbon Bacon Fest</Link>
                 </li>
                 <li>
-                    <Link to="/services">Services</Link>
+                    <Link to="/hinterland">Hinterland</Link>
                 </li>
                 <li>
-                    <Link to="/hush">HUSH</Link>
+                    <Link to="/515alive">515 Alive</Link>
                 </li>
                 <li>
-                    <Link to="/tbd">TBD</Link>
+                    <Link to="/80-35">80-35</Link>
                 </li>
                 <li>
-                    <Link to="/festivals">Festivals</Link>
+                    <Link to="/greenbelt">Greenbelt</Link>
                 </li>
                 <li>
-                    <Link to="/humanfoosball">Human Foosball</Link>
+                    <Link to="/iowacraft">Iowa Craft Beer</Link>
                 </li>
                 <li>
-                    <Link to="/merch">Merch</Link>
+                    <Link to="/oktoberfest">Oktoberfest DSM</Link>
                 </li>
                 <li>
-                    <Link to="/hisstory">His Story</Link>
+                    <Link to="/fielddaze">Field Daze</Link>
+                </li>
+                <li>
+                    <Link to="/ragbrai">Ragbrai</Link>
+                </li>
+                <li>
+                    <Link to="/truckin">Truckin' Food Truck Fest</Link>
+                </li>
+                <li>
+                    <Link to="/desmoinesarts">Des Moines Arts Fest</Link>
                 </li>
             </ul>
         </StyledNav>
