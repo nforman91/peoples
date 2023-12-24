@@ -88,8 +88,9 @@ const Home = () => {
         <>
         <StyledUniverse id="a" src={galaxy} alt="picture of a galaxy"></StyledUniverse>
             <StyledOne>
-                <StyledPlanet src={blue_planet} alt="blue planet"/>
-                <StyledWater className="planet">
+                <StyledWater>
+                <StyledBluePlanet1 src={blue_planet} alt="blue planet"/>
+                {/* <StyledWater className="planet"> */}
                 {/* <StyledBluePlanet 
                     src={blue_planet} alt="blue planet"
                 /> */}
@@ -97,6 +98,7 @@ const Home = () => {
                     <Info planetsInfo={planetsInfo} setPlanetsInfo={setPlanetsInfo}/>
                 } */}
                 <StyledWaterOnButton onClick={toggleWaterModal}>Water Works Amphitheater</StyledWaterOnButton>
+                </StyledWater>
                 {waterModal && (
                     <StyledWaterModal>
                         <StyledWaterOverlay onClick={toggleWaterModal}/>
@@ -107,11 +109,11 @@ const Home = () => {
                         </StyledWaterModalContent>
                     </StyledWaterModal>
                 )}
-                </StyledWater>
+                {/* </StyledWater> */}
                 
             </StyledOne>
             <StyledTwo>
-                <StyledPlanet src={blue_planet2} alt="blue planet"/>
+                <StyledBluePlanet2 src={blue_planet2} alt="blue planet"/>
                 <StyledServices className="planet">
                     <StyledServicesOnButton onClick={toggleServicesModal}>Services</StyledServicesOnButton>
                     {servicesModal && (
@@ -298,10 +300,13 @@ const StyledOne = styled.div`
 `;
 
 // STYLED BLUE PLANET
-const StyledPlanet = styled.img`
+const StyledBluePlanet1 = styled.img`
     width: 17vh;
     height: 17vh;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+    z-index: 1;
 `;
 
 // WATER WORKS AMPHITHEATER
@@ -309,22 +314,29 @@ const StyledWater = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 17vh;
-    height: 17vh;
-    /* background-color: white; */
-    /* background-image: url("../img/blue_planet.jpg"); */
-    /* filter: blur(1rem); */
-    line-height: 3vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    border: 1px solid white;
-    .planet:hover{
-        cursor: pointer;
-        /* margin-top: -1vh; */
-    }
+    z-index: 0;
 `;
+
+// const StyledWater = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     /* background-color: white; */
+//     /* background-image: url("../img/blue_planet.jpg"); */
+//     /* filter: blur(1rem); */
+//     line-height: 3vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     border: 1px solid white;
+//     .planet:hover{
+//         cursor: pointer;
+//         /* margin-top: -1vh; */
+//     }
+// `;
 
 // const StyledBluePlanet = styled.img`
 //     width: 17vh;
@@ -334,13 +346,14 @@ const StyledWater = styled.div`
 // `;
 
 const StyledWaterOnButton = styled.button`
-    display: block;
+    /* display: block; */
     font-family: 'Permanent Marker';
     font-size: 18px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
+    z-index: 2;
 `;
 
 const StyledWaterModal = styled.div`
@@ -395,6 +408,16 @@ const StyledTwo = styled.div`
         color: black;
         text-decoration: none;
     }
+`;
+
+// STYLED BLUE PLANET 2
+const StyledBluePlanet2 = styled.img`
+    width: 17vh;
+    height: 17vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% -5vh;
+    z-index: 1;
 `;
 
 
