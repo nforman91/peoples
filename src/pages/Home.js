@@ -113,8 +113,8 @@ const Home = () => {
                 
             </StyledOne>
             <StyledTwo>
-                <StyledBluePlanet2 src={blue_planet2} alt="blue planet"/>
                 <StyledServices className="planet">
+                    <StyledBluePlanet2 src={blue_planet2} alt="blue planet"/>
                     <StyledServicesOnButton onClick={toggleServicesModal}>Services</StyledServicesOnButton>
                     {servicesModal && (
                         <StyledServicesModal>
@@ -128,6 +128,7 @@ const Home = () => {
                     )}
                 </StyledServices>
                 <StyledHush className="planet">
+                    <StyledBrownPlanet1 src={brown_planet} alt="brown planet"/>
                     <StyledHushOnButton onClick={toggleHushModal}>Hush</StyledHushOnButton>
                     {hushModal && (
                         <StyledHushModal>
@@ -149,6 +150,7 @@ const Home = () => {
             </StyledTwo>
             <StyledThree>
                 <StyledFuture className="planet">
+                    <StyledBrownPlanet2 src={brown_planet2} alt="brown planet"/>
                     <StyledFutureOnButton onClick={toggleFutureModal}>Future Projects</StyledFutureOnButton>
                     {futureModal && (
                         <StyledFutureModal>
@@ -166,6 +168,7 @@ const Home = () => {
                     <StyledPeoplesLogo2 src={peoples_bw_on_white_logo} alt="People's Productions logo2"/>
                 {/* </StyledLogo> */}
                 <StyledFestivals className="planet">
+                        <StyledPurplePlanet src={purple_planet} alt="purple planet"/>
                         <StyledFestivalsOnButton onClick={toggleFestivalsModal}>Festivals</StyledFestivalsOnButton>
                     {festivalsModal && (
                         <StyledFestivalsModal>
@@ -221,6 +224,7 @@ const Home = () => {
             </StyledThree>
             <StyledTwo>
                 <StyledHuman className="planet">
+                    <StyledRedPlanet src={red_planet} alt="red planet"/>
                     <StyledHumanOnButton onClick={toggleHumanModal}>Human<br/>Foosball</StyledHumanOnButton>
                     {humanModal && (
                         <StyledHumanModal>
@@ -239,6 +243,7 @@ const Home = () => {
                     )}
                     </StyledHuman>
                 <StyledMerch className="planet">
+                    <StyledRingPlanet src={ring_planet} alt="ring planet"/>
                     <StyledMerchOnButton onClick={toggleMerchModal}>Merch</StyledMerchOnButton>
                     {merchModal && (
                         <StyledMerchModal>
@@ -265,6 +270,7 @@ const Home = () => {
                             </StyledStoryModalContent>
                         </StyledStoryModal>
                     )}
+                    <StyledWhitePlanet src={white_planet} alt="white planet"/>
                 </StyledStory>
             </StyledOne>
         </>    
@@ -314,6 +320,14 @@ const StyledWater = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 17vh;
+    height: 17vh;
+    line-height: 5vh;
+    font-size: 20px;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    text-align: center;
+    /* border: 1px solid white; */
     z-index: 0;
 `;
 
@@ -349,6 +363,7 @@ const StyledWaterOnButton = styled.button`
     /* display: block; */
     font-family: 'Permanent Marker';
     font-size: 18px;
+    /* word-wrap: normal; */
     background: none;
     border: none;
     color: white;
@@ -430,15 +445,18 @@ const StyledServices = styled.div`
     height: 17vh;
     line-height: 5vh;
     font-size: 20px;
+    flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    z-index: 0;
 `;
 
 const StyledServicesOnButton = styled.button`
     display: block;
     font-family: 'Permanent Marker';
     font-size: 25px;
+    /* word-wrap: wrap; */
     background: none;
     border: none;
     color: white;
@@ -483,6 +501,15 @@ const StyledServicesCloseButton = styled.button`
     padding: 5px 7px;
 `;
 
+// STYLED BROWN PLANET 1
+const StyledBrownPlanet1 = styled.img`
+    width: 17vh;
+    height: 17vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+    z-index: 1;
+`;
 
 // HUSH
 const StyledHush = styled.div`
@@ -493,9 +520,11 @@ const StyledHush = styled.div`
     height: 17vh;
     line-height: 5vh;
     font-size: 20px;
+    flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    z-index: 0;
 `;
 
 const StyledHushOnButton = styled.button`
@@ -506,6 +535,7 @@ const StyledHushOnButton = styled.button`
     border: none;
     color: white;
     cursor: pointer;
+    z-index: 2;
 `;
 
 const StyledHushModal = styled.div`
@@ -570,6 +600,15 @@ const StyledThree = styled.div`
     }
 `;
 
+// STYLED BROWN PLANET 2
+const StyledBrownPlanet2 = styled.img`
+    width: 17vh;
+    height: 17vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+    z-index: 1;
+`;
 
 // FUTURE PROJECTS
 const StyledFuture = styled.div`
@@ -580,9 +619,11 @@ const StyledFuture = styled.div`
     height: 17vh;
     line-height: 5vh;
     font-size: 20px;
+    flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    z-index: 0;
 `;
 
 const StyledFutureOnButton = styled.button`
@@ -634,6 +675,15 @@ const StyledFutureCloseButton = styled.button`
     padding: 5px 7px;
 `;
 
+// STYLED PURPLE PLANET
+const StyledPurplePlanet = styled.img`
+    width: 17vh;
+    height: 17vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+    z-index: 1;
+`;
 
 // FESTIVALS
 const StyledFestivals = styled.div`
@@ -644,9 +694,11 @@ const StyledFestivals = styled.div`
     height: 17vh;
     line-height: 5vh;
     font-size: 20px;
+    flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    z-index: 0;
 `;
 
 const StyledFestivalsOnButton = styled.button`
@@ -756,6 +808,15 @@ const StyledPeoplesLogo2 = styled.img`
         box-shadow: -10px -10px 10px 10px white inset;} */
 `;
 
+// STYLED RED PLANET
+const StyledRedPlanet = styled.img`
+    width: 17vh;
+    height: 17vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+    z-index: 1;
+`;
 
 // HUMAN FOOSBALL
 const StyledHuman = styled.div`
@@ -769,7 +830,8 @@ const StyledHuman = styled.div`
     flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    z-index: 0;
 `;
 
 const StyledHumanOnButton = styled.button`
@@ -827,6 +889,15 @@ const StyledHumanCloseButton = styled.button`
     padding: 5px 7px;
 `;
 
+// STYLED RING PLANET
+const StyledRingPlanet = styled.img`
+    width: 17vh;
+    height: 17vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+    z-index: 1;
+`;
 
 // MERCH
 const StyledMerch = styled.div`
@@ -837,9 +908,11 @@ const StyledMerch = styled.div`
     height: 17vh;
     line-height: 5vh;
     font-size: 20px;
+    flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    z-index: 0;
 `;
 
 const StyledMerchOnButton = styled.button`
@@ -888,6 +961,15 @@ const StyledMerchCloseButton = styled.button`
     padding: 5px 7px;
 `;
 
+// STYLED WHITE PLANET
+const StyledWhitePlanet = styled.img`
+    width: 17vh;
+    height: 17vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+    z-index: 1;
+`;
 
 // HIS STORY
 const StyledStory = styled.div`
@@ -901,7 +983,8 @@ const StyledStory = styled.div`
     flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    z-index: 0;
 `;
 
 const StyledStoryOnButton = styled.button`
