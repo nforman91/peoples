@@ -39,6 +39,7 @@ const Home = () => {
     const [humanModal, setHumanModal] = useState(false);
     const [merchModal, setMerchModal] = useState(false);
     const [storyModal, setStoryModal] = useState(false);
+    const [contactModal, setContactModal] = useState(false);
 
     // const [planet, setPlanet] = useState();
     // const [planetsInfo, setPlanetsInfo] = useState(planets);
@@ -77,6 +78,10 @@ const Home = () => {
 
     const toggleStoryModal = () => {
         setStoryModal(!storyModal)
+    }
+
+    const toggleContactModal = () => {
+        setContactModal(!contactModal)
     }
 
     // const showPlanetsInfo = (oneplanet) => {
@@ -282,6 +287,12 @@ const Home = () => {
                     )}
                     <StyledWhitePlanet src={white_planet} alt="white planet"/>
                 </StyledStory>
+
+                <StyledContact>
+                    <StyledContactOnButton onClick={toggleContactModal}>Contact</StyledContactOnButton>
+                    <StyledBluePlanet1 src={white_planet} alt="white planet"/>
+                </StyledContact>
+
             </StyledOne>
         </>    
     );
@@ -303,6 +314,7 @@ const StyledOne = styled.div`
     /* border: 1px solid white; */
     position: relative;
     z-index: 2;
+    /* height: cover; */
     h4{
         color: black;
     }
@@ -330,7 +342,7 @@ const StyledWater = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 17vh;
+    width: 25vh;
     height: 17vh;
     line-height: 5vh;
     font-size: 20px;
@@ -1072,6 +1084,35 @@ const StyledStoryCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+`;
+
+// CONTACT
+
+const StyledContact = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    height: 17vh;
+    line-height: 5vh;
+    font-size: 20px;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    text-align: center;
+    /* border: 1px solid white; */
+    z-index: 0;
+`;
+
+const StyledContactOnButton = styled.button`
+    /* display: block; */
+    font-family: 'Permanent Marker';
+    font-size: 25px;
+    /* word-wrap: normal; */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
 `;
 
 export default Home;
