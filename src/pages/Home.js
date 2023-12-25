@@ -31,6 +31,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     const [waterModal, setWaterModal] = useState(false);
+    const [vendingModal, setVendingModal] = useState(false);
     const [servicesModal, setServicesModal] = useState(false);
     const [hushModal, setHushModal] = useState(false);
     const [futureModal, setFutureModal] = useState(false);
@@ -44,6 +45,10 @@ const Home = () => {
 
     const toggleWaterModal = () => {
         setWaterModal(!waterModal)
+    }
+
+    const toggleVendingModal = () => {
+        setVendingModal(!vendingModal)
     }
 
     const toggleServicesModal = () => {
@@ -110,6 +115,11 @@ const Home = () => {
                     </StyledWaterModal>
                 )}
                 {/* </StyledWater> */}
+
+                <StyledVending>
+                    <StyledBluePlanet1 src={blue_planet} alt="blue planet"/>
+                    <StyledVendingOnButton onClick={toggleVendingModal}>Vending Services</StyledVendingOnButton>
+                </StyledVending>
                 
             </StyledOne>
             <StyledTwo>
@@ -407,6 +417,35 @@ const StyledWaterCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+`;
+
+// VENDING SERVICES
+
+const StyledVending = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17vh;
+    height: 17vh;
+    line-height: 5vh;
+    font-size: 20px;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    text-align: center;
+    /* border: 1px solid white; */
+    z-index: 0;
+`;
+
+const StyledVendingOnButton = styled.button`
+    /* display: block; */
+    font-family: 'Permanent Marker';
+    font-size: 18px;
+    /* word-wrap: normal; */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
 `;
 
 const StyledTwo = styled.div`
@@ -721,6 +760,7 @@ const StyledFestivalsModal = styled.div`
     border: 1px solid white;
     background-color: white;
     margin: 5vh 120vh 0 0;
+    z-index: 5;
 `;
 
 const StyledFestivalsOverlay = styled.div`
@@ -795,6 +835,7 @@ const StyledPeoplesLogo2 = styled.img`
     border-radius: 30%;
     /* position: relative; */
     z-index: -1;
+    background: inherit;
     /* filter: blur(.2rem); */
     /* &before {
         top: -$b;
