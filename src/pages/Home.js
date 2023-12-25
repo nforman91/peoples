@@ -14,6 +14,8 @@ import purple_planet from "../img/purple_planet.jpg";
 import red_planet from "../img/red_planet.jpg";
 import ring_planet from "../img/ring_planet.jpg";
 import white_planet from "../img/white_planet.jpg";
+import white_planet2 from "../img/white_planet2.jpg";
+import earth from "../img/earth.jpg";
 
 // FESTIVALS
 import ReactPlayer from "react-player";
@@ -122,7 +124,7 @@ const Home = () => {
                 {/* </StyledWater> */}
 
                 <StyledVending>
-                    <StyledBluePlanet1 src={blue_planet} alt="blue planet"/>
+                    <StyledBluePlanet1 src={white_planet2} alt="white planet"/>
                     <StyledVendingOnButton onClick={toggleVendingModal}>Vending Services</StyledVendingOnButton>
                 </StyledVending>
                 
@@ -239,8 +241,9 @@ const Home = () => {
             </StyledThree>
             <StyledTwo>
                 <StyledHuman className="planet">
-                    <StyledRedPlanet src={red_planet} alt="red planet"/>
+                    
                     <StyledHumanOnButton onClick={toggleHumanModal}>Human<br/>Foosball</StyledHumanOnButton>
+                    <StyledRedPlanet src={red_planet} alt="red planet"/>
                     {humanModal && (
                         <StyledHumanModal>
                             <StyledHumanOverlay onClick={toggleHumanModal}/>
@@ -258,8 +261,9 @@ const Home = () => {
                     )}
                     </StyledHuman>
                 <StyledMerch className="planet">
-                    <StyledRingPlanet src={ring_planet} alt="ring planet"/>
+                    
                     <StyledMerchOnButton onClick={toggleMerchModal}>Merch</StyledMerchOnButton>
+                    <StyledRingPlanet src={ring_planet} alt="ring planet"/>
                     {merchModal && (
                         <StyledMerchModal>
                             <StyledMerchOverlay onClick={toggleMerchModal}/>
@@ -290,7 +294,7 @@ const Home = () => {
 
                 <StyledContact>
                     <StyledContactOnButton onClick={toggleContactModal}>Contact</StyledContactOnButton>
-                    <StyledBluePlanet1 src={white_planet} alt="white planet"/>
+                    <StyledBluePlanet1 src={earth} alt="earth"/>
                 </StyledContact>
 
             </StyledOne>
@@ -919,10 +923,11 @@ const StyledHumanOverlay = styled.div`
 `;
 
 const StyledHumanModalContent = styled.div`
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
     /* top: 40%; */
     /* left: 50%; */
     line-height: 1.4;
