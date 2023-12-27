@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 // IMAGES
 import galaxy from "../img/galaxy.jpg";
-import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
+// import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
+import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.png";
 // import planets from "../planets/Planets";
 // import Info from "../components/Info";
 import blue_planet from "../img/blue_planet.jpg";
@@ -848,10 +849,10 @@ const StyledPeoplesLogo2 = styled.img`
     /* width: 100%; */
     width: 30vh;
     height: 30vh;
-    border-radius: 30%;
+    /* border-radius: 30%; */
     /* position: relative; */
     z-index: -1;
-    background: inherit;
+    background-color: inherit;
     /* filter: blur(.2rem); */
     /* &before {
         top: -$b;

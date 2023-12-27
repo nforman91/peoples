@@ -1,13 +1,19 @@
 import React from 'react';
 import Nav from '../components/Nav';
+import styled from 'styled-components';
 
 const Oktoberfest = () => {
   return (
-    <div>
+    <StyledOktoberfest>
       <Nav/>
       <p>Oktoberfest DSM</p>
-    </div>
+    </StyledOktoberfest>
   );
 };
+
+const StyledOktoberfest = styled.div`
+  display: flex;
+  height: 100%;
+`;
 
 export default Oktoberfest;

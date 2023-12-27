@@ -1,13 +1,19 @@
 import React from 'react';
 import Nav from '../components/Nav';
+import styled from 'styled-components';
 
 const DesMoinesArts = () => {
   return (
-    <div>
+    <StyledDesMoinesArts>
       <Nav/>
       <p>Des Moines Arts Festival</p>
-    </div>
+    </StyledDesMoinesArts>
   );
 };
+
+const StyledDesMoinesArts = styled.div`
+  display: flex;
+  height: 100%;
+`;
 
 export default DesMoinesArts;

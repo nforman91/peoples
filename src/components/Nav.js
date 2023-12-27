@@ -50,28 +50,36 @@ const Nav = () => {
     );
 };
 
-const StyledNav = styled.nav`
-    min-height: 5vh;
+const StyledNav = styled.div`
+    /* min-height: 5vh; */
+    max-width: 25vh;
     display: flex;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5rem;
+    /* flex-direction: column; */
+    /* margin: auto; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    height: 100%;
+    padding: 1rem 5rem 1rem 1rem;
     background: #282828;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 10;
+    border: 1px solid orange;
     a{
         color: white;
         text-decoration: none;
+        border: 1px solid white;
     }
     ul{
         display: flex;
+        flex-direction: column;
         list-style: none;
+        border: 1px solid green;
     }
     li{
-        padding-left: 2rem;
+        padding: 1rem 1rem 1rem 0;
         position: relative;
+        border: 1px solid red;
     }
 `;
 

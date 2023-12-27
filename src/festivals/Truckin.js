@@ -1,13 +1,19 @@
 import React from 'react';
 import Nav from '../components/Nav';
+import styled from 'styled-components';
 
 const Truckin = () => {
   return (
-    <div>
+    <StyledTruckin>
       <Nav/>
       <p>Truckin' Food Truck Festival</p>
-    </div>
+    </StyledTruckin>
   );
 };
+
+const StyledTruckin = styled.div`
+  display: flex;
+  height: 100%;
+`;
 
 export default Truckin;
