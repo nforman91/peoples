@@ -16,34 +16,34 @@ const Nav = () => {
                     <Link to="/blueribbon">Blue Ribbon Bacon Fest</Link>
                 </li> */}
                 <li>
-                    <Link to="/hinterland">Hinterland</Link>
+                    <Link to="/hinterland">Hinterland Music Festival</Link>
                 </li>
                 <li>
-                    <Link to="/515alive">515 Alive</Link>
+                    <Link to="/515alive">515 Alive Music Festival</Link>
                 </li>
                 <li>
-                    <Link to="/80-35">80-35</Link>
+                    <Link to="/80-35">80-35 Music Festival</Link>
                 </li>
                 <li>
-                    <Link to="/greenbelt">Greenbelt</Link>
+                    <Link to="/greenbelt">Greenbelt Music Festival</Link>
                 </li>
                 <li>
-                    <Link to="/iowacraft">Iowa Craft Beer</Link>
+                    <Link to="/iowacraft">Iowa Craft Beer Festival</Link>
                 </li>
                 <li>
                     <Link to="/oktoberfest">Oktoberfest DSM</Link>
                 </li>
                 <li>
-                    <Link to="/fielddaze">Field Daze</Link>
+                    <Link to="/fielddaze">Field Daze Music Series</Link>
                 </li>
                 <li>
                     <Link to="/ragbrai">Ragbrai</Link>
                 </li>
                 <li>
-                    <Link to="/truckin">Truckin' Food Truck Fest</Link>
+                    <Link to="/truckin">Truckin' Food Truck Festival</Link>
                 </li>
                 <li>
-                    <Link to="/desmoinesarts">Des Moines Arts Fest</Link>
+                    <Link to="/desmoinesarts">Des Moines Arts Festival</Link>
                 </li>
             </ul>
         </StyledNav>
@@ -52,14 +52,15 @@ const Nav = () => {
 
 const StyledNav = styled.div`
     /* min-height: 5vh; */
-    max-width: 25vh;
+    max-width: 30vh;
     display: flex;
     /* flex-direction: column; */
     /* margin: auto; */
     /* justify-content: space-between; */
     /* align-items: center; */
     height: 100%;
-    padding: 1rem 5rem 1rem 1rem;
+    padding-left: 1rem;
+    /* padding: 1rem 5rem 1rem 1rem; */
     background: #282828;
     /* position: sticky; */
     top: 0;

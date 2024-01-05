@@ -146,7 +146,7 @@ const Home = () => {
                     )}
                 </StyledServices>
                 <StyledHush className="planet">
-                    <StyledBrownPlanet1 src={brown_planet} alt="brown planet"/>
+                    <StyledRedPlanet src={red_planet} alt="red planet"/>
                     <StyledHushOnButton onClick={toggleHushModal}>Hush</StyledHushOnButton>
                     {hushModal && (
                         <StyledHushModal>
@@ -186,8 +186,8 @@ const Home = () => {
                     <StyledPeoplesLogo2 src={peoples_bw_on_white_logo} alt="People's Productions logo2"/>
                 {/* </StyledLogo> */}
                 <StyledFestivals className="planet">
-                        <StyledPurplePlanet src={purple_planet} alt="purple planet"/>
                         <StyledFestivalsOnButton onClick={toggleFestivalsModal}>Festivals</StyledFestivalsOnButton>
+                        <StyledPurplePlanet src={purple_planet} alt="purple planet"/>
                     {festivalsModal && (
                         <StyledFestivalsModal>
                             <StyledFestivalsOverlay onClick={toggleFestivalsModal}/>
@@ -244,7 +244,7 @@ const Home = () => {
                 <StyledHuman className="planet">
                     
                     <StyledHumanOnButton onClick={toggleHumanModal}>Human<br/>Foosball</StyledHumanOnButton>
-                    <StyledRedPlanet src={red_planet} alt="red planet"/>
+                    <StyledBrownPlanet1 src={brown_planet} alt="brown planet"/>
                     {humanModal && (
                         <StyledHumanModal>
                             <StyledHumanOverlay onClick={toggleHumanModal}/>
@@ -669,13 +669,14 @@ const StyledBrownPlanet2 = styled.img`
 // FUTURE PROJECTS
 const StyledFuture = styled.div`
     display: flex;
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
     width: 17vh;
     height: 17vh;
     line-height: 5vh;
     font-size: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
@@ -750,7 +751,7 @@ const StyledFestivals = styled.div`
     height: 17vh;
     line-height: 5vh;
     font-size: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
