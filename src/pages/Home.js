@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Button from "@mui/material/Button";
 
 // IMAGES
 import galaxy from "../img/galaxy.jpg";
@@ -186,7 +187,7 @@ const Home = () => {
                     <StyledPeoplesLogo2 src={peoples_bw_on_white_logo} alt="People's Productions logo2"/>
                 {/* </StyledLogo> */}
                 <StyledFestivals className="planet">
-                        <StyledFestivalsOnButton onClick={toggleFestivalsModal}>Festivals</StyledFestivalsOnButton>
+                        <Button variant="text" onClick={toggleFestivalsModal}>Festivals</Button>
                         <StyledPurplePlanet src={purple_planet} alt="purple planet"/>
                     {festivalsModal && (
                         <StyledFestivalsModal>
@@ -758,15 +759,15 @@ const StyledFestivals = styled.div`
     z-index: 0;
 `;
 
-const StyledFestivalsOnButton = styled.button`
-    display: block;
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-`;
+// const StyledFestivalsOnButton = styled.button`
+//     display: block;
+//     font-family: 'Permanent Marker';
+//     font-size: 25px;
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+// `;
 
 const StyledFestivalsModal = styled.div`
     display: flex;
