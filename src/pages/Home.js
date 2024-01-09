@@ -116,7 +116,7 @@ const Home = () => {
         <ThemeProvider theme={theme}>
             <StyledOne>
                 <StyledWater>
-                <StyledBluePlanet1 src={blue_planet} alt="blue planet"/>
+                <StyledBluePlanet1 src={blue_planet} onClick={toggleWaterModal} alt="blue planet"/>
                 {/* <StyledWater className="planet"> */}
                 {/* <StyledBluePlanet 
                     src={blue_planet} alt="blue planet"
@@ -124,7 +124,7 @@ const Home = () => {
                 {/* {planetsInfo &&
                     <Info planetsInfo={planetsInfo} setPlanetsInfo={setPlanetsInfo}/>
                 } */}
-                <StyledWaterOnButton onClick={toggleWaterModal}>Water Works Amphitheater</StyledWaterOnButton>
+                <Button variant="text" onClick={toggleWaterModal}>Water Works Amphitheater</Button>
                 </StyledWater>
                 {waterModal && (
                     <StyledWaterModal>
@@ -139,15 +139,15 @@ const Home = () => {
                 {/* </StyledWater> */}
 
                 <StyledVending>
-                    <StyledBluePlanet1 src={white_planet2} alt="white planet"/>
-                    <StyledVendingOnButton onClick={toggleVendingModal}>Vending Services</StyledVendingOnButton>
+                    <StyledBluePlanet1 src={white_planet2} onClick={toggleVendingModal} alt="white planet"/>
+                    <Button variant="text" onClick={toggleVendingModal}>Vending Services</Button>
                 </StyledVending>
                 
             </StyledOne>
             <StyledTwo>
                 <StyledServices className="planet">
-                    <StyledBluePlanet2 src={blue_planet2} alt="blue planet"/>
-                    <StyledServicesOnButton onClick={toggleServicesModal}>Services</StyledServicesOnButton>
+                    <StyledBluePlanet2 src={blue_planet2} onClick={toggleServicesModal} alt="blue planet"/>
+                    <Button variant="text" onClick={toggleServicesModal}>Services</Button>
                     {servicesModal && (
                         <StyledServicesModal>
                             <StyledServicesOverlay onClick={toggleServicesModal}/>
@@ -160,8 +160,8 @@ const Home = () => {
                     )}
                 </StyledServices>
                 <StyledHush className="planet">
-                    <StyledRedPlanet src={red_planet} alt="red planet"/>
-                    <StyledHushOnButton onClick={toggleHushModal}>Hush</StyledHushOnButton>
+                    <StyledRedPlanet src={red_planet} onClick={toggleHushModal} alt="red planet"/>
+                    <Button variant="text" onClick={toggleHushModal}>Hush</Button>
                     {hushModal && (
                         <StyledHushModal>
                             <StyledHushOverlay onClick={toggleHushModal}/>
@@ -182,8 +182,8 @@ const Home = () => {
             </StyledTwo>
             <StyledThree>
                 <StyledFuture className="planet">
-                    <StyledBrownPlanet2 src={brown_planet2} alt="brown planet"/>
-                    <StyledFutureOnButton onClick={toggleFutureModal}>Future Projects</StyledFutureOnButton>
+                    <StyledBrownPlanet2 src={brown_planet2} onClick={toggleFutureModal} alt="brown planet"/>
+                    <Button variant="text" onClick={toggleFutureModal}>Future Projects</Button>
                     {futureModal && (
                         <StyledFutureModal>
                             <StyledFutureOverlay onClick={toggleFutureModal}/>
@@ -203,7 +203,7 @@ const Home = () => {
                         
                             <Button variant="text" onClick={toggleFestivalsModal}>Festivals</Button>
                         
-                        <StyledPurplePlanet src={purple_planet} alt="purple planet"/>
+                        <StyledPurplePlanet src={purple_planet} onClick={toggleFestivalsModal} alt="purple planet"/>
                     {festivalsModal && (
                         <StyledFestivalsModal>
                             <StyledFestivalsOverlay onClick={toggleFestivalsModal}/>
@@ -259,8 +259,8 @@ const Home = () => {
             <StyledTwo>
                 <StyledHuman className="planet">
                     
-                    <StyledHumanOnButton onClick={toggleHumanModal}>Human<br/>Foosball</StyledHumanOnButton>
-                    <StyledBrownPlanet1 src={brown_planet} alt="brown planet"/>
+                    <Button variant="text" onClick={toggleHumanModal}>Human<br/>Foosball</Button>
+                    <StyledBrownPlanet1 src={brown_planet} onClick={toggleHumanModal} alt="brown planet"/>
                     {humanModal && (
                         <StyledHumanModal>
                             <StyledHumanOverlay onClick={toggleHumanModal}/>
@@ -279,8 +279,8 @@ const Home = () => {
                     </StyledHuman>
                 <StyledMerch className="planet">
                     
-                    <StyledMerchOnButton onClick={toggleMerchModal}>Merch</StyledMerchOnButton>
-                    <StyledRingPlanet src={ring_planet} alt="ring planet"/>
+                    <Button variant="text" onClick={toggleMerchModal}>Merch</Button>
+                    <StyledRingPlanet src={ring_planet} onClick={toggleMerchModal} alt="ring planet"/>
                     {merchModal && (
                         <StyledMerchModal>
                             <StyledMerchOverlay onClick={toggleMerchModal}/>
@@ -295,7 +295,7 @@ const Home = () => {
             </StyledTwo>
             <StyledOne>
                 <StyledStory>
-                    <StyledStoryOnButton onClick={toggleStoryModal}>His Story</StyledStoryOnButton>
+                    <Button variant="text" onClick={toggleStoryModal}>His Story</Button>
                     {storyModal && (
                         <StyledStoryModal>
                             <StyledStoryOverlay onClick={toggleStoryModal}/>
@@ -306,12 +306,12 @@ const Home = () => {
                             </StyledStoryModalContent>
                         </StyledStoryModal>
                     )}
-                    <StyledWhitePlanet src={white_planet} alt="white planet"/>
+                    <StyledWhitePlanet src={white_planet} onClick={toggleStoryModal} alt="white planet"/>
                 </StyledStory>
 
                 <StyledContact>
-                    <StyledContactOnButton onClick={toggleContactModal}>Contact</StyledContactOnButton>
-                    <StyledBluePlanet1 src={earth} alt="earth"/>
+                    <Button variant="text" onClick={toggleContactModal}>Contact</Button>
+                    <StyledBluePlanet1 src={earth} onClick={toggleContactModal} alt="earth"/>
                 </StyledContact>
 
             </StyledOne>
@@ -356,6 +356,7 @@ const StyledBluePlanet1 = styled.img`
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 0;
+    cursor: pointer;
     z-index: 1;
 `;
 
@@ -403,17 +404,17 @@ const StyledWater = styled.div`
 //     border-radius: 50%;
 // `;
 
-const StyledWaterOnButton = styled.button`
-    /* display: block; */
-    font-family: 'Permanent Marker';
-    font-size: 20px;
-    /* word-wrap: normal; */
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    z-index: 2;
-`;
+// const StyledWaterOnButton = styled.button`
+//     /* display: block; */
+//     font-family: 'Permanent Marker';
+//     font-size: 20px;
+//     /* word-wrap: normal; */
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+//     z-index: 2;
+// `;
 
 const StyledWaterModal = styled.div`
     width: 100vh;
@@ -470,17 +471,17 @@ const StyledVending = styled.div`
     z-index: 0;
 `;
 
-const StyledVendingOnButton = styled.button`
-    /* display: block; */
-    font-family: 'Permanent Marker';
-    font-size: 20px;
-    /* word-wrap: normal; */
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    z-index: 2;
-`;
+// const StyledVendingOnButton = styled.button`
+//     /* display: block; */
+//     font-family: 'Permanent Marker';
+//     font-size: 20px;
+//     /* word-wrap: normal; */
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+//     z-index: 2;
+// `;
 
 const StyledTwo = styled.div`
     display: flex;
@@ -505,6 +506,7 @@ const StyledBluePlanet2 = styled.img`
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% -5vh;
+    cursor: pointer;
     z-index: 1;
 `;
 
@@ -525,16 +527,16 @@ const StyledServices = styled.div`
     z-index: 0;
 `;
 
-const StyledServicesOnButton = styled.button`
-    display: block;
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    /* word-wrap: wrap; */
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-`;
+// const StyledServicesOnButton = styled.button`
+//     display: block;
+//     font-family: 'Permanent Marker';
+//     font-size: 25px;
+//     /* word-wrap: wrap; */
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+// `;
 
 const StyledServicesModal = styled.div`
     width: 100vh;
@@ -581,6 +583,7 @@ const StyledBrownPlanet1 = styled.img`
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 0;
+    cursor: pointer;
     z-index: 1;
 `;
 
@@ -600,16 +603,16 @@ const StyledHush = styled.div`
     z-index: 0;
 `;
 
-const StyledHushOnButton = styled.button`
-    display: block;
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    z-index: 2;
-`;
+// const StyledHushOnButton = styled.button`
+//     display: block;
+//     font-family: 'Permanent Marker';
+//     font-size: 25px;
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+//     z-index: 2;
+// `;
 
 const StyledHushModal = styled.div`
     display: flex;
@@ -680,6 +683,7 @@ const StyledBrownPlanet2 = styled.img`
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 0;
+    cursor: pointer;
     z-index: 1;
 `;
 
@@ -700,15 +704,15 @@ const StyledFuture = styled.div`
     z-index: 0;
 `;
 
-const StyledFutureOnButton = styled.button`
-    display: block;
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-`;
+// const StyledFutureOnButton = styled.button`
+//     display: block;
+//     font-family: 'Permanent Marker';
+//     font-size: 25px;
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+// `;
 
 const StyledFutureModal = styled.div`
     width: 100vh;
@@ -756,6 +760,7 @@ const StyledPurplePlanet = styled.img`
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 0;
+    cursor: pointer;
     z-index: 1;
 `;
 
@@ -891,6 +896,7 @@ const StyledRedPlanet = styled.img`
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 0;
+    cursor: pointer;
     z-index: 1;
 `;
 
@@ -910,15 +916,15 @@ const StyledHuman = styled.div`
     z-index: 0;
 `;
 
-const StyledHumanOnButton = styled.button`
-    display: block;
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-`;
+// const StyledHumanOnButton = styled.button`
+//     display: block;
+//     font-family: 'Permanent Marker';
+//     font-size: 25px;
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+// `;
 
 const StyledHumanModal = styled.div`
     display: flex;
@@ -973,6 +979,7 @@ const StyledRingPlanet = styled.img`
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 0;
+    cursor: pointer;
     z-index: 1;
 `;
 
@@ -992,15 +999,15 @@ const StyledMerch = styled.div`
     z-index: 0;
 `;
 
-const StyledMerchOnButton = styled.button`
-    display: block;
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-`;
+// const StyledMerchOnButton = styled.button`
+//     display: block;
+//     font-family: 'Permanent Marker';
+//     font-size: 25px;
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+// `;
 
 const StyledMerchModal = styled.div`
     width: 100vh;
@@ -1045,6 +1052,7 @@ const StyledWhitePlanet = styled.img`
     border-radius: 50%;
     object-fit: cover;
     object-position: 50% 0;
+    cursor: pointer;
     z-index: 1;
 `;
 
@@ -1064,15 +1072,15 @@ const StyledStory = styled.div`
     z-index: 0;
 `;
 
-const StyledStoryOnButton = styled.button`
-    display: block;
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-`;
+// const StyledStoryOnButton = styled.button`
+//     display: block;
+//     font-family: 'Permanent Marker';
+//     font-size: 25px;
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+// `;
 
 const StyledStoryModal = styled.div`
     width: 100vh;
@@ -1127,16 +1135,16 @@ const StyledContact = styled.div`
     z-index: 0;
 `;
 
-const StyledContactOnButton = styled.button`
-    /* display: block; */
-    font-family: 'Permanent Marker';
-    font-size: 25px;
-    /* word-wrap: normal; */
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    z-index: 2;
-`;
+// const StyledContactOnButton = styled.button`
+//     /* display: block; */
+//     font-family: 'Permanent Marker';
+//     font-size: 25px;
+//     /* word-wrap: normal; */
+//     background: none;
+//     border: none;
+//     color: white;
+//     cursor: pointer;
+//     z-index: 2;
+// `;
 
 export default Home;
