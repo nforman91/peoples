@@ -32,6 +32,18 @@ import Ragbrai from "../festivals/Ragbrai";
 import Truckin from "../festivals/Truckin";
 import DesMoinesArts from "../festivals/DesMoinesArts";
 import { Link } from "react-router-dom";
+import { createTheme, ThemeProvider } from "@mui/material";
+// import Typography from "@mui/material";
+
+const theme = createTheme({
+    typography: {
+        fontFamily: [
+            "Permanent Marker"
+        ].join(','),
+        fontSize: 20,
+        color: 'white',
+    },
+});
 
 const Home = () => {
     const [waterModal, setWaterModal] = useState(false);
@@ -101,6 +113,7 @@ const Home = () => {
     return (
         <>
         <StyledUniverse id="a" src={galaxy} alt="picture of a galaxy"></StyledUniverse>
+        <ThemeProvider theme={theme}>
             <StyledOne>
                 <StyledWater>
                 <StyledBluePlanet1 src={blue_planet} alt="blue planet"/>
@@ -187,7 +200,9 @@ const Home = () => {
                     <StyledPeoplesLogo2 src={peoples_bw_on_white_logo} alt="People's Productions logo2"/>
                 {/* </StyledLogo> */}
                 <StyledFestivals className="planet">
-                        <Button variant="text" onClick={toggleFestivalsModal}>Festivals</Button>
+                        
+                            <Button variant="text" onClick={toggleFestivalsModal}>Festivals</Button>
+                        
                         <StyledPurplePlanet src={purple_planet} alt="purple planet"/>
                     {festivalsModal && (
                         <StyledFestivalsModal>
@@ -300,6 +315,7 @@ const Home = () => {
                 </StyledContact>
 
             </StyledOne>
+            </ThemeProvider>
         </>    
     );
 };
@@ -390,7 +406,7 @@ const StyledWater = styled.div`
 const StyledWaterOnButton = styled.button`
     /* display: block; */
     font-family: 'Permanent Marker';
-    font-size: 18px;
+    font-size: 20px;
     /* word-wrap: normal; */
     background: none;
     border: none;
@@ -457,7 +473,7 @@ const StyledVending = styled.div`
 const StyledVendingOnButton = styled.button`
     /* display: block; */
     font-family: 'Permanent Marker';
-    font-size: 18px;
+    font-size: 20px;
     /* word-wrap: normal; */
     background: none;
     border: none;
@@ -823,26 +839,26 @@ const StyledFestivalsCloseButton = styled.button`
 
 
 // PEOPLE'S LOGO
-const StyledLogo = styled.div`
-    margin: auto;
-    width: 30vh;
-    height: 30vh;
-    /* border: 1px solid white; */
-    background: inherit;
-    $b: 1.5em;
-    /* position: relative; */
-`;
+// const StyledLogo = styled.div`
+//     margin: auto;
+//     width: 30vh;
+//     height: 30vh;
+//     /* border: 1px solid white; */
+//     background: inherit;
+//     $b: 1.5em;
+//     /* position: relative; */
+// `;
 
-const StyledPeoplesLogo1 = styled.img`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vh;
-    height: 30vh;
-    border-radius: 50%;
-    /* position: relative; */
-    z-index: -1;
-`;
+// const StyledPeoplesLogo1 = styled.img`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 30vh;
+//     height: 30vh;
+//     border-radius: 50%;
+//     /* position: relative; */
+//     z-index: -1;
+// `;
 
 const StyledPeoplesLogo2 = styled.img`
     display: flex;
