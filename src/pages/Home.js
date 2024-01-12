@@ -358,6 +358,7 @@ const StyledBluePlanet1 = styled.img`
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
+    padding-bottom: 0;
     z-index: 1;
 `;
 
