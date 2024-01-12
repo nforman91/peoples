@@ -41,6 +41,7 @@ const theme = createTheme({
             "Permanent Marker"
         ].join(','),
         fontSize: 20,
+        cursor: "pointer",
         color: 'white',
     },
 });
@@ -335,7 +336,7 @@ const StyledOne = styled.div`
     align-items: center;
     /* border: 1px solid white; */
     position: relative;
-    z-index: 2;
+    z-index: 1;
     /* height: cover; */
     h4{
         color: black;
@@ -373,7 +374,7 @@ const StyledWater = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 0;
+    z-index: 1;
 `;
 
 // const StyledWater = styled.div`
@@ -576,8 +577,8 @@ const StyledServicesCloseButton = styled.button`
     padding: 5px 7px;
 `;
 
-// STYLED BROWN PLANET 1
-const StyledBrownPlanet1 = styled.img`
+// STYLED RED PLANET
+const StyledRedPlanet = styled.img`
     width: 17vh;
     height: 17vh;
     border-radius: 50%;
@@ -586,6 +587,17 @@ const StyledBrownPlanet1 = styled.img`
     cursor: pointer;
     z-index: 1;
 `;
+
+// // STYLED BROWN PLANET 1
+// const StyledBrownPlanet1 = styled.img`
+//     width: 17vh;
+//     height: 17vh;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     object-position: 50% 0;
+//     cursor: pointer;
+//     z-index: 1;
+// `;
 
 // HUSH
 const StyledHush = styled.div`
@@ -684,6 +696,7 @@ const StyledBrownPlanet2 = styled.img`
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
+    padding-right: 2vh;
     z-index: 1;
 `;
 
@@ -761,6 +774,7 @@ const StyledPurplePlanet = styled.img`
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
+    padding-left: 3vh;
     z-index: 1;
 `;
 
@@ -889,8 +903,19 @@ const StyledPeoplesLogo2 = styled.img`
         box-shadow: -10px -10px 10px 10px white inset;} */
 `;
 
-// STYLED RED PLANET
-const StyledRedPlanet = styled.img`
+// // STYLED RED PLANET
+// const StyledRedPlanet = styled.img`
+//     width: 17vh;
+//     height: 17vh;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     object-position: 50% 0;
+//     cursor: pointer;
+//     z-index: 1;
+// `;
+
+// STYLED BROWN PLANET 1
+const StyledBrownPlanet1 = styled.img`
     width: 17vh;
     height: 17vh;
     border-radius: 50%;

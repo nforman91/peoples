@@ -65,22 +65,22 @@ const StyledNav = styled.div`
     /* position: sticky; */
     top: 0;
     z-index: 10;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     a{
         color: white;
         text-decoration: none;
-        border: 1px solid white;
+        /* border: 1px solid white; */
     }
     ul{
         display: flex;
         flex-direction: column;
         list-style: none;
-        border: 1px solid green;
+        /* border: 1px solid green; */
     }
     li{
         padding: 1rem 1rem 1rem 0;
         position: relative;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 `;
 
