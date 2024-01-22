@@ -3,15 +3,21 @@ import styled from "styled-components";
 import Button from "@mui/material/Button";
 
 // IMAGES
-import galaxy from "../img/galaxy.jpg";
+// import galaxy from "../img/galaxy.jpg";
+// import universe_doughnut from "../img/universe_doughnut.jpg";
+import galaxy2 from "../img/galaxy2.jpg";
+
 // import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
-import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.png";
+// import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.png";
+import Peoples_transparent from "../img/Peoples_transparent.png";
+import Peoples_transparent_white from "../img/Peoples_transparent_white.png";
 // import planets from "../planets/Planets";
 // import Info from "../components/Info";
 import blue_planet from "../img/blue_planet.jpg";
 import blue_planet2 from "../img/blue_planet2.jpg";
 import brown_planet from "../img//brown_planet.jpg";
 import brown_planet2 from "../img/brown_planet2.jpg";
+import pluto from "../img/pluto.jpg";
 import purple_planet from "../img/purple_planet.jpg";
 import red_planet from "../img/red_planet.jpg";
 import ring_planet from "../img/ring_planet.jpg";
@@ -43,6 +49,7 @@ const theme = createTheme({
         fontSize: 20,
         cursor: "pointer",
         color: 'white',
+        text: 'white'
     },
 });
 
@@ -113,7 +120,7 @@ const Home = () => {
 
     return (
         <>
-        <StyledUniverse id="a" src={galaxy} alt="picture of a galaxy"></StyledUniverse>
+        <StyledUniverse id="a" src={galaxy2} alt="picture of a galaxy"></StyledUniverse>
         <ThemeProvider theme={theme}>
             <StyledOne>
                 <StyledWater>
@@ -140,7 +147,7 @@ const Home = () => {
                 {/* </StyledWater> */}
 
                 <StyledVending>
-                    <StyledBluePlanet1 src={white_planet2} onClick={toggleVendingModal} alt="white planet"/>
+                    <StyledWhitePlanet2 src={pluto} onClick={toggleVendingModal} alt="white planet"/>
                     <Button variant="text" onClick={toggleVendingModal}>Vending Services</Button>
                 </StyledVending>
                 
@@ -198,7 +205,8 @@ const Home = () => {
                     </StyledFuture>
                 {/* <StyledPeoplesLogo1 src={peoples_bw_on_white_logo} alt="People's Productions logo1"/> */}
                 {/* <StyledLogo> */}
-                    <StyledPeoplesLogo2 src={peoples_bw_on_white_logo} alt="People's Productions logo2"/>
+                    <StyledPeoplesLogo2 src={Peoples_transparent} alt="People's Productions logo2"/>
+                    {/* <StyledPeoplesLogo2 src={Peoples_transparent_white} alt="People's Productions logo2 white"/> */}
                 {/* </StyledLogo> */}
                 <StyledFestivals className="planet">
                         
@@ -337,7 +345,7 @@ const StyledOne = styled.div`
     /* border: 1px solid white; */
     position: relative;
     z-index: 1;
-    /* height: cover; */
+    height: cover;
     h4{
         color: black;
     }
@@ -352,7 +360,7 @@ const StyledOne = styled.div`
 
 // STYLED BLUE PLANET
 const StyledBluePlanet1 = styled.img`
-    width: 17vh;
+    width: 12vh;
     height: 17vh;
     border-radius: 50%;
     object-fit: cover;
@@ -454,6 +462,18 @@ const StyledWaterCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+`;
+
+// STYLED WHITE PLANET 2
+const StyledWhitePlanet2 = styled.img`
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+    cursor: pointer;
+    padding-bottom: 0;
+    z-index: 1;
 `;
 
 // VENDING SERVICES
