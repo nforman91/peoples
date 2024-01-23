@@ -360,9 +360,11 @@ const StyledOne = styled.div`
 
 // STYLED BLUE PLANET
 const StyledBluePlanet1 = styled.img`
-    width: 12vh;
+    width: 17vh;
     height: 17vh;
     border-radius: 50%;
+    background-size: cover;
+    max-width: 100%;
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
@@ -466,7 +468,7 @@ const StyledWaterCloseButton = styled.button`
 
 // STYLED WHITE PLANET 2
 const StyledWhitePlanet2 = styled.img`
-    width: 15vh;
+    width: 12vh;
     height: 15vh;
     border-radius: 50%;
     object-fit: cover;
