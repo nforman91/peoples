@@ -369,7 +369,7 @@ const StyledBluePlanet1 = styled.img`
     object-position: 50% 0;
     cursor: pointer;
     padding-bottom: 0;
-    z-index: 1;
+    z-index: 2;
 `;
 
 // WATER WORKS AMPHITHEATER
@@ -457,6 +457,7 @@ const StyledWaterModalContent = styled.div`
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
+    z-index: 3;
 `;
 
 const StyledWaterCloseButton = styled.button`
@@ -464,6 +465,7 @@ const StyledWaterCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    z-index: 3;
 `;
 
 // STYLED WHITE PLANET 2
@@ -513,7 +515,7 @@ const StyledTwo = styled.div`
     align-items: center;
     /* border: 1px solid white; */
     position: relative;
-    z-index: 2;
+    z-index: 1;
     h4{
         /* color: white; */
     }
@@ -531,7 +533,7 @@ const StyledBluePlanet2 = styled.img`
     object-fit: cover;
     object-position: 50% -5vh;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
 `;
 
 
@@ -548,7 +550,7 @@ const StyledServices = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 0;
+    z-index: 1;
 `;
 
 // const StyledServicesOnButton = styled.button`
@@ -571,6 +573,7 @@ const StyledServicesModal = styled.div`
     background-color: white;
     padding: 5vh;
     margin: 70vh 0 30vh 100vh;
+    z-index: 3;
 `;
 
 const StyledServicesOverlay = styled.div`
@@ -591,6 +594,7 @@ const StyledServicesModalContent = styled.div`
     max-width: 600px;
     /* min-width: 300px; */
     /* padding: 5vh; */
+    z-index: 3;
 `;
 
 const StyledServicesCloseButton = styled.button`
@@ -598,6 +602,7 @@ const StyledServicesCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    z-index: 3;
 `;
 
 // STYLED RED PLANET
@@ -608,7 +613,7 @@ const StyledRedPlanet = styled.img`
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
 `;
 
 // // STYLED BROWN PLANET 1
@@ -661,6 +666,7 @@ const StyledHushModal = styled.div`
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center;  */
+    z-index: 3;
 `;
 
 const StyledHushOverlay = styled.div`
@@ -686,6 +692,7 @@ const StyledHushModalContent = styled.div`
     overflow-y: auto;
     padding: 5vh;
     font-family: 'Lato';
+    z-index: 3;
 `;
 
 const StyledHushCloseButton = styled.button`
@@ -693,6 +700,7 @@ const StyledHushCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    z-index: 3;
 `;
 
 const StyledThree = styled.div`
@@ -701,7 +709,7 @@ const StyledThree = styled.div`
     align-items: center;
     /* border: 1px solid white; */
     position: relative;
-    z-index: 2;
+    z-index: 1;
     h4{
         /* color: white; */
     }
@@ -720,7 +728,7 @@ const StyledBrownPlanet2 = styled.img`
     object-position: 50% 0;
     cursor: pointer;
     padding-right: 2vh;
-    z-index: 1;
+    z-index: 2;
 `;
 
 // FUTURE PROJECTS
@@ -737,7 +745,7 @@ const StyledFuture = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 0;
+    z-index: 1;
 `;
 
 // const StyledFutureOnButton = styled.button`
@@ -759,6 +767,7 @@ const StyledFutureModal = styled.div`
     border: 1px solid white;
     background-color: white;
     margin: 5vh 0 0 140vh;
+    z-index: 3;
 `;
 
 const StyledFutureOverlay = styled.div`
@@ -780,6 +789,7 @@ const StyledFutureModalContent = styled.div`
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
+    z-index: 3;
 `;
 
 const StyledFutureCloseButton = styled.button`
@@ -787,6 +797,7 @@ const StyledFutureCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    z-index: 3;
 `;
 
 // STYLED PURPLE PLANET
@@ -798,7 +809,7 @@ const StyledPurplePlanet = styled.img`
     object-position: 50% 0;
     cursor: pointer;
     padding-left: 3vh;
-    z-index: 1;
+    z-index: 2;
 `;
 
 // FESTIVALS
@@ -814,7 +825,7 @@ const StyledFestivals = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 0;
+    z-index: 1;
 `;
 
 // const StyledFestivalsOnButton = styled.button`
@@ -837,7 +848,7 @@ const StyledFestivalsModal = styled.div`
     border: 1px solid white;
     background-color: white;
     margin: 5vh 120vh 0 0;
-    z-index: 5;
+    z-index: 3;
 `;
 
 const StyledFestivalsOverlay = styled.div`
@@ -862,6 +873,7 @@ const StyledFestivalsModalContent = styled.div`
     max-height: calc(100vh - 210px);
     overflow-y: auto;
     font-family: 'Josefin Sans';
+    z-index: 3;
 `;
 
 const StyledFestivalsLists = styled.div`
@@ -877,6 +889,7 @@ const StyledFestivalsCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    z-index: 3;
 `;
 
 
@@ -911,7 +924,7 @@ const StyledPeoplesLogo2 = styled.img`
     height: 30vh;
     /* border-radius: 30%; */
     /* position: relative; */
-    z-index: -1;
+    z-index: 0;
     background-color: inherit;
     /* filter: blur(.2rem); */
     /* &before {
@@ -945,7 +958,7 @@ const StyledBrownPlanet1 = styled.img`
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
 `;
 
 // HUMAN FOOSBALL
@@ -961,7 +974,7 @@ const StyledHuman = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 0;
+    z-index: 1;
 `;
 
 // const StyledHumanOnButton = styled.button`
@@ -983,6 +996,7 @@ const StyledHumanModal = styled.div`
     position: fixed;
     background-color: white;
     margin: 0 0 50vh 80vh;
+    z-index: 3;
 `;
 
 const StyledHumanOverlay = styled.div`
@@ -1011,6 +1025,7 @@ const StyledHumanModalContent = styled.div`
     max-height: calc(100vh - 210px);
     overflow-y: auto;
     font-family: 'Varela';
+    z-index: 3;
 `;
 
 const StyledHumanCloseButton = styled.button`
@@ -1018,6 +1033,7 @@ const StyledHumanCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    z-index: 3;
 `;
 
 // STYLED RING PLANET
@@ -1028,7 +1044,7 @@ const StyledRingPlanet = styled.img`
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
 `;
 
 // MERCH
@@ -1044,7 +1060,7 @@ const StyledMerch = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 0;
+    z-index: 1;
 `;
 
 // const StyledMerchOnButton = styled.button`
@@ -1063,6 +1079,7 @@ const StyledMerchModal = styled.div`
     position: fixed;
     background-color: white;
     margin: 5vh 0 0 0;
+    z-index: 3;
 `;
 
 const StyledMerchOverlay = styled.div`
@@ -1084,6 +1101,7 @@ const StyledMerchModalContent = styled.div`
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
+    z-index: 3;
 `;
 
 const StyledMerchCloseButton = styled.button`
@@ -1091,6 +1109,7 @@ const StyledMerchCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    z-index: 3;
 `;
 
 // STYLED WHITE PLANET
@@ -1101,7 +1120,7 @@ const StyledWhitePlanet = styled.img`
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
 `;
 
 // HIS STORY
@@ -1117,7 +1136,7 @@ const StyledStory = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 0;
+    z-index: 1;
 `;
 
 // const StyledStoryOnButton = styled.button`
@@ -1136,6 +1155,7 @@ const StyledStoryModal = styled.div`
     position: fixed;
     background-color: white;
     margin: 5vh 0 0 0;
+    z-index: 3;
 `;
 
 const StyledStoryOverlay = styled.div`
@@ -1157,6 +1177,7 @@ const StyledStoryModalContent = styled.div`
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
+    z-index: 3;
 `;
 
 const StyledStoryCloseButton = styled.button`
@@ -1164,6 +1185,7 @@ const StyledStoryCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    z-index: 3;
 `;
 
 // CONTACT
@@ -1180,7 +1202,7 @@ const StyledContact = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 0;
+    z-index: 2;
 `;
 
 // const StyledContactOnButton = styled.button`
