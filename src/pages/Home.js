@@ -154,6 +154,16 @@ const Home = () => {
                     <StyledWhitePlanet2 src={pluto} onClick={toggleVendingModal} alt="white planet"/>
                     <Button variant="text" onClick={toggleVendingModal}>Vending Services</Button>
                 </StyledVending>
+                {vendingModal && (
+                    <StyledVendingModal>
+                        <StyledVendingOverlay onClick={toggleVendingModal}/>
+                        <StyledVendingModalContent>
+                            <h2>Vending Services</h2>
+                            <p>We own and operate Several Food Trucks / Trailers and work with hundreds of other vendors with literally ANY type of food experience that you would like or need for ANY event – just contact us with your dates and needs and we will find you quality food vendors that will fit your needs that have been vetted and used at one of our many festivals</p>
+                            <a href="info@peoplesproductions.biz">info@peoplesproductions.biz</a>
+                        </StyledVendingModalContent>
+                    </StyledVendingModal>
+                )}
                 
             </StyledOne>
             <StyledTwo>
