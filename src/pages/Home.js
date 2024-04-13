@@ -25,6 +25,9 @@ import white_planet from "../img/white_planet.jpg";
 import white_planet2 from "../img/white_planet2.jpg";
 import earth from "../img/earth.jpg";
 
+// PAGES
+import WaterWorks from "../pages/WaterWorks";
+
 // FESTIVALS
 import ReactPlayer from "react-player";
 import Hinterland from "../festivals/Hinterland";
@@ -54,7 +57,7 @@ const theme = createTheme({
 });
 
 const Home = () => {
-    const [waterModal, setWaterModal] = useState(false);
+    // const [waterModal, setWaterModal] = useState(false);
     const [vendingModal, setVendingModal] = useState(false);
     const [servicesModal, setServicesModal] = useState(false);
     const [hushModal, setHushModal] = useState(false);
@@ -68,9 +71,9 @@ const Home = () => {
     // const [planet, setPlanet] = useState();
     // const [planetsInfo, setPlanetsInfo] = useState(planets);
 
-    const toggleWaterModal = () => {
-        setWaterModal(!waterModal)
-    }
+    // const toggleWaterModal = () => {
+    //     setWaterModal(!waterModal)
+    // }
 
     const toggleVendingModal = () => {
         setVendingModal(!vendingModal)
@@ -123,8 +126,8 @@ const Home = () => {
         <StyledUniverse id="a" src={galaxy2} alt="picture of a galaxy"/>
         <ThemeProvider theme={theme}>
             <StyledOne>
-                <StyledWater>
-                <StyledBluePlanet1 src={blue_planet} onClick={toggleWaterModal} alt="blue planet"/>
+                {/* <StyledWater> */}
+                {/* <StyledBluePlanet1 src={blue_planet} onClick={toggleWaterModal} alt="blue planet"/> */}
                 {/* <StyledWater className="planet"> */}
                 {/* <StyledBluePlanet 
                     src={blue_planet} alt="blue planet"
@@ -132,9 +135,10 @@ const Home = () => {
                 {/* {planetsInfo &&
                     <Info planetsInfo={planetsInfo} setPlanetsInfo={setPlanetsInfo}/>
                 } */}
-                <Button variant="text" onClick={toggleWaterModal}>Water Works Amphitheater</Button>
-                </StyledWater>
-                {waterModal && (
+                {/* <Button variant="text" onClick={toggleWaterModal}>Water Works Amphitheater</Button> */}
+                {/* </StyledWater> */}
+                <WaterWorks/>
+                {/* {waterModal && (
                     <StyledWaterModal>
                         <StyledWaterOverlay onClick={toggleWaterModal}/>
                         <StyledWaterModalContent>
@@ -147,7 +151,7 @@ const Home = () => {
                             <StyledWaterCloseButton onClick={toggleWaterModal}>CLOSE</StyledWaterCloseButton>
                         </StyledWaterModalContent>
                     </StyledWaterModal>
-                )}
+                )} */}
                 {/* </StyledWater> */}
 
                 <StyledVending>
@@ -388,21 +392,21 @@ const StyledBluePlanet1 = styled.img`
 `;
 
 // WATER WORKS AMPHITHEATER
-const StyledWater = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    position: relative;
-    z-index: 1;
-`;
+// const StyledWater = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 25vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     position: relative;
+//     z-index: 1;
+// `;
 
 // const StyledWater = styled.div`
 //     display: flex;
@@ -444,48 +448,48 @@ const StyledWater = styled.div`
 //     z-index: 2;
 // `;
 
-const StyledWaterModal = styled.div`
-    width: 100vh;
-    height: 60vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    padding: 5vh;
-    margin: 70vh 0 0 0;
-    position: fixed;
-    z-index: 3;
-`;
+// const StyledWaterModal = styled.div`
+//     width: 100vh;
+//     height: 60vh;
+//     position: fixed;
+//     display: flex;
+//     justify-content: center;
+//     background-color: white;
+//     padding: 5vh;
+//     margin: 70vh 0 0 0;
+//     position: fixed;
+//     z-index: 3;
+// `;
 
-const StyledWaterOverlay = styled.div`
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-`;
+// const StyledWaterOverlay = styled.div`
+//     width: 100vw;
+//     height: 100vh;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     position: fixed;
+// `;
 
-const StyledWaterModalContent = styled.div`
-    position: absolute;
-    top: 40%;
-    line-height: 1.4;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
-    position: fixed;
-    z-index: 3;
-`;
+// const StyledWaterModalContent = styled.div`
+//     position: absolute;
+//     top: 40%;
+//     line-height: 1.4;
+//     border-radius: 3px;
+//     max-width: 600px;
+//     min-width: 300px;
+//     position: fixed;
+//     z-index: 3;
+// `;
 
-const StyledWaterCloseButton = styled.button`
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
-    position: absolute;
-    z-index: 3;
-`;
+// const StyledWaterCloseButton = styled.button`
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     padding: 5px 7px;
+//     position: absolute;
+//     z-index: 3;
+// `;
 
 // STYLED WHITE PLANET 2
 const StyledWhitePlanet2 = styled.img`
