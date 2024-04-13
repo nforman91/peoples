@@ -19,7 +19,7 @@ import brown_planet from "../img//brown_planet.jpg";
 import brown_planet2 from "../img/brown_planet2.jpg";
 // import pluto from "../img/pluto.jpg";
 import purple_planet from "../img/purple_planet.jpg";
-import red_planet from "../img/red_planet.jpg";
+// import red_planet from "../img/red_planet.jpg";
 import ring_planet from "../img/ring_planet.jpg";
 import white_planet from "../img/white_planet.jpg";
 // import white_planet2 from "../img/white_planet2.jpg";
@@ -28,6 +28,7 @@ import earth from "../img/earth.jpg";
 // PAGES
 import WaterWorks from "../pages/WaterWorks";
 import Vending from "../pages/Vending";
+import HUSH from "../pages/HUSH";
 
 // FESTIVALS
 import ReactPlayer from "react-player";
@@ -61,7 +62,7 @@ const Home = () => {
     // const [waterModal, setWaterModal] = useState(false);
     // const [vendingModal, setVendingModal] = useState(false);
     const [servicesModal, setServicesModal] = useState(false);
-    const [hushModal, setHushModal] = useState(false);
+    // const [hushModal, setHushModal] = useState(false);
     const [futureModal, setFutureModal] = useState(false);
     const [festivalsModal, setFestivalsModal] = useState(false);
     const [humanModal, setHumanModal] = useState(false);
@@ -84,9 +85,9 @@ const Home = () => {
         setServicesModal(!servicesModal)
     }
 
-    const toggleHushModal = () => {
-        setHushModal(!hushModal)
-    }
+    // const toggleHushModal = () => {
+    //     setHushModal(!hushModal)
+    // }
 
     const toggleFutureModal = () => {
         setFutureModal(!futureModal)
@@ -186,7 +187,8 @@ const Home = () => {
                         </StyledServicesModal>
                     )}
                 </StyledServices>
-                <StyledHush className="planet">
+                <HUSH/>
+                {/* <StyledHush className="planet">
                     <StyledRedPlanet src={red_planet} onClick={toggleHushModal} alt="red planet"/>
                     <Button variant="text" onClick={toggleHushModal}>Hush</Button>
                     {hushModal && (
@@ -205,7 +207,7 @@ const Home = () => {
                             </StyledHushModalContent>
                         </StyledHushModal>
                     )}
-                </StyledHush>
+                </StyledHush> */}
             </StyledTwo>
             <StyledThree>
                 <StyledFuture className="planet">
@@ -662,16 +664,16 @@ const StyledServicesCloseButton = styled.button`
     z-index: 3;
 `;
 
-// STYLED RED PLANET
-const StyledRedPlanet = styled.img`
-    width: 17vh;
-    height: 17vh;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 0;
-    cursor: pointer;
-    z-index: 2;
-`;
+// // STYLED RED PLANET
+// const StyledRedPlanet = styled.img`
+//     width: 17vh;
+//     height: 17vh;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     object-position: 50% 0;
+//     cursor: pointer;
+//     z-index: 2;
+// `;
 
 // // STYLED BROWN PLANET 1
 // const StyledBrownPlanet1 = styled.img`
@@ -684,81 +686,81 @@ const StyledRedPlanet = styled.img`
 //     z-index: 1;
 // `;
 
-// HUSH
-const StyledHush = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    z-index: 0;
-`;
-
-// const StyledHushOnButton = styled.button`
-//     display: block;
-//     font-family: 'Permanent Marker';
-//     font-size: 25px;
-//     background: none;
-//     border: none;
-//     color: white;
-//     cursor: pointer;
-//     z-index: 2;
+// // HUSH
+// const StyledHush = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     z-index: 0;
 // `;
 
-const StyledHushModal = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170vh;
-    height: 80vh;
-    position: fixed;
-    background-color: white;
-    margin: 40vh 90vh 0 0;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center;  */
-    z-index: 3;
-`;
+// // const StyledHushOnButton = styled.button`
+// //     display: block;
+// //     font-family: 'Permanent Marker';
+// //     font-size: 25px;
+// //     background: none;
+// //     border: none;
+// //     color: white;
+// //     cursor: pointer;
+// //     z-index: 2;
+// // `;
 
-const StyledHushOverlay = styled.div`
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-`;
+// const StyledHushModal = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 170vh;
+//     height: 80vh;
+//     position: fixed;
+//     background-color: white;
+//     margin: 40vh 90vh 0 0;
+//     /* display: flex; */
+//     /* justify-content: center; */
+//     /* align-items: center;  */
+//     z-index: 3;
+// `;
 
-const StyledHushModalContent = styled.div`
-    position: absolute;
-    /* top: 20%; */
-    /* display: flex; */
-    /* justify-content: center; */
-    line-height: 1.4;
-    border-radius: 3px;
-    /* max-width: 600px; */
-    min-width: 300px;
-    max-height: calc(100vh - 210px);
-    overflow-y: auto;
-    padding: 5vh;
-    font-family: 'Lato';
-    z-index: 3;
-`;
+// const StyledHushOverlay = styled.div`
+//     width: 100vw;
+//     height: 100vh;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     position: fixed;
+// `;
 
-const StyledHushCloseButton = styled.button`
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
-    z-index: 3;
-`;
+// const StyledHushModalContent = styled.div`
+//     position: absolute;
+//     /* top: 20%; */
+//     /* display: flex; */
+//     /* justify-content: center; */
+//     line-height: 1.4;
+//     border-radius: 3px;
+//     /* max-width: 600px; */
+//     min-width: 300px;
+//     max-height: calc(100vh - 210px);
+//     overflow-y: auto;
+//     padding: 5vh;
+//     font-family: 'Lato';
+//     z-index: 3;
+// `;
+
+// const StyledHushCloseButton = styled.button`
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     padding: 5px 7px;
+//     z-index: 3;
+// `;
 
 const StyledThree = styled.div`
     display: flex;
