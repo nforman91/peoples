@@ -516,6 +516,39 @@ const StyledVending = styled.div`
     z-index: 0;
 `;
 
+const StyledVendingModal = styled.div`
+    width: 100vh;
+    height: 60vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 5vh;
+    margin: 70vh 0 30vh 100vh;
+    z-index: 3;
+`;
+
+const StyledVendingOverlay = styled.div`
+    width: 100vw;
+    height: 60vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+`;
+
+const StyledVendingModalContent = styled.div`
+    position: absolute;
+    top: 20%;
+    line-height: 1.4;
+    border-radius: 3px;
+    max-width: 600px;
+    /* min-width: 300px; */
+    /* padding: 5vh; */
+    z-index: 3;
+`;
+
 // const StyledVendingOnButton = styled.button`
 //     /* display: block; */
 //     font-family: 'Permanent Marker';
