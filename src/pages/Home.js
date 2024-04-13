@@ -120,7 +120,7 @@ const Home = () => {
 
     return (
         <>
-        <StyledUniverse id="a" src={galaxy2} alt="picture of a galaxy"></StyledUniverse>
+        <StyledUniverse id="a" src={galaxy2} alt="picture of a galaxy"/>
         <ThemeProvider theme={theme}>
             <StyledOne>
                 <StyledWater>
@@ -138,8 +138,12 @@ const Home = () => {
                     <StyledWaterModal>
                         <StyledWaterOverlay onClick={toggleWaterModal}/>
                         <StyledWaterModalContent>
-                            <h2>Hello Modal!</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+                            <h2>Waterworks Amphitheater</h2>
+                            <p>Tucked into the 2nd largest urban park in the country – The Lauridsen Amphitheater at Water Works Park is the premier outdoor venue in the state.  Featuring a Large 2 sided stage we are able to host everything from small intimate shows on the Southside Stage (Killinger Family Stage) from 100 people to 1250 people or flip around to the Great Lawn where we can host up to 15,000 people for concerts / festivals / events.  We are host to many great annual events suck as The Iowa Brewers Guild Brew Fest / The 80-35 Music Festival / The Des Moines Symphony Labor Day Pops Series / Oktoberfest DSM and more every season.  Last year we hosted both the camping and concert for RAGBRAI’s 50th year celebration where we were home to 18,000 campers and 20,000 + concert goers to see the headliner Lynyrd Skynyrd.  The Field Daze Music Series has brought us many great acts such as Willie Nelson / STYX / The Dead South / Koe Wetzel / (fill in others from previous seasons) – We are the perfect spot to host everything from a small community event or dance recital to large Concerts, Multi Day Festivals, Political Events and More</p>
+                            <br/>
+                            <p>contact us at 
+                                <a href="info@peoplesproductions.biz">info@peoplesproductions.biz</a>
+                            for more information</p>
                             <StyledWaterCloseButton onClick={toggleWaterModal}>CLOSE</StyledWaterCloseButton>
                         </StyledWaterModalContent>
                     </StyledWaterModal>
@@ -205,8 +209,8 @@ const Home = () => {
                     </StyledFuture>
                 {/* <StyledPeoplesLogo1 src={peoples_bw_on_white_logo} alt="People's Productions logo1"/> */}
                 {/* <StyledLogo> */}
-                    <StyledPeoplesLogo2 src={Peoples_transparent} alt="People's Productions logo2"/>
-                    {/* <StyledPeoplesLogo2 src={Peoples_transparent_white} alt="People's Productions logo2 white"/> */}
+                    {/* <StyledPeoplesLogo2 src={Peoples_transparent} alt="People's Productions logo2"/> */}
+                    <StyledPeoplesLogo2 src={Peoples_transparent_white} alt="People's Productions logo2 white"/>
                 {/* </StyledLogo> */}
                 <StyledFestivals className="planet">
                         
@@ -369,6 +373,7 @@ const StyledBluePlanet1 = styled.img`
     object-position: 50% 0;
     cursor: pointer;
     padding-bottom: 0;
+    position: relative;
     z-index: 2;
 `;
 
@@ -385,6 +390,7 @@ const StyledWater = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
+    position: relative;
     z-index: 1;
 `;
 
@@ -437,6 +443,7 @@ const StyledWaterModal = styled.div`
     background-color: white;
     padding: 5vh;
     margin: 70vh 0 0 0;
+    position: fixed;
     z-index: 3;
 `;
 
@@ -457,6 +464,7 @@ const StyledWaterModalContent = styled.div`
     border-radius: 3px;
     max-width: 600px;
     min-width: 300px;
+    position: fixed;
     z-index: 3;
 `;
 
@@ -465,6 +473,7 @@ const StyledWaterCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    position: absolute;
     z-index: 3;
 `;
 
@@ -926,6 +935,7 @@ const StyledPeoplesLogo2 = styled.img`
     /* position: relative; */
     z-index: 0;
     background-color: inherit;
+    position: relative;
     /* filter: blur(.2rem); */
     /* &before {
         top: -$b;
@@ -958,6 +968,7 @@ const StyledBrownPlanet1 = styled.img`
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
+    position: relative;
     z-index: 2;
 `;
 
@@ -974,6 +985,7 @@ const StyledHuman = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
+    position: relative;
     z-index: 1;
 `;
 
@@ -992,7 +1004,7 @@ const StyledHumanModal = styled.div`
     justify-content: center;
     align-items: center;
     width: 150vh;
-    height: 90vh;
+    height: 120vh;
     position: fixed;
     background-color: white;
     margin: 0 0 50vh 80vh;
@@ -1025,6 +1037,7 @@ const StyledHumanModalContent = styled.div`
     max-height: calc(100vh - 210px);
     overflow-y: auto;
     font-family: 'Varela';
+    position: relative;
     z-index: 3;
 `;
 
@@ -1044,6 +1057,7 @@ const StyledRingPlanet = styled.img`
     object-fit: cover;
     object-position: 50% 0;
     cursor: pointer;
+    position: relative;
     z-index: 2;
 `;
 
