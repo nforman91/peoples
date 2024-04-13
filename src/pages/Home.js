@@ -14,7 +14,7 @@ import Peoples_transparent_white from "../img/Peoples_transparent_white.png";
 // import planets from "../planets/Planets";
 // import Info from "../components/Info";
 // import blue_planet from "../img/blue_planet.jpg";
-import blue_planet2 from "../img/blue_planet2.jpg";
+// import blue_planet2 from "../img/blue_planet2.jpg";
 import brown_planet from "../img//brown_planet.jpg";
 import brown_planet2 from "../img/brown_planet2.jpg";
 // import pluto from "../img/pluto.jpg";
@@ -28,6 +28,7 @@ import earth from "../img/earth.jpg";
 // PAGES
 import WaterWorks from "../pages/WaterWorks";
 import Vending from "../pages/Vending";
+import Services from "../pages/Services";
 import HUSH from "../pages/HUSH";
 
 // FESTIVALS
@@ -61,7 +62,7 @@ const theme = createTheme({
 const Home = () => {
     // const [waterModal, setWaterModal] = useState(false);
     // const [vendingModal, setVendingModal] = useState(false);
-    const [servicesModal, setServicesModal] = useState(false);
+    // const [servicesModal, setServicesModal] = useState(false);
     // const [hushModal, setHushModal] = useState(false);
     const [futureModal, setFutureModal] = useState(false);
     const [festivalsModal, setFestivalsModal] = useState(false);
@@ -81,9 +82,9 @@ const Home = () => {
     //     setVendingModal(!vendingModal)
     // }
 
-    const toggleServicesModal = () => {
-        setServicesModal(!servicesModal)
-    }
+    // const toggleServicesModal = () => {
+    //     setServicesModal(!servicesModal)
+    // }
 
     // const toggleHushModal = () => {
     //     setHushModal(!hushModal)
@@ -173,7 +174,8 @@ const Home = () => {
                 
             </StyledOne>
             <StyledTwo>
-                <StyledServices className="planet">
+                <Services/>
+                {/* <StyledServices className="planet">
                     <StyledBluePlanet2 src={blue_planet2} onClick={toggleServicesModal} alt="blue planet"/>
                     <Button variant="text" onClick={toggleServicesModal}>Services</Button>
                     {servicesModal && (
@@ -186,7 +188,7 @@ const Home = () => {
                             </StyledServicesModalContent>
                         </StyledServicesModal>
                     )}
-                </StyledServices>
+                </StyledServices> */}
                 <HUSH/>
                 {/* <StyledHush className="planet">
                     <StyledRedPlanet src={red_planet} onClick={toggleHushModal} alt="red planet"/>
@@ -584,85 +586,85 @@ const StyledTwo = styled.div`
     }
 `;
 
-// STYLED BLUE PLANET 2
-const StyledBluePlanet2 = styled.img`
-    width: 17vh;
-    height: 17vh;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% -5vh;
-    cursor: pointer;
-    z-index: 2;
-`;
-
-
-// SERVICES
-const StyledServices = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    z-index: 1;
-`;
-
-// const StyledServicesOnButton = styled.button`
-//     display: block;
-//     font-family: 'Permanent Marker';
-//     font-size: 25px;
-//     /* word-wrap: wrap; */
-//     background: none;
-//     border: none;
-//     color: white;
+// // STYLED BLUE PLANET 2
+// const StyledBluePlanet2 = styled.img`
+//     width: 17vh;
+//     height: 17vh;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     object-position: 50% -5vh;
 //     cursor: pointer;
+//     z-index: 2;
 // `;
 
-const StyledServicesModal = styled.div`
-    width: 100vh;
-    height: 60vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    padding: 5vh;
-    margin: 70vh 0 30vh 100vh;
-    z-index: 3;
-`;
 
-const StyledServicesOverlay = styled.div`
-    width: 100vw;
-    height: 60vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-`;
+// // SERVICES
+// const StyledServices = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     z-index: 1;
+// `;
 
-const StyledServicesModalContent = styled.div`
-    position: absolute;
-    top: 20%;
-    line-height: 1.4;
-    border-radius: 3px;
-    max-width: 600px;
-    /* min-width: 300px; */
-    /* padding: 5vh; */
-    z-index: 3;
-`;
+// // const StyledServicesOnButton = styled.button`
+// //     display: block;
+// //     font-family: 'Permanent Marker';
+// //     font-size: 25px;
+// //     /* word-wrap: wrap; */
+// //     background: none;
+// //     border: none;
+// //     color: white;
+// //     cursor: pointer;
+// // `;
 
-const StyledServicesCloseButton = styled.button`
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
-    z-index: 3;
-`;
+// const StyledServicesModal = styled.div`
+//     width: 100vh;
+//     height: 60vh;
+//     position: fixed;
+//     display: flex;
+//     justify-content: center;
+//     background-color: white;
+//     padding: 5vh;
+//     margin: 70vh 0 30vh 100vh;
+//     z-index: 3;
+// `;
+
+// const StyledServicesOverlay = styled.div`
+//     width: 100vw;
+//     height: 60vh;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     position: fixed;
+// `;
+
+// const StyledServicesModalContent = styled.div`
+//     position: absolute;
+//     top: 20%;
+//     line-height: 1.4;
+//     border-radius: 3px;
+//     max-width: 600px;
+//     /* min-width: 300px; */
+//     /* padding: 5vh; */
+//     z-index: 3;
+// `;
+
+// const StyledServicesCloseButton = styled.button`
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     padding: 5px 7px;
+//     z-index: 3;
+// `;
 
 // // STYLED RED PLANET
 // const StyledRedPlanet = styled.img`
