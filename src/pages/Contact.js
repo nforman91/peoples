@@ -1,14 +1,12 @@
 import React from "react";
 // import styled from "styled-components";
-import Nav from "../components/Nav";
 
-const TBD = () => {
+const Contact = () => {
     return (
         <div>
-            <Nav/>
-            <p>TBD</p>
+            <p>Contact</p>
         </div>
     );
 };
 
-export default TBD;
+export default Contact;

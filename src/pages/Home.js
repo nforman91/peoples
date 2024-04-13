@@ -9,24 +9,25 @@ import galaxy2 from "../img/galaxy2.jpg";
 
 // import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.jpg";
 // import peoples_bw_on_white_logo from "../img/peoples_bw_on_white_logo.png";
-import Peoples_transparent from "../img/Peoples_transparent.png";
+// import Peoples_transparent from "../img/Peoples_transparent.png";
 import Peoples_transparent_white from "../img/Peoples_transparent_white.png";
 // import planets from "../planets/Planets";
 // import Info from "../components/Info";
-import blue_planet from "../img/blue_planet.jpg";
+// import blue_planet from "../img/blue_planet.jpg";
 import blue_planet2 from "../img/blue_planet2.jpg";
 import brown_planet from "../img//brown_planet.jpg";
 import brown_planet2 from "../img/brown_planet2.jpg";
-import pluto from "../img/pluto.jpg";
+// import pluto from "../img/pluto.jpg";
 import purple_planet from "../img/purple_planet.jpg";
 import red_planet from "../img/red_planet.jpg";
 import ring_planet from "../img/ring_planet.jpg";
 import white_planet from "../img/white_planet.jpg";
-import white_planet2 from "../img/white_planet2.jpg";
+// import white_planet2 from "../img/white_planet2.jpg";
 import earth from "../img/earth.jpg";
 
 // PAGES
 import WaterWorks from "../pages/WaterWorks";
+import Vending from "../pages/Vending";
 
 // FESTIVALS
 import ReactPlayer from "react-player";
@@ -58,7 +59,7 @@ const theme = createTheme({
 
 const Home = () => {
     // const [waterModal, setWaterModal] = useState(false);
-    const [vendingModal, setVendingModal] = useState(false);
+    // const [vendingModal, setVendingModal] = useState(false);
     const [servicesModal, setServicesModal] = useState(false);
     const [hushModal, setHushModal] = useState(false);
     const [futureModal, setFutureModal] = useState(false);
@@ -75,9 +76,9 @@ const Home = () => {
     //     setWaterModal(!waterModal)
     // }
 
-    const toggleVendingModal = () => {
-        setVendingModal(!vendingModal)
-    }
+    // const toggleVendingModal = () => {
+    //     setVendingModal(!vendingModal)
+    // }
 
     const toggleServicesModal = () => {
         setServicesModal(!servicesModal)
@@ -153,8 +154,8 @@ const Home = () => {
                     </StyledWaterModal>
                 )} */}
                 {/* </StyledWater> */}
-
-                <StyledVending>
+                <Vending/>
+                {/* <StyledVending>
                     <StyledWhitePlanet2 src={pluto} onClick={toggleVendingModal} alt="white planet"/>
                     <Button variant="text" onClick={toggleVendingModal}>Vending Services</Button>
                 </StyledVending>
@@ -167,7 +168,7 @@ const Home = () => {
                             <a href="info@peoplesproductions.biz">info@peoplesproductions.biz</a>
                         </StyledVendingModalContent>
                     </StyledVendingModal>
-                )}
+                )} */}
                 
             </StyledOne>
             <StyledTwo>
@@ -491,67 +492,67 @@ const StyledBluePlanet1 = styled.img`
 //     z-index: 3;
 // `;
 
-// STYLED WHITE PLANET 2
-const StyledWhitePlanet2 = styled.img`
-    width: 12vh;
-    height: 15vh;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 0;
-    cursor: pointer;
-    padding-bottom: 0;
-    z-index: 1;
-`;
+// // STYLED WHITE PLANET 2
+// const StyledWhitePlanet2 = styled.img`
+//     width: 12vh;
+//     height: 15vh;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     object-position: 50% 0;
+//     cursor: pointer;
+//     padding-bottom: 0;
+//     z-index: 1;
+// `;
 
-// VENDING SERVICES
+// // VENDING SERVICES
 
-const StyledVending = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    z-index: 0;
-`;
+// const StyledVending = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     z-index: 0;
+// `;
 
-const StyledVendingModal = styled.div`
-    width: 100vh;
-    height: 60vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    padding: 5vh;
-    margin: 70vh 0 30vh 100vh;
-    z-index: 3;
-`;
+// const StyledVendingModal = styled.div`
+//     width: 100vh;
+//     height: 60vh;
+//     position: fixed;
+//     display: flex;
+//     justify-content: center;
+//     background-color: white;
+//     padding: 5vh;
+//     margin: 70vh 0 30vh 100vh;
+//     z-index: 3;
+// `;
 
-const StyledVendingOverlay = styled.div`
-    width: 100vw;
-    height: 60vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-`;
+// const StyledVendingOverlay = styled.div`
+//     width: 100vw;
+//     height: 60vh;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     position: fixed;
+// `;
 
-const StyledVendingModalContent = styled.div`
-    position: absolute;
-    top: 20%;
-    line-height: 1.4;
-    border-radius: 3px;
-    max-width: 600px;
-    /* min-width: 300px; */
-    /* padding: 5vh; */
-    z-index: 3;
-`;
+// const StyledVendingModalContent = styled.div`
+//     position: absolute;
+//     top: 20%;
+//     line-height: 1.4;
+//     border-radius: 3px;
+//     max-width: 600px;
+//     /* min-width: 300px; */
+//     /* padding: 5vh; */
+//     z-index: 3;
+// `;
 
 // const StyledVendingOnButton = styled.button`
 //     /* display: block; */

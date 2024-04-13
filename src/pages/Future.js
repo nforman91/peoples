@@ -1,12 +1,12 @@
 import React from "react";
 // import styled from "styled-components";
 
-const Festivals = () => {
+const Future = () => {
     return (
         <div>
-            <p>Festivals</p>
+            <p>Future</p>
         </div>
     );
 };
 
-export default Festivals;
+export default Future;

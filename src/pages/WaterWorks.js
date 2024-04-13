@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
 import blue_planet from "../img/blue_planet.jpg";
-import {Button} from "@mui/material";
+import { Button } from "@mui/material";
 
 const WaterWorks = () => {
     const [waterModal, setWaterModal] = useState(false);
@@ -12,9 +12,8 @@ const WaterWorks = () => {
         }
 
     return (
-        <div>
-            <StyledWater>
-                <StyledBluePlanet1 src={blue_planet} onClick={toggleWaterModal} alt="blue planet"/>
+        <StyledWater>
+            <StyledBluePlanet1 src={blue_planet} onClick={toggleWaterModal} alt="blue planet"/>
                 {/* <StyledWater className="planet"> */}
                 {/* <StyledBluePlanet 
                     src={blue_planet} alt="blue planet"
@@ -22,23 +21,22 @@ const WaterWorks = () => {
                 {/* {planetsInfo &&
                     <Info planetsInfo={planetsInfo} setPlanetsInfo={setPlanetsInfo}/>
                 } */}
-                <Button variant="text" onClick={toggleWaterModal}>Water Works Amphitheater</Button>
-                {waterModal && (
-                    <StyledWaterModal>
-                        <StyledWaterOverlay onClick={toggleWaterModal}/>
-                        <StyledWaterModalContent>
-                            <h2>Waterworks Amphitheater</h2>
-                            <p>Tucked into the 2nd largest urban park in the country – The Lauridsen Amphitheater at Water Works Park is the premier outdoor venue in the state.  Featuring a Large 2 sided stage we are able to host everything from small intimate shows on the Southside Stage (Killinger Family Stage) from 100 people to 1250 people or flip around to the Great Lawn where we can host up to 15,000 people for concerts / festivals / events.  We are host to many great annual events suck as The Iowa Brewers Guild Brew Fest / The 80-35 Music Festival / The Des Moines Symphony Labor Day Pops Series / Oktoberfest DSM and more every season.  Last year we hosted both the camping and concert for RAGBRAI’s 50th year celebration where we were home to 18,000 campers and 20,000 + concert goers to see the headliner Lynyrd Skynyrd.  The Field Daze Music Series has brought us many great acts such as Willie Nelson / STYX / The Dead South / Koe Wetzel / (fill in others from previous seasons) – We are the perfect spot to host everything from a small community event or dance recital to large Concerts, Multi Day Festivals, Political Events and More</p>
-                            <br/>
-                            <p>contact us at 
-                                <a href="info@peoplesproductions.biz">info@peoplesproductions.biz</a>
+            <Button variant="text" onClick={toggleWaterModal}>Water Works Amphitheater</Button>
+            {waterModal && (
+                <StyledWaterModal>
+                    <StyledWaterOverlay onClick={toggleWaterModal}/>
+                    <StyledWaterModalContent>
+                        <h2>Waterworks Amphitheater</h2>
+                        <p>Tucked into the 2nd largest urban park in the country – The Lauridsen Amphitheater at Water Works Park is the premier outdoor venue in the state.  Featuring a Large 2 sided stage we are able to host everything from small intimate shows on the Southside Stage (Killinger Family Stage) from 100 people to 1250 people or flip around to the Great Lawn where we can host up to 15,000 people for concerts / festivals / events.  We are host to many great annual events suck as The Iowa Brewers Guild Brew Fest / The 80-35 Music Festival / The Des Moines Symphony Labor Day Pops Series / Oktoberfest DSM and more every season.  Last year we hosted both the camping and concert for RAGBRAI’s 50th year celebration where we were home to 18,000 campers and 20,000 + concert goers to see the headliner Lynyrd Skynyrd.  The Field Daze Music Series has brought us many great acts such as Willie Nelson / STYX / The Dead South / Koe Wetzel / (fill in others from previous seasons) – We are the perfect spot to host everything from a small community event or dance recital to large Concerts, Multi Day Festivals, Political Events and More</p>
+                        <br/>
+                        <p>contact us at 
+                            <a href="info@peoplesproductions.biz">info@peoplesproductions.biz</a>
                             for more information</p>
-                            <StyledWaterCloseButton onClick={toggleWaterModal}>CLOSE</StyledWaterCloseButton>
-                        </StyledWaterModalContent>
-                    </StyledWaterModal>
-                )}
-            </StyledWater>
-        </div>
+                        <StyledWaterCloseButton onClick={toggleWaterModal}>CLOSE</StyledWaterCloseButton>
+                    </StyledWaterModalContent>
+                </StyledWaterModal>
+            )}
+        </StyledWater>
     );
 };
 
