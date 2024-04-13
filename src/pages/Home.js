@@ -16,7 +16,7 @@ import Peoples_transparent_white from "../img/Peoples_transparent_white.png";
 // import blue_planet from "../img/blue_planet.jpg";
 // import blue_planet2 from "../img/blue_planet2.jpg";
 import brown_planet from "../img//brown_planet.jpg";
-import brown_planet2 from "../img/brown_planet2.jpg";
+// import brown_planet2 from "../img/brown_planet2.jpg";
 // import pluto from "../img/pluto.jpg";
 import purple_planet from "../img/purple_planet.jpg";
 // import red_planet from "../img/red_planet.jpg";
@@ -30,6 +30,12 @@ import WaterWorks from "../pages/WaterWorks";
 import Vending from "../pages/Vending";
 import Services from "../pages/Services";
 import HUSH from "../pages/HUSH";
+import Future from "../pages/Future";
+
+
+
+
+
 
 // FESTIVALS
 import ReactPlayer from "react-player";
@@ -64,7 +70,7 @@ const Home = () => {
     // const [vendingModal, setVendingModal] = useState(false);
     // const [servicesModal, setServicesModal] = useState(false);
     // const [hushModal, setHushModal] = useState(false);
-    const [futureModal, setFutureModal] = useState(false);
+    // const [futureModal, setFutureModal] = useState(false);
     const [festivalsModal, setFestivalsModal] = useState(false);
     const [humanModal, setHumanModal] = useState(false);
     const [merchModal, setMerchModal] = useState(false);
@@ -90,9 +96,9 @@ const Home = () => {
     //     setHushModal(!hushModal)
     // }
 
-    const toggleFutureModal = () => {
-        setFutureModal(!futureModal)
-    }
+    // const toggleFutureModal = () => {
+    //     setFutureModal(!futureModal)
+    // }
 
     const toggleFestivalsModal = () => {
         setFestivalsModal(!festivalsModal)
@@ -212,7 +218,8 @@ const Home = () => {
                 </StyledHush> */}
             </StyledTwo>
             <StyledThree>
-                <StyledFuture className="planet">
+                <Future/>
+                {/* <StyledFuture className="planet">
                     <StyledBrownPlanet2 src={brown_planet2} onClick={toggleFutureModal} alt="brown planet"/>
                     <Button variant="text" onClick={toggleFutureModal}>Future Projects</Button>
                     {futureModal && (
@@ -225,7 +232,7 @@ const Home = () => {
                             </StyledFutureModalContent>
                         </StyledFutureModal>
                     )}
-                    </StyledFuture>
+                    </StyledFuture> */}
                 {/* <StyledPeoplesLogo1 src={peoples_bw_on_white_logo} alt="People's Productions logo1"/> */}
                 {/* <StyledLogo> */}
                     {/* <StyledPeoplesLogo2 src={Peoples_transparent} alt="People's Productions logo2"/> */}
@@ -780,86 +787,86 @@ const StyledThree = styled.div`
     }
 `;
 
-// STYLED BROWN PLANET 2
-const StyledBrownPlanet2 = styled.img`
-    width: 17vh;
-    height: 17vh;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 0;
-    cursor: pointer;
-    padding-right: 2vh;
-    z-index: 2;
-`;
-
-// FUTURE PROJECTS
-const StyledFuture = styled.div`
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    /* flex-wrap: wrap; */
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    z-index: 1;
-`;
-
-// const StyledFutureOnButton = styled.button`
-//     display: block;
-//     font-family: 'Permanent Marker';
-//     font-size: 25px;
-//     background: none;
-//     border: none;
-//     color: white;
+// // STYLED BROWN PLANET 2
+// const StyledBrownPlanet2 = styled.img`
+//     width: 17vh;
+//     height: 17vh;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     object-position: 50% 0;
 //     cursor: pointer;
+//     padding-right: 2vh;
+//     z-index: 2;
 // `;
 
-const StyledFutureModal = styled.div`
-    width: 100vh;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    border: 1px solid white;
-    background-color: white;
-    margin: 5vh 0 0 140vh;
-    z-index: 3;
-`;
+// // FUTURE PROJECTS
+// const StyledFuture = styled.div`
+//     display: flex;
+//     /* flex-direction: row; */
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     /* flex-wrap: wrap; */
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     z-index: 1;
+// `;
 
-const StyledFutureOverlay = styled.div`
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-`;
+// // const StyledFutureOnButton = styled.button`
+// //     display: block;
+// //     font-family: 'Permanent Marker';
+// //     font-size: 25px;
+// //     background: none;
+// //     border: none;
+// //     color: white;
+// //     cursor: pointer;
+// // `;
 
-const StyledFutureModalContent = styled.div`
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    line-height: 1.4;
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
-    z-index: 3;
-`;
+// const StyledFutureModal = styled.div`
+//     width: 100vh;
+//     height: 100vh;
+//     position: fixed;
+//     display: flex;
+//     justify-content: center;
+//     border: 1px solid white;
+//     background-color: white;
+//     margin: 5vh 0 0 140vh;
+//     z-index: 3;
+// `;
 
-const StyledFutureCloseButton = styled.button`
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
-    z-index: 3;
-`;
+// const StyledFutureOverlay = styled.div`
+//     width: 100vw;
+//     height: 100vh;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     position: fixed;
+// `;
+
+// const StyledFutureModalContent = styled.div`
+//     position: absolute;
+//     top: 40%;
+//     left: 50%;
+//     line-height: 1.4;
+//     padding: 14px 28px;
+//     border-radius: 3px;
+//     max-width: 600px;
+//     min-width: 300px;
+//     z-index: 3;
+// `;
+
+// const StyledFutureCloseButton = styled.button`
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     padding: 5px 7px;
+//     z-index: 3;
+// `;
 
 // STYLED PURPLE PLANET
 const StyledPurplePlanet = styled.img`

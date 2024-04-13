@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import red_planet from "../img/red_planet.jpg";
 import { Button } from "@mui/material";

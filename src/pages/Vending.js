@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 // import white_planet2 from "../img/white_planet2.jpg";
 import pluto from "../img/pluto.jpg";
