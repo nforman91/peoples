@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-// import white_planet2 from "../img/white_planet2.jpg";
 import pluto from "../img/pluto.jpg";
 import { Button } from "@mui/material";
 
