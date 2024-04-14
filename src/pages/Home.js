@@ -23,7 +23,7 @@ import Peoples_transparent_white from "../img/Peoples_transparent_white.png";
 // import ring_planet from "../img/ring_planet.jpg";
 // import white_planet from "../img/white_planet.jpg";
 // import white_planet2 from "../img/white_planet2.jpg";
-import earth from "../img/earth.jpg";
+// import earth from "../img/earth.jpg";
 
 // PAGES
 import WaterWorks from "../pages/WaterWorks";
@@ -35,8 +35,7 @@ import Festivals from "../pages/Festivals";
 import HumanFoosball from "../pages/HumanFoosball";
 import Merch from "../pages/Merch";
 import HisStory from "../pages/HisStory";
-
-
+import Contact from "../pages/Contact";
 
 // // FESTIVALS
 import ReactPlayer from "react-player";
@@ -76,7 +75,7 @@ const Home = () => {
     // const [humanModal, setHumanModal] = useState(false);
     // const [merchModal, setMerchModal] = useState(false);
     // const [storyModal, setStoryModal] = useState(false);
-    const [contactModal, setContactModal] = useState(false);
+    // const [contactModal, setContactModal] = useState(false);
 
     // const [planet, setPlanet] = useState();
     // const [planetsInfo, setPlanetsInfo] = useState(planets);
@@ -117,9 +116,9 @@ const Home = () => {
     //     setStoryModal(!storyModal)
     // }
 
-    const toggleContactModal = () => {
-        setContactModal(!contactModal)
-    }
+    // const toggleContactModal = () => {
+    //     setContactModal(!contactModal)
+    // }
 
     // const showPlanetsInfo = (oneplanet) => {
     //     return (
@@ -352,11 +351,11 @@ const Home = () => {
                     )}
                     <StyledWhitePlanet src={white_planet} onClick={toggleStoryModal} alt="white planet"/>
                 </StyledStory> */}
-
-                <StyledContact>
+                <Contact/>
+                {/* <StyledContact>
                     <Button variant="text" onClick={toggleContactModal}>Contact</Button>
                     <StyledBluePlanet1 src={earth} onClick={toggleContactModal} alt="earth"/>
-                </StyledContact>
+                </StyledContact> */}
 
             </StyledOne>
             </ThemeProvider>
