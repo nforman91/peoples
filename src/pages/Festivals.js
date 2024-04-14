@@ -15,7 +15,7 @@ import Ragbrai from "../festivals/Ragbrai";
 import Truckin from "../festivals/Truckin";
 import DesMoinesArts from "../festivals/DesMoinesArts";
 import { Link } from "react-router-dom";
-import { createTheme, ThemeProvider } from "@mui/material";
+// import { createTheme, ThemeProvider } from "@mui/material";
 // import Typography from "@mui/material";
 
 const Festivals = () => {

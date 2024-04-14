@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import Button from "@mui/material/Button";
 
 // IMAGES
 import galaxy2 from "../img/galaxy2.jpg";
