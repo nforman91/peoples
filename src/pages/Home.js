@@ -20,7 +20,7 @@ import Peoples_transparent_white from "../img/Peoples_transparent_white.png";
 // import pluto from "../img/pluto.jpg";
 // import purple_planet from "../img/purple_planet.jpg";
 // import red_planet from "../img/red_planet.jpg";
-import ring_planet from "../img/ring_planet.jpg";
+// import ring_planet from "../img/ring_planet.jpg";
 import white_planet from "../img/white_planet.jpg";
 // import white_planet2 from "../img/white_planet2.jpg";
 import earth from "../img/earth.jpg";
@@ -33,7 +33,7 @@ import HUSH from "../pages/HUSH";
 import Future from "../pages/Future";
 import Festivals from "../pages/Festivals";
 import HumanFoosball from "../pages/HumanFoosball";
-
+import Merch from "../pages/Merch";
 
 
 
@@ -74,7 +74,7 @@ const Home = () => {
     // const [futureModal, setFutureModal] = useState(false);
     // const [festivalsModal, setFestivalsModal] = useState(false);
     // const [humanModal, setHumanModal] = useState(false);
-    const [merchModal, setMerchModal] = useState(false);
+    // const [merchModal, setMerchModal] = useState(false);
     const [storyModal, setStoryModal] = useState(false);
     const [contactModal, setContactModal] = useState(false);
 
@@ -109,9 +109,9 @@ const Home = () => {
     //     setHumanModal(!humanModal)
     // }
 
-    const toggleMerchModal = () => {
-        setMerchModal(!merchModal)
-    }
+    // const toggleMerchModal = () => {
+    //     setMerchModal(!merchModal)
+    // }
 
     const toggleStoryModal = () => {
         setStoryModal(!storyModal)
@@ -319,7 +319,8 @@ const Home = () => {
                         </StyledHumanModal>
                     )}
                     </StyledHuman> */}
-                <StyledMerch className="planet">
+                    <Merch/>
+                {/* <StyledMerch className="planet">
                     
                     <Button variant="text" onClick={toggleMerchModal}>Merch</Button>
                     <StyledRingPlanet src={ring_planet} onClick={toggleMerchModal} alt="ring planet"/>
@@ -333,7 +334,7 @@ const Home = () => {
                             </StyledMerchModalContent>
                         </StyledMerchModal>
                     )}
-                </StyledMerch>
+                </StyledMerch> */}
             </StyledTwo>
             <StyledOne>
                 <StyledStory>
@@ -1111,82 +1112,82 @@ const StyledPeoplesLogo2 = styled.img`
 //     z-index: 3;
 // `;
 
-// STYLED RING PLANET
-const StyledRingPlanet = styled.img`
-    width: 17vh;
-    height: 17vh;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 0;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-`;
-
-// MERCH
-const StyledMerch = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    z-index: 1;
-`;
-
-// const StyledMerchOnButton = styled.button`
-//     display: block;
-//     font-family: 'Permanent Marker';
-//     font-size: 25px;
-//     background: none;
-//     border: none;
-//     color: white;
+// // STYLED RING PLANET
+// const StyledRingPlanet = styled.img`
+//     width: 17vh;
+//     height: 17vh;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     object-position: 50% 0;
 //     cursor: pointer;
+//     position: relative;
+//     z-index: 2;
 // `;
 
-const StyledMerchModal = styled.div`
-    width: 100vh;
-    height: 100vh;
-    position: fixed;
-    background-color: white;
-    margin: 5vh 0 0 0;
-    z-index: 3;
-`;
+// // MERCH
+// const StyledMerch = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     z-index: 1;
+// `;
 
-const StyledMerchOverlay = styled.div`
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-`;
+// // const StyledMerchOnButton = styled.button`
+// //     display: block;
+// //     font-family: 'Permanent Marker';
+// //     font-size: 25px;
+// //     background: none;
+// //     border: none;
+// //     color: white;
+// //     cursor: pointer;
+// // `;
 
-const StyledMerchModalContent = styled.div`
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    line-height: 1.4;
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
-    z-index: 3;
-`;
+// const StyledMerchModal = styled.div`
+//     width: 100vh;
+//     height: 100vh;
+//     position: fixed;
+//     background-color: white;
+//     margin: 5vh 0 0 0;
+//     z-index: 3;
+// `;
 
-const StyledMerchCloseButton = styled.button`
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
-    z-index: 3;
-`;
+// const StyledMerchOverlay = styled.div`
+//     width: 100vw;
+//     height: 100vh;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     position: fixed;
+// `;
+
+// const StyledMerchModalContent = styled.div`
+//     position: absolute;
+//     top: 40%;
+//     left: 50%;
+//     line-height: 1.4;
+//     padding: 14px 28px;
+//     border-radius: 3px;
+//     max-width: 600px;
+//     min-width: 300px;
+//     z-index: 3;
+// `;
+
+// const StyledMerchCloseButton = styled.button`
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     padding: 5px 7px;
+//     z-index: 3;
+// `;
 
 // STYLED WHITE PLANET
 const StyledWhitePlanet = styled.img`
