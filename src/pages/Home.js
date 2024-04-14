@@ -15,7 +15,7 @@ import Peoples_transparent_white from "../img/Peoples_transparent_white.png";
 // import Info from "../components/Info";
 // import blue_planet from "../img/blue_planet.jpg";
 // import blue_planet2 from "../img/blue_planet2.jpg";
-import brown_planet from "../img//brown_planet.jpg";
+// import brown_planet from "../img//brown_planet.jpg";
 // import brown_planet2 from "../img/brown_planet2.jpg";
 // import pluto from "../img/pluto.jpg";
 // import purple_planet from "../img/purple_planet.jpg";
@@ -32,6 +32,7 @@ import Services from "../pages/Services";
 import HUSH from "../pages/HUSH";
 import Future from "../pages/Future";
 import Festivals from "../pages/Festivals";
+import HumanFoosball from "../pages/HumanFoosball";
 
 
 
@@ -72,7 +73,7 @@ const Home = () => {
     // const [hushModal, setHushModal] = useState(false);
     // const [futureModal, setFutureModal] = useState(false);
     // const [festivalsModal, setFestivalsModal] = useState(false);
-    const [humanModal, setHumanModal] = useState(false);
+    // const [humanModal, setHumanModal] = useState(false);
     const [merchModal, setMerchModal] = useState(false);
     const [storyModal, setStoryModal] = useState(false);
     const [contactModal, setContactModal] = useState(false);
@@ -104,9 +105,9 @@ const Home = () => {
     //     setFestivalsModal(!festivalsModal)
     // }
 
-    const toggleHumanModal = () => {
-        setHumanModal(!humanModal)
-    }
+    // const toggleHumanModal = () => {
+    //     setHumanModal(!humanModal)
+    // }
 
     const toggleMerchModal = () => {
         setMerchModal(!merchModal)
@@ -297,7 +298,8 @@ const Home = () => {
                     {/* </StyledFestivals> */}
             </StyledThree>
             <StyledTwo>
-                <StyledHuman className="planet">
+                <HumanFoosball/>
+                {/* <StyledHuman className="planet">
                     
                     <Button variant="text" onClick={toggleHumanModal}>Human<br/>Foosball</Button>
                     <StyledBrownPlanet1 src={brown_planet} onClick={toggleHumanModal} alt="brown planet"/>
@@ -316,7 +318,7 @@ const Home = () => {
                             </StyledHumanModalContent>
                         </StyledHumanModal>
                     )}
-                    </StyledHuman>
+                    </StyledHuman> */}
                 <StyledMerch className="planet">
                     
                     <Button variant="text" onClick={toggleMerchModal}>Merch</Button>
@@ -1020,94 +1022,94 @@ const StyledPeoplesLogo2 = styled.img`
 //     z-index: 1;
 // `;
 
-// STYLED BROWN PLANET 1
-const StyledBrownPlanet1 = styled.img`
-    width: 17vh;
-    height: 17vh;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 0;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-`;
-
-// HUMAN FOOSBALL
-const StyledHuman = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 3vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    position: relative;
-    z-index: 1;
-`;
-
-// const StyledHumanOnButton = styled.button`
-//     display: block;
-//     font-family: 'Permanent Marker';
-//     font-size: 25px;
-//     background: none;
-//     border: none;
-//     color: white;
+// // STYLED BROWN PLANET 1
+// const StyledBrownPlanet1 = styled.img`
+//     width: 17vh;
+//     height: 17vh;
+//     border-radius: 50%;
+//     object-fit: cover;
+//     object-position: 50% 0;
 //     cursor: pointer;
+//     position: relative;
+//     z-index: 2;
 // `;
 
-const StyledHumanModal = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150vh;
-    height: 120vh;
-    position: fixed;
-    background-color: white;
-    margin: 0 0 50vh 80vh;
-    z-index: 3;
-`;
+// // HUMAN FOOSBALL
+// const StyledHuman = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 3vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     position: relative;
+//     z-index: 1;
+// `;
 
-const StyledHumanOverlay = styled.div`
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-`;
+// // const StyledHumanOnButton = styled.button`
+// //     display: block;
+// //     font-family: 'Permanent Marker';
+// //     font-size: 25px;
+// //     background: none;
+// //     border: none;
+// //     color: white;
+// //     cursor: pointer;
+// // `;
 
-const StyledHumanModalContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* position: absolute; */
-    /* top: 40%; */
-    /* left: 50%; */
-    line-height: 1.4;
-    padding: 5vh;
-    border-radius: 3px;
-    /* max-width: 600px; */
-    min-width: 300px;
-    max-height: calc(100vh - 210px);
-    overflow-y: auto;
-    font-family: 'Varela';
-    position: relative;
-    z-index: 3;
-`;
+// const StyledHumanModal = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 150vh;
+//     height: 120vh;
+//     position: fixed;
+//     background-color: white;
+//     margin: 0 0 50vh 80vh;
+//     z-index: 3;
+// `;
 
-const StyledHumanCloseButton = styled.button`
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
-    z-index: 3;
-`;
+// const StyledHumanOverlay = styled.div`
+//     width: 100vw;
+//     height: 100vh;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     position: fixed;
+// `;
+
+// const StyledHumanModalContent = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     /* position: absolute; */
+//     /* top: 40%; */
+//     /* left: 50%; */
+//     line-height: 1.4;
+//     padding: 5vh;
+//     border-radius: 3px;
+//     /* max-width: 600px; */
+//     min-width: 300px;
+//     max-height: calc(100vh - 210px);
+//     overflow-y: auto;
+//     font-family: 'Varela';
+//     position: relative;
+//     z-index: 3;
+// `;
+
+// const StyledHumanCloseButton = styled.button`
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     padding: 5px 7px;
+//     z-index: 3;
+// `;
 
 // STYLED RING PLANET
 const StyledRingPlanet = styled.img`
