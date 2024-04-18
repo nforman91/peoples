@@ -21,6 +21,7 @@ const Vending = () => {
                         <h2>Vending Services</h2>
                         <p>We own and operate Several Food Trucks / Trailers and work with hundreds of other vendors with literally ANY type of food experience that you would like or need for ANY event – just contact us with your dates and needs and we will find you quality food vendors that will fit your needs that have been vetted and used at one of our many festivals</p>
                         <a href="info@peoplesproductions.biz">info@peoplesproductions.biz</a>
+                        <StyledVendingCloseButton onClick={toggleVendingModal}>CLOSE</StyledVendingCloseButton>
                     </StyledVendingModalContent>
                 </StyledVendingModal>
             )}
@@ -65,7 +66,7 @@ const StyledVendingModal = styled.div`
     justify-content: center;
     background-color: white;
     padding: 5vh;
-    margin: 70vh 0 30vh 100vh;
+    margin: 120vh 40vh 30vh 0vh;
     z-index: 3;
 `;
 
@@ -87,6 +88,15 @@ const StyledVendingModalContent = styled.div`
     max-width: 600px;
     /* min-width: 300px; */
     /* padding: 5vh; */
+    z-index: 3;
+`;
+
+const StyledVendingCloseButton = styled.button`
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    position: absolute;
     z-index: 3;
 `;
 
