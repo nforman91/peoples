@@ -20,6 +20,7 @@ const HUSH = () => {
                             <StyledHushOverlay onClick={toggleHushModal}/>
                             <StyledHushModalContent>
                                 <h4>HUSH</h4>
+                                <br/>
                                 <p>SILENT DISCO’S are the entertainment / party events sweeping the globe. This new sensation is a dance party with 3 DJ’s at the same time who are playing to a packed crowd in what appears to be total silence.  Participants all wear high-quality noise cancelling headphones and can choose between which DJ they like the best at any given moment.  It’s a spectacle to witness and an even bigger experience to participate in.  Think a packed room of people all grooving to their own beat or singing their favorite song at the top of their lungs with absolutely NO SOUND being played over amplified speakers.  This revolution started in Europe when creative rave organizers needed a solution to their late night parties being constantly shut down due to noise problems.  So they came up with this amazing idea of being able to throw dance parties with no amplified sound and it was an immediate smash hit.  It came to the United States via the festival circuit and it is now a staple part of many many music festivals around the county. We are very excited that we are now able to bring this technology to you at any location.  We do everything from large 15,000 person festivals to back yard / basement or office parties and everything in between.  We have never experienced anything so satisfying that is always a 100% home run with guests and neither will you.<br/><br/>Contact us at 
                                 <br/>
                                 <a href="mailto:HUSHDSM@GMAIL.COM">hushdsm@gmail.com</a>
@@ -78,7 +79,7 @@ const StyledHushModal = styled.div`
     justify-content: center;
     align-items: center;
     width: 170vh;
-    height: 80vh;
+    height: 100vh;
     position: fixed;
     background-color: white;
     margin: 40vh 90vh 0 0;
@@ -110,7 +111,10 @@ const StyledHushModalContent = styled.div`
     min-width: 300px;
     max-height: calc(100vh - 210px);
     overflow-y: auto;
-    padding: 5vh;
+    /* padding-top: 5vh; */
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 5vh;
     font-family: 'Lato';
     z-index: 3;
 `;
