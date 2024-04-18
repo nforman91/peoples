@@ -18,6 +18,7 @@ import HisStory from "../pages/HisStory";
 import Contact from "../pages/Contact";
 
 import { createTheme, ThemeProvider } from "@mui/material";
+// import { createTheme, ThemeProvider } from "@mui/material/core/Typography";
 
 const theme = createTheme({
     typography: {
@@ -26,8 +27,8 @@ const theme = createTheme({
         ].join(','),
         fontSize: 20,
         cursor: "pointer",
-        color: 'white',
-        text: 'white'
+        color: 'yellow',
+        text: 'yellow',
     },
 });
 
@@ -35,28 +36,28 @@ const Home = () => {
     return (
         <>
         <StyledUniverse id="a" src={galaxy2} alt="picture of a galaxy"/>
-        <ThemeProvider theme={theme}>
-            <StyledOne>
-                <WaterWorks/>
-                <Vending/>
-            </StyledOne>
-            <StyledTwo>
-                <Services/>
-                <HUSH/>
-            </StyledTwo>
-            <StyledThree>
-                <Future/>
-                <StyledPeoplesLogo2 src={Peoples_transparent_white} alt="People's Productions logo2 white"/>
-                <Festivals/>
-            </StyledThree>
-            <StyledTwo>
-                <HumanFoosball/>
-                <Merch/>
-            </StyledTwo>
-            <StyledOne>
-                <HisStory/>
-                <Contact/>
-            </StyledOne>
+            <ThemeProvider theme={theme}>
+                <StyledOne>
+                    <WaterWorks/>
+                    <Vending/>
+                </StyledOne>
+                <StyledTwo>
+                    <Services/>
+                    <HUSH/>
+                </StyledTwo>
+                <StyledThree>
+                    <Future/>
+                    <StyledPeoplesLogo2 src={Peoples_transparent_white} alt="People's Productions logo2 white"/>
+                    <Festivals/>
+                </StyledThree>
+                <StyledTwo>
+                    <HumanFoosball/>
+                    <Merch/>
+                </StyledTwo>
+                <StyledOne>
+                    <HisStory/>
+                    <Contact/>
+                </StyledOne>
             </ThemeProvider>
         </>    
     );
