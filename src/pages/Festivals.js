@@ -132,7 +132,7 @@ const StyledFestivalsModal = styled.div`
     position: fixed;
     border: 1px solid white;
     background-color: white;
-    margin: 5vh 120vh 0 0;
+    margin: 5vh 210vh 0 0;
     z-index: 3;
 `;
 

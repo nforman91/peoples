@@ -65,7 +65,7 @@ const Home = () => {
 const StyledUniverse = styled.img`
     background-image: url("../img/galaxy.jpg");
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     z-index: 0;
     position: absolute;

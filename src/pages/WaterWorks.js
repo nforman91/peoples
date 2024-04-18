@@ -52,6 +52,7 @@ const StyledWater = styled.div`
     text-align: center;
     /* border: 1px solid white; */
     position: relative;
+    padding-right: 20vh;
     z-index: 1;
 `;
 

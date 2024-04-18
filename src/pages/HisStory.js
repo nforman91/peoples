@@ -52,6 +52,7 @@ const StyledStory = styled.div`
     flex-wrap: wrap;
     border-radius: 50%;
     text-align: center;
+    padding-right: 20vh;
     /* border: 1px solid white; */
     z-index: 1;
     margin-bottom: 50px;
