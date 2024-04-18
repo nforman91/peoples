@@ -103,6 +103,7 @@ const StyledHushModalContent = styled.div`
     /* top: 20%; */
     /* display: flex; */
     /* justify-content: center; */
+    /* align-items: center; */
     line-height: 1.4;
     border-radius: 3px;
     /* max-width: 600px; */

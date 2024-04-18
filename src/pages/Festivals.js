@@ -63,6 +63,7 @@ const Festivals = () => {
                                     
                                     <ul>
                                         <p>Some of the Festivals that we work with : </p>
+                                        <p>(click on any festival to learn more!)</p>
                                         <br/>
                                     {/* <li><Link to="/blueribbon" element={</>}>Blue Ribbon Bacon Festival</Link></li> */}
                                     <li><Link to="/hinterland" element={<Hinterland/>}>Hinterland Music Festival</Link> </li>
@@ -132,7 +133,7 @@ const StyledFestivalsModal = styled.div`
     position: fixed;
     border: 1px solid white;
     background-color: white;
-    margin: 5vh 210vh 0 0;
+    margin: 5vh 140vh 0 0;
     z-index: 3;
 `;
 
