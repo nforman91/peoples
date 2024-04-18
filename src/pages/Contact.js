@@ -14,6 +14,16 @@ const Contact = () => {
         <StyledContact>
                     <Button variant="text" onClick={toggleContactModal}>Contact</Button>
                     <StyledBluePlanet1 src={earth} onClick={toggleContactModal} alt="earth"/>
+                    {contactModal && (
+                        <StyledContactModal>
+                            <StyledContactOverlay onClick={toggleContactModal}/>
+                            <StyledContactModalContent>
+                                <h2>Hello Modal!</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+                                <StyledContactCloseButton onClick={toggleContactModal}>CLOSE</StyledContactCloseButton>
+                            </StyledContactModalContent>
+                        </StyledContactModal>
+                    )}
                 </StyledContact>
     );
 };
@@ -61,5 +71,44 @@ const StyledContact = styled.div`
 //     cursor: pointer;
 //     z-index: 2;
 // `;
+
+const StyledContactModal = styled.div`
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    margin: 0 100vh 30vh 0;
+    z-index: 3;
+`;
+
+const StyledContactOverlay = styled.div`
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+`;
+
+const StyledContactModalContent = styled.div`
+    position: absolute;
+    /* top: 40%; */
+    /* left: 50%; */
+    line-height: 1.4;
+    padding: 14px 28px;
+    border-radius: 3px;
+    /* max-width: 600px; */
+    /* min-width: 300px; */
+    z-index: 3;
+`;
+
+const StyledContactCloseButton = styled.button`
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    z-index: 3;
+`;
 
 export default Contact;
