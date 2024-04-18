@@ -73,13 +73,13 @@ const StyledBluePlanet1 = styled.img`
 
 const StyledWaterModal = styled.div`
     width: 100vh;
-    height: 60vh;
+    height: 80vh;
     position: fixed;
     display: flex;
     justify-content: center;
     background-color: white;
     padding: 5vh;
-    margin: 70vh 0 0 15vh;
+    margin: 80vh 0 0 30vh;
     position: fixed;
     z-index: 3;
 `;
@@ -96,7 +96,7 @@ const StyledWaterOverlay = styled.div`
 
 const StyledWaterModalContent = styled.div`
     position: absolute;
-    top: 40%;
+    /* top: 40%; */
     line-height: 1.4;
     border-radius: 3px;
     max-width: 600px;
