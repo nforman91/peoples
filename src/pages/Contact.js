@@ -77,7 +77,7 @@ const StyledContactModal = styled.div`
     height: 100vh;
     position: fixed;
     background-color: white;
-    margin: 0 100vh 30vh 0;
+    margin: 0 35vh 50vh 0;
     z-index: 3;
 `;
 
