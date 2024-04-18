@@ -78,7 +78,7 @@ const StyledWaterModal = styled.div`
     justify-content: center;
     background-color: white;
     padding: 5vh;
-    margin: 70vh 0 0 0;
+    margin: 70vh 0 0 15vh;
     position: fixed;
     z-index: 3;
 `;
@@ -101,6 +101,7 @@ const StyledWaterModalContent = styled.div`
     max-width: 600px;
     min-width: 300px;
     position: fixed;
+    overflow-y: auto;
     z-index: 3;
 `;
 

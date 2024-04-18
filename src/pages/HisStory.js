@@ -37,6 +37,7 @@ const StyledWhitePlanet = styled.img`
     object-position: 50% 0;
     cursor: pointer;
     z-index: 2;
+    margin-bottom: 5;
 `;
 
 // HIS STORY
@@ -53,6 +54,7 @@ const StyledStory = styled.div`
     text-align: center;
     /* border: 1px solid white; */
     z-index: 1;
+    margin-bottom: 50px;
 `;
 
 // const StyledStoryOnButton = styled.button`

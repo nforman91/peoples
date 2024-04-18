@@ -66,8 +66,12 @@ const StyledUniverse = styled.img`
     background-image: url("../img/galaxy.jpg");
     width: 100%;
     height: 100%;
+    margin: 0;
     z-index: 0;
     position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     /* opacity: 10%; */
 `;
 
