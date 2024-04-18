@@ -72,7 +72,7 @@ const StyledMerchModal = styled.div`
     height: 100vh;
     position: fixed;
     background-color: white;
-    margin: 5vh 0 0 0;
+    margin: 0 100vh 30vh 0;
     z-index: 3;
 `;
 
@@ -88,13 +88,13 @@ const StyledMerchOverlay = styled.div`
 
 const StyledMerchModalContent = styled.div`
     position: absolute;
-    top: 40%;
-    left: 50%;
+    /* top: 40%; */
+    /* left: 50%; */
     line-height: 1.4;
     padding: 14px 28px;
     border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+    /* max-width: 600px; */
+    /* min-width: 300px; */
     z-index: 3;
 `;
 
