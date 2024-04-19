@@ -70,10 +70,10 @@ const StyledStory = styled.div`
 
 const StyledStoryModal = styled.div`
     width: 100vh;
-    height: 100vh;
+    height: 50vh;
     position: fixed;
     background-color: white;
-    margin: 5vh 0 0 0;
+    margin: 0 0 80vh 50vh;
     z-index: 3;
 `;
 
@@ -89,8 +89,8 @@ const StyledStoryOverlay = styled.div`
 
 const StyledStoryModalContent = styled.div`
     position: absolute;
-    top: 40%;
-    left: 50%;
+    /* top: 40%; */
+    /* left: 50%; */
     line-height: 1.4;
     padding: 14px 28px;
     border-radius: 3px;
