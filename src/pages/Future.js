@@ -91,8 +91,8 @@ const StyledFutureOverlay = styled.div`
 
 const StyledFutureModalContent = styled.div`
     position: absolute;
-    top: 40%;
-    left: 50%;
+    /* top: 40%; */
+    /* left: 50%; */
     line-height: 1.4;
     padding: 14px 28px;
     border-radius: 3px;

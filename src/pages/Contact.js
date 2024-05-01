@@ -57,6 +57,7 @@ const StyledContact = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
+    margin-bottom: 50px;
     z-index: 2;
 `;
 
