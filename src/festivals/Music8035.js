@@ -7,6 +7,7 @@ const Music8035 = () => {
     <StyledMusic8035>
       <Nav/>
       <p>80-35 Music Festival</p>
+      <a href="80-35.com" target="_blank">80-35 Music Festival Website</a>
     </StyledMusic8035>
   );
 };

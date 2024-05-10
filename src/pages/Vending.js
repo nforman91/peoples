@@ -79,6 +79,7 @@ const StyledVendingOverlay = styled.div`
     right: 0;
     bottom: 0;
     position: fixed;
+    z-index: 3;
 `;
 
 const StyledVendingModalContent = styled.div`

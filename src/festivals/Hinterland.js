@@ -7,6 +7,7 @@ const Hinterland = () => {
     <StyledHinterland>
         <Nav/>
         <p>Hinterland Music Festival</p>
+        <a href="www.hinterlandiowa.com" target="_blank">Hinterland Music Festival Website</a>
     </StyledHinterland>
   );
 };

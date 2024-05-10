@@ -7,6 +7,7 @@ const Truckin = () => {
     <StyledTruckin>
       <Nav/>
       <p>Truckin' Food Truck Festival</p>
+      {/* <a href="" target="_blank">Truckin' Food Truck Festival Website</a> */}
     </StyledTruckin>
   );
 };

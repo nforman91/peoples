@@ -14,9 +14,9 @@ const Nav = () => {
                 <li>
                     <Link to="/">Home</Link>
                 </li>
-                {/* <li>
+                <li>
                     <Link to="/blueribbon">Blue Ribbon Bacon Fest</Link>
-                </li> */}
+                </li>
                 <li>
                     <Link to="/hinterland">Hinterland Music Festival</Link>
                 </li>
@@ -43,6 +43,9 @@ const Nav = () => {
                 </li>
                 <li>
                     <Link to="/truckin">Truckin' Food Truck Festival</Link>
+                </li>
+                <li>
+                    <Link to="/knotfest">Knotfest</Link>
                 </li>
                 <li>
                     <Link to="/desmoinesarts">Des Moines Arts Festival</Link>

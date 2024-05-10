@@ -7,6 +7,7 @@ const Alive515 = () => {
         <StyledAlive515>
             <Nav/>
             <p>515 Alive Music Festival</p>
+            <a href="515alive.com" target="_blank">515 Alive Music Festival Website</a>
         </StyledAlive515>
     );
 };

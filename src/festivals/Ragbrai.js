@@ -7,6 +7,7 @@ const Ragbrai = () => {
     <StyledRagbrai>
       <Nav/>
       <p>Ragbrai</p>
+      <a href="ragbrai.com" target="_blank">Ragbrai Website</a>
     </StyledRagbrai>
   );
 };

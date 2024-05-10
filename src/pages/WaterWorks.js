@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import blue_planet from "../img/blue_planet.jpg";
 import { Button } from "@mui/material";
+// import { Modal, Text } from "react-native";
+import styles from "../pages/modals/WaterWorks.module.scss";
 
 const WaterWorks = () => {
     const [waterModal, setWaterModal] = useState(false);
@@ -21,8 +23,12 @@ const WaterWorks = () => {
                     <Info planetsInfo={planetsInfo} setPlanetsInfo={setPlanetsInfo}/>
                 } */}
             <Button variant="text" onClick={toggleWaterModal}>Water Works Amphitheater</Button>
+            {/* <Modal>
+                <Text>Hello World!</Text>
+            </Modal> */}
             {waterModal && (
-                <StyledWaterModal>
+                // <StyledWaterModal>
+                <div className={`${styles.container} ${styles.active}`}>
                     <StyledWaterOverlay onClick={toggleWaterModal}/>
                     <StyledWaterModalContent>
                         <h2>Waterworks Amphitheater</h2>
@@ -32,8 +38,10 @@ const WaterWorks = () => {
                             <a href="info@peoplesproductions.biz">info@peoplesproductions.biz</a>
                             for more information</p>
                         <StyledWaterCloseButton onClick={toggleWaterModal}>CLOSE</StyledWaterCloseButton>
+                        <span className={styles.togglemodal}>CLOSE</span>
                     </StyledWaterModalContent>
-                </StyledWaterModal>
+                {/* </StyledWaterModal> */}
+                </div>
             )}
         </StyledWater>
     );
@@ -68,21 +76,21 @@ const StyledBluePlanet1 = styled.img`
     cursor: pointer;
     padding-bottom: 0;
     position: relative;
-    z-index: 2;
+    z-index: 0;
 `;
 
-const StyledWaterModal = styled.div`
-    width: 100vh;
-    height: 80vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    padding: 5vh;
-    margin: 80vh 0 0 30vh;
-    position: fixed;
-    z-index: 3;
-`;
+// const StyledWaterModal = styled.div`
+//     width: 100vh;
+//     height: 80vh;
+//     position: fixed;
+//     display: flex;
+//     justify-content: center;
+//     background-color: white;
+//     padding: 5vh;
+//     margin: 80vh 0 0 30vh;
+//     position: fixed;
+//     z-index: 3;
+// `;
 
 const StyledWaterOverlay = styled.div`
     width: 100vw;
@@ -92,6 +100,7 @@ const StyledWaterOverlay = styled.div`
     right: 0;
     bottom: 0;
     position: fixed;
+    z-index: 3;
 `;
 
 const StyledWaterModalContent = styled.div`

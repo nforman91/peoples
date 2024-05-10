@@ -7,6 +7,7 @@ const IowaCraft = () => {
     <StyledIowaCraft>
       <Nav/>
       <p>Iowa Craft Beer Festival</p>
+      <a href="iowacraftbrewfestival.com" target="_blank">Iowa Craft Beer Festival Website</a>
     </StyledIowaCraft>
   );
 };

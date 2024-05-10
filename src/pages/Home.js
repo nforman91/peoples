@@ -68,8 +68,9 @@ const StyledUniverse = styled.img`
     width: 100%;
     height: 100vh;
     margin: 0;
-    z-index: 0;
     position: absolute;
+    z-index: 0;
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

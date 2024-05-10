@@ -7,6 +7,7 @@ const Oktoberfest = () => {
     <StyledOktoberfest>
       <Nav/>
       <p>Oktoberfest DSM</p>
+      <a href="oktoberfestdsm.net" target="_blank">Oktoberfest DSM Website</a>
     </StyledOktoberfest>
   );
 };

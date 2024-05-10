@@ -7,6 +7,7 @@ const Greenbelt = () => {
     <StyledGreenbelt>
       <Nav/>
       <p>Greenbelt Music Festival</p>
+      <a href="greenbeltmusic.com" target="_blank">Greenbelt Music Festival Website</a>
     </StyledGreenbelt>
   );
 };

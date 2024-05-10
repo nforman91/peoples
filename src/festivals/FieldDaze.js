@@ -7,6 +7,7 @@ const FieldDaze = () => {
     <StyledFieldDaze>
       <Nav/>
       <p>Field Daze Music Series</p>
+      <a href="fielddazdsm.com" target="_blank">Field Daze Music Series Website</a>
     </StyledFieldDaze>
   );
 };

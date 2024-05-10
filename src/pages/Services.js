@@ -36,6 +36,7 @@ const StyledBluePlanet2 = styled.img`
     object-fit: cover;
     object-position: 50% -5vh;
     cursor: pointer;
+    position: relative;
     z-index: 2;
 `;
 

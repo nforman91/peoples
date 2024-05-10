@@ -4,6 +4,7 @@ import purple_planet from "../img/purple_planet.jpg";
 import { Button } from "@mui/material";
 
 // FESTIVALS
+import BlueRibbon from "../festivals/BlueRibbon";
 import Hinterland from "../festivals/Hinterland";
 import Alive515 from "../festivals/Alive515";
 import Music8035 from "../festivals/Music8035";
@@ -13,6 +14,7 @@ import Oktoberfest from "../festivals/Oktoberfest";
 import FieldDaze from "../festivals/FieldDaze";
 import Ragbrai from "../festivals/Ragbrai";
 import Truckin from "../festivals/Truckin";
+import Knotfest from "../festivals/Knotfest";
 import DesMoinesArts from "../festivals/DesMoinesArts";
 import { Link } from "react-router-dom";
 // import { createTheme, ThemeProvider } from "@mui/material";
@@ -65,7 +67,7 @@ const Festivals = () => {
                                         <p>Some of the Festivals that we work with : </p>
                                         <p>(click on any festival to learn more!)</p>
                                         <br/>
-                                    {/* <li><Link to="/blueribbon" element={</>}>Blue Ribbon Bacon Festival</Link></li> */}
+                                    <li><Link to="/blueribbon" element={<BlueRibbon/>}>Blue Ribbon Bacon Festival</Link></li>
                                     <li><Link to="/hinterland" element={<Hinterland/>}>Hinterland Music Festival</Link> </li>
                                     <li><Link to="/515alive" element={<Alive515/>}>515 Alive Music Festival</Link> </li>
                                     <li><Link to="/80-35" element={<Music8035/>}>80-35 Music Festival</Link> </li>
@@ -75,6 +77,7 @@ const Festivals = () => {
                                     <li><Link to="/fielddaze" element={<FieldDaze/>}>Field Daze Music Series</Link></li>
                                     <li><Link to="/ragbrai" element={<Ragbrai/>}>Ragbrai</Link> </li>
                                     <li><Link to="/truckin" element={<Truckin/>}>Truckin’ Food Truck Festival</Link> </li>
+                                    <li><Link to="/knotfest" element={<Knotfest/>}>Knotfest</Link></li>
                                     <li><Link to="/desmoinesarts" element={<DesMoinesArts/>}>Des Moines Arts Festival</Link></li>
                                     </ul>
                                     </StyledFestivalsLists>
