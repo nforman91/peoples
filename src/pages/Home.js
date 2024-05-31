@@ -55,8 +55,8 @@ const Home = () => {
                     <Merch/>
                 </StyledTwo>
                 <StyledOne>
-                    <HisStory/>
-                    <Contact/>
+                    {/* <HisStory/> */}
+                    {/* <Contact/> */}
                 </StyledOne>
             </ThemeProvider>
         </>    
