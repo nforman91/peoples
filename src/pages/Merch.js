@@ -19,7 +19,7 @@ const Merch = () => {
                         <StyledMerchModal>
                             {/* <StyledMerchOverlay onClick={toggleMerchModal}/> */}
                             <StyledMerchModalContent>
-                                <h2>Hello Modal!</h2>
+                                <h2>Merch Modal!</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
                                 <StyledMerchCloseButton onClick={toggleMerchModal}>CLOSE</StyledMerchCloseButton>
                             </StyledMerchModalContent>
