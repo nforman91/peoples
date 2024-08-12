@@ -17,7 +17,7 @@ const HUSH = () => {
                     <Button variant="text" onClick={toggleHushModal}>Hush</Button>
                     {hushModal && (
                         <StyledHushModal>
-                            <StyledHushOverlay onClick={toggleHushModal}/>
+                            {/* <StyledHushOverlay onClick={toggleHushModal}/> */}
                             <StyledHushModalContent>
                                 <h4>HUSH</h4>
                                 <br/>

@@ -35,7 +35,7 @@ const Festivals = () => {
                         <StyledPurplePlanet src={purple_planet} onClick={toggleFestivalsModal} alt="purple planet"/>
                     {festivalsModal && (
                         <StyledFestivalsModal>
-                            <StyledFestivalsOverlay onClick={toggleFestivalsModal}/>
+                            {/* <StyledFestivalsOverlay onClick={toggleFestivalsModal}/> */}
                             <StyledFestivalsModalContent>
                                 <h4>FESTIVALS</h4>
                                 <p>Festival Season is our FAVORITE Season !!!  And People’s Productions has their hand in SO Many great festivals here in the Midwest.  We are the festival management Guru’s of Central Iowa.  We have a managing role in 10 different festivals over the course of the year.  We are here to promote the ones that we currently work with and fill you in our services for the ones that we don’t yet.  We are the experts in the field and bring a full staff for whatever is needed to facilitate the success of your event.  Whether you just need help with a couple of aspects of your event or need a managing director our crack staff is on top of everything in the Festie world and can bring you everything from talent procurement and production management to cost savings due to our large volume of events that we produce.</p>  

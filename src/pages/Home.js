@@ -139,7 +139,7 @@ const StyledPeoplesLogo2 = styled.img`
     /* border-radius: 30%; */
     /* position: relative; */
     z-index: 0;
-    background-color: inherit;
+    /* background-color: inherit; */
     position: relative;
     /* filter: blur(.2rem); */
     /* &before {

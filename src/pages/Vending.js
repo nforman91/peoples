@@ -16,7 +16,7 @@ const Vending = () => {
             <Button variant="text" onClick={toggleVendingModal}>Vending Services</Button>
             {vendingModal && (
                 <StyledVendingModal>
-                    <StyledVendingOverlay onClick={toggleVendingModal}/>
+                    {/* <StyledVendingOverlay onClick={toggleVendingModal}/> */}
                     <StyledVendingModalContent>
                         <h2>Vending Services</h2>
                         <p>We own and operate Several Food Trucks / Trailers and work with hundreds of other vendors with literally ANY type of food experience that you would like or need for ANY event – just contact us with your dates and needs and we will find you quality food vendors that will fit your needs that have been vetted and used at one of our many festivals</p>
@@ -39,7 +39,8 @@ const StyledWhitePlanet2 = styled.img`
     object-position: 50% 0;
     cursor: pointer;
     padding-bottom: 0;
-    z-index: 1;
+    /* position: absolute; */
+    z-index: 0;
 `;
 
 // VENDING SERVICES
@@ -56,7 +57,8 @@ const StyledVending = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 0;
+    /* position: absolute; */
+    z-index: 1;
 `;
 
 const StyledVendingModal = styled.div`
