@@ -38,7 +38,7 @@ const StyledRingPlanet = styled.img`
     object-position: 50% 0;
     cursor: pointer;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 `;
 
 // MERCH
