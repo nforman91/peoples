@@ -68,7 +68,7 @@ const StyledServices = styled.div`
 // `;
 
 const StyledServicesModal = styled.div`
-    width: 100vh;
+    width: 70vh;
     height: 60vh;
     position: fixed;
     display: flex;

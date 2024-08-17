@@ -20,6 +20,7 @@ const Future = () => {
                             <StyledFutureModalContent>
                                 <h2>Future Projects Modal!</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
                                 <StyledFutureCloseButton onClick={toggleFutureModal}>CLOSE</StyledFutureCloseButton>
                             </StyledFutureModalContent>
                         </StyledFutureModal>
@@ -68,7 +69,7 @@ const StyledFuture = styled.div`
 // `;
 
 const StyledFutureModal = styled.div`
-    width: 100vh;
+    width: 80vh;
     height: 100vh;
     position: fixed;
     display: flex;

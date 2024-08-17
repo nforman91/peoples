@@ -69,8 +69,7 @@ const StyledUniverse = styled.img`
     height: 100vh;
     margin: 0;
     position: absolute;
-    z-index: 0;
-    
+    z-index: -1;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,7 +102,7 @@ const StyledTwo = styled.div`
     align-items: center;
     /* border: 1px solid white; */
     position: relative;
-    z-index: 1;
+    z-index: 0;
     h4{
         /* color: white; */
     }
@@ -131,16 +130,15 @@ const StyledThree = styled.div`
 
 const StyledPeoplesLogo2 = styled.img`
     display: flex;
+    z-index: 0;
+    width: 30vh;
+    height: 30vh;
+    /* position: relative; */
     /* justify-content: center; */
     /* align-items: center; */
     /* width: 100%; */
-    width: 30vh;
-    height: 30vh;
     /* border-radius: 30%; */
-    /* position: relative; */
-    z-index: 0;
     /* background-color: inherit; */
-    position: relative;
     /* filter: blur(.2rem); */
     /* &before {
         top: -$b;
