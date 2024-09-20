@@ -54,7 +54,7 @@ const StyledMerch = styled.div`
     border-radius: 50%;
     text-align: center;
     /* border: 1px solid white; */
-    z-index: 1;
+    z-index: 3;
 `;
 
 // const StyledMerchOnButton = styled.button`
@@ -103,7 +103,7 @@ const StyledMerchCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
-    z-index: 3;
+    z-index: 5;
 `;
 
 export default Merch;

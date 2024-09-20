@@ -130,7 +130,7 @@ const StyledThree = styled.div`
 
 const StyledPeoplesLogo2 = styled.img`
     display: flex;
-    z-index: 0;
+    z-index: -1;
     width: 30vh;
     height: 30vh;
     /* position: relative; */

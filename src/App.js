@@ -1,6 +1,19 @@
 import React from "react";
 import GlobalStyle from "./components/GlobalStyle";
 import Home from "./pages/Home";
+// PAGES
+import WaterWorks from "./pages/WaterWorks";
+import Vending from "./pages/Vending";
+import Services from "./pages/Services";
+import HUSH from "./pages/HUSH";
+import Future from "./pages/Future";
+import Festivals from "./pages/Festivals";
+import HumanFoosball from "./pages/HumanFoosball";
+import Merch from "./pages/Merch";
+import HisStory from "./pages/HisStory";
+import Contact from "./pages/Contact";
+
+// FESTIVALS
 import BlueRibbon from "./festivals/BlueRibbon";
 import Hinterland from "./festivals/Hinterland";
 import Alive515 from "./festivals/Alive515";
@@ -26,7 +39,21 @@ function App() {
           <Routes 
           // location={location} key={location.pathname}
           >
+
+            {/* PAGES */}
             <Route exact path="/" element={<Home/>}/>
+            <Route path="/waterworks" element={<WaterWorks/>}/>
+            <Route path="/vending" element={<Vending/>}/>
+            <Route path="/services" element={<Services/>}/>
+            <Route path="/hush" element={<HUSH/>}/>
+            <Route path="/festivals" element={<Festivals/>}/>
+            <Route path="/merch" element={<Merch/>}/>
+            <Route path="/future" element={<Future/>}/>
+            <Route path="/foosball" element={<HumanFoosball/>}/>
+            <Route path="/hisstory" element={<HisStory/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+
+            {/* FESTIVALS */}
             <Route path="/blueribbon" element={<BlueRibbon/>}/>
             <Route path="/hinterland" element={<Hinterland/>}/>
             <Route path="/515alive" element={<Alive515/>}/>

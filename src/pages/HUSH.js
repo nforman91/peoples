@@ -124,7 +124,7 @@ const StyledHushCloseButton = styled.button`
     top: 10px;
     right: 10px;
     padding: 5px 7px;
-    z-index: 3;
+    z-index: 5;
 `;
 
 export default HUSH;
