@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyle from "./components/GlobalStyle";
 import Home from "./pages/Home";
+
 // PAGES
 import WaterWorks from "./pages/WaterWorks";
 import Vending from "./pages/Vending";

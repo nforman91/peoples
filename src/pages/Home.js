@@ -17,6 +17,10 @@ import Merch from "../pages/Merch";
 import HisStory from "../pages/HisStory";
 import Contact from "../pages/Contact";
 
+// META_NAV
+import Meta_Nav from "../components/Meta_Nav";
+import peoples_logo from "../img/peoples_bw_on_white_logo.png";
+
 import { createTheme, ThemeProvider } from "@mui/material";
 // import { createTheme, ThemeProvider } from "@mui/material/core/Typography";
 
@@ -34,35 +38,48 @@ const theme = createTheme({
 
 const Home = () => {
     return (
-        <>
-        <StyledUniverse id="a" src={galaxy2} alt="picture of a galaxy"/>
-            <ThemeProvider theme={theme}>
-                <StyledOne>
-                    <WaterWorks/>
-                    <Vending/>
-                </StyledOne>
-                <StyledTwo>
-                    <Services/>
-                    <HUSH/>
-                </StyledTwo>
-                <StyledThree>
-                    <Future/>
-                    <StyledPeoplesLogo2 src={Peoples_transparent_white} alt="People's Productions logo2 white"/>
-                    <Festivals/>
-                </StyledThree>
-                <StyledTwo>
-                    <HumanFoosball/>
-                    <Merch/>
-                </StyledTwo>
-                <StyledOne>
+        <StyledHome>
+            <Meta_Nav/>
+            <StyledPeoplesLogo src={peoples_logo} alt="peoples logo"/>
+        {/* <StyledUniverse id="a" src={galaxy2} alt="picture of a galaxy"/> */}
+            {/* <ThemeProvider theme={theme}> */}
+                {/* <StyledOne> */}
+                    {/* <WaterWorks/> */}
+                    {/* <Vending/> */}
+                {/* </StyledOne> */}
+                {/* <StyledTwo> */}
+                    {/* <Services/> */}
+                    {/* <HUSH/> */}
+                {/* </StyledTwo> */}
+                {/* // <StyledThree> */}
+                    {/* <Future/> */}
+                    {/* <StyledPeoplesLogo2 src={Peoples_transparent_white} alt="People's Productions logo2 white"/> */}
+                    {/* <Festivals/> */}
+                {/* </StyledThree> */}
+                {/* <StyledTwo> */}
+                    {/* <HumanFoosball/> */}
+                    {/* <Merch/> */}
+                {/* </StyledTwo> */}
+                {/* <StyledOne> */}
                     {/* <HisStory/> */}
                     {/* <Contact/> */}
-                </StyledOne>
-            </ThemeProvider>
-        </>    
+                {/* </StyledOne> */}
+            {/* </ThemeProvider> */}
+        </StyledHome>    
     );
 };
 
+const StyledHome = styled.div`
+    display: flex;
+`;
+
+const StyledPeoplesLogo = styled.img`
+    padding: 10vh;
+    width: 30vh;
+    height: 30vh;
+`;
+
+// START OF PLANET VERSION
 const StyledUniverse = styled.img`
     background-image: url("../img/galaxy.jpg");
     width: 100%;

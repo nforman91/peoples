@@ -45,6 +45,7 @@ const Meta_Nav = () => {
 };
 
 const StyledNav = styled.div`
+    min-width: 30vh;
     max-width: 30vh;
     display: flex;
     height: 100%;

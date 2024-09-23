@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import blue_planet2 from "../img/blue_planet2.jpg";
 import { Button } from "@mui/material";
+import Meta_Nav from "../components/Meta_Nav";
 
 const Services = () => {
     const [servicesModal, setServicesModal] = useState(false);
@@ -11,23 +12,46 @@ const Services = () => {
     }
 
     return (
-        <StyledServices className="planet">
-                    <StyledBluePlanet2 src={blue_planet2} onClick={toggleServicesModal} alt="blue planet"/>
-                    <Button variant="text" onClick={toggleServicesModal}>Services</Button>
-                    {servicesModal && (
-                        <StyledServicesModal>
-                            {/* <StyledServicesOverlay onClick={toggleServicesModal}/> */}
-                            <StyledServicesModalContent>
-                                <h2>Services Modal!</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
-                                <StyledServicesCloseButton onClick={toggleServicesModal}>CLOSE</StyledServicesCloseButton>
-                            </StyledServicesModalContent>
-                        </StyledServicesModal>
-                    )}
+        <StyledMetaServices>
+                <Meta_Nav/>
+                <StyledServices>
+                <StyledP>Services</StyledP>
+                <StyledP>***NEEDS COPY***</StyledP>
                 </StyledServices>
+            </StyledMetaServices>
+
+        // START OF PLANET VERSION
+        // <StyledServices className="planet">
+        //             <StyledBluePlanet2 src={blue_planet2} onClick={toggleServicesModal} alt="blue planet"/>
+        //             <Button variant="text" onClick={toggleServicesModal}>Services</Button>
+        //             {servicesModal && (
+        //                 <StyledServicesModal>
+        //                     {/* <StyledServicesOverlay onClick={toggleServicesModal}/> */}
+        //                     <StyledServicesModalContent>
+        //                         <h2>Services Modal!</h2>
+        //                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+        //                         <StyledServicesCloseButton onClick={toggleServicesModal}>CLOSE</StyledServicesCloseButton>
+        //                     </StyledServicesModalContent>
+        //                 </StyledServicesModal>
+        //             )}
+        //         </StyledServices>
     );
 };
 
+const StyledMetaServices = styled.div`
+    display: flex;
+`;
+
+const StyledP = styled.p`
+    padding: 50px;
+`;
+
+const StyledServices = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+// START OF PLANET VERSION
 // STYLED BLUE PLANET 2
 const StyledBluePlanet2 = styled.img`
     width: 17vh;
@@ -41,20 +65,20 @@ const StyledBluePlanet2 = styled.img`
 `;
 
 // SERVICES
-const StyledServices = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    z-index: 1;
-`;
+// const StyledServices = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     z-index: 1;
+// `;
 
 // const StyledServicesOnButton = styled.button`
 //     display: block;
