@@ -19,6 +19,7 @@ import DesMoinesArts from "../festivals/DesMoinesArts";
 import { Link } from "react-router-dom";
 // import { createTheme, ThemeProvider } from "@mui/material";
 // import Typography from "@mui/material";
+import Meta_Nav from "../components/Meta_Nav";
 
 const Festivals = () => {
     const [festivalsModal, setFestivalsModal] = useState(false);
@@ -28,15 +29,10 @@ const Festivals = () => {
     }
 
     return (
-        <StyledFestivals className="planet">
-                        
-                            <Button variant="text" onClick={toggleFestivalsModal}>Festivals</Button>
-                        
-                        <StyledPurplePlanet src={purple_planet} onClick={toggleFestivalsModal} alt="purple planet"/>
-                    {festivalsModal && (
-                        <StyledFestivalsModal>
-                            {/* <StyledFestivalsOverlay onClick={toggleFestivalsModal}/> */}
-                            <StyledFestivalsModalContent>
+        <StyledMetaFestivals>
+                <Meta_Nav/>
+                <StyledFestivals>
+                    <StyledFestivalsModalContent>
                                 <h4>FESTIVALS</h4>
                                 <p>Festival Season is our FAVORITE Season !!!  And People’s Productions has their hand in SO Many great festivals here in the Midwest.  We are the festival management Guru’s of Central Iowa.  We have a managing role in 10 different festivals over the course of the year.  We are here to promote the ones that we currently work with and fill you in our services for the ones that we don’t yet.  We are the experts in the field and bring a full staff for whatever is needed to facilitate the success of your event.  Whether you just need help with a couple of aspects of your event or need a managing director our crack staff is on top of everything in the Festie world and can bring you everything from talent procurement and production management to cost savings due to our large volume of events that we produce.</p>  
                                     <br/><br/>
@@ -81,14 +77,86 @@ const Festivals = () => {
                                     <li><Link to="/desmoinesarts" element={<DesMoinesArts/>}>Des Moines Arts Festival</Link></li>
                                     </ul>
                                     </StyledFestivalsLists>
-                                <StyledFestivalsCloseButton onClick={toggleFestivalsModal}>CLOSE</StyledFestivalsCloseButton>
                             </StyledFestivalsModalContent>
-                        </StyledFestivalsModal>
-                    )}
-                    </StyledFestivals>
+                </StyledFestivals>
+            </StyledMetaFestivals>
+        
+        // START OF PLANET VERSION
+        // <StyledFestivals className="planet">
+                        
+        //                     <Button variant="text" onClick={toggleFestivalsModal}>Festivals</Button>
+                        
+        //                 <StyledPurplePlanet src={purple_planet} onClick={toggleFestivalsModal} alt="purple planet"/>
+        //             {festivalsModal && (
+        //                 <StyledFestivalsModal>
+        //                     {/* <StyledFestivalsOverlay onClick={toggleFestivalsModal}/> */}
+        //                     <StyledFestivalsModalContent>
+        //                         <h4>FESTIVALS</h4>
+        //                         <p>Festival Season is our FAVORITE Season !!!  And People’s Productions has their hand in SO Many great festivals here in the Midwest.  We are the festival management Guru’s of Central Iowa.  We have a managing role in 10 different festivals over the course of the year.  We are here to promote the ones that we currently work with and fill you in our services for the ones that we don’t yet.  We are the experts in the field and bring a full staff for whatever is needed to facilitate the success of your event.  Whether you just need help with a couple of aspects of your event or need a managing director our crack staff is on top of everything in the Festie world and can bring you everything from talent procurement and production management to cost savings due to our large volume of events that we produce.</p>  
+        //                             <br/><br/>
+        //                             <StyledFestivalsLists>
+                                    
+        //                             <ul>
+        //                                 <p>Some of the services that we provide for various festivals : </p>
+        //                                 <br/>
+        //                             <li>Talent Buying</li>
+        //                             <li>Staging Operations</li>
+        //                             <li>Production Management (Sound & Lights)</li>
+        //                             <li>Vendor Coordination </li>
+        //                             <li>Infrastructure Procurement and Supervision </li>
+        //                             <li>Security Consultation</li>
+        //                             <li>Entertainment Services</li>
+        //                             <li>Volunteer Program Development </li>
+        //                             <li>Ticketing Oversight and Crowd Control </li>
+        //                             <li>Trash and Clean-Up Services</li>
+        //                             <li>Marketing and Media Management </li>
+        //                             <li>Sponsorship Procurement</li>
+        //                             <li>Stage Management </li>
+        //                             <li>Parking Services</li>
+        //                             <li>Venue Liaison </li>
+        //                             </ul>
+        //                             <br/><br/>
+                                    
+        //                             <ul>
+        //                                 <p>Some of the Festivals that we work with : </p>
+        //                                 <p>(click on any festival to learn more!)</p>
+        //                                 <br/>
+        //                             <li><Link to="/blueribbon" element={<BlueRibbon/>}>Blue Ribbon Bacon Festival</Link></li>
+        //                             <li><Link to="/hinterland" element={<Hinterland/>}>Hinterland Music Festival</Link> </li>
+        //                             <li><Link to="/515alive" element={<Alive515/>}>515 Alive Music Festival</Link> </li>
+        //                             <li><Link to="/80-35" element={<Music8035/>}>80-35 Music Festival</Link> </li>
+        //                             <li><Link to="/greenbelt" element={<Greenbelt/>}>Greenbelt Music Festival</Link> </li>
+        //                             <li><Link to="/iowacraft" element={<IowaCraft/>}>Iowa Craft Beer Festival</Link></li>
+        //                             <li><Link to="/oktoberfest" element={<Oktoberfest/>}>Oktoberfest DSM</Link> </li>
+        //                             <li><Link to="/fielddaze" element={<FieldDaze/>}>Field Daze Music Series</Link></li>
+        //                             <li><Link to="/ragbrai" element={<Ragbrai/>}>Ragbrai</Link> </li>
+        //                             <li><Link to="/truckin" element={<Truckin/>}>Truckin’ Food Truck Festival</Link> </li>
+        //                             <li><Link to="/knotfest" element={<Knotfest/>}>Knotfest</Link></li>
+        //                             <li><Link to="/desmoinesarts" element={<DesMoinesArts/>}>Des Moines Arts Festival</Link></li>
+        //                             </ul>
+        //                             </StyledFestivalsLists>
+        //                         <StyledFestivalsCloseButton onClick={toggleFestivalsModal}>CLOSE</StyledFestivalsCloseButton>
+        //                     </StyledFestivalsModalContent>
+        //                 </StyledFestivalsModal>
+        //             )}
+        //             </StyledFestivals>
     );
 };
 
+const StyledMetaFestivals = styled.div`
+    display: flex;
+`;
+
+const StyledP = styled.p`
+    padding: 50px;
+`;
+
+const StyledFestivals = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+// START OF PLANET VERSION
 // STYLED PURPLE PLANET
 const StyledPurplePlanet = styled.img`
     width: 17vh;
@@ -102,20 +170,20 @@ const StyledPurplePlanet = styled.img`
 `;
 
 // FESTIVALS
-const StyledFestivals = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    /* flex-wrap: wrap; */
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    z-index: 1;
-`;
+// const StyledFestivals = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     /* flex-wrap: wrap; */
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     z-index: 1;
+// `;
 
 // const StyledFestivalsOnButton = styled.button`
 //     display: block;

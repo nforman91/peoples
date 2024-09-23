@@ -12,7 +12,7 @@ const Nav = () => {
         <StyledNav>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/Festivals">Back To Festivals</Link>
                 </li>
                 <li>
                     <Link to="/blueribbon">Blue Ribbon Bacon Fest</Link>
