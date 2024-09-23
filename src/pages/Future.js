@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import brown_planet2 from "../img/brown_planet2.jpg";
 import { Button } from "@mui/material";
+import Meta_Nav from "../components/Meta_Nav";
 
 const Future = () => {
     const [futureModal, setFutureModal] = useState(false);
@@ -11,24 +12,47 @@ const Future = () => {
     }
 
     return (
-        <StyledFuture className="planet">
-                    <StyledBrownPlanet2 src={brown_planet2} onClick={toggleFutureModal} alt="brown planet"/>
-                    <Button variant="text" onClick={toggleFutureModal}>Future Projects</Button>
-                    {futureModal && (
-                        <StyledFutureModal>
-                            {/* <StyledFutureOverlay onClick={toggleFutureModal}/> */}
-                            <StyledFutureModalContent>
-                                <h2>Future Projects Modal!</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
-                                <StyledFutureCloseButton onClick={toggleFutureModal}>CLOSE</StyledFutureCloseButton>
-                            </StyledFutureModalContent>
-                        </StyledFutureModal>
-                    )}
-                    </StyledFuture>
+        <StyledMetaFuture>
+                <Meta_Nav/>
+                <StyledFuture>
+                <StyledP>Future</StyledP>
+                <StyledP>***NEEDS COPY***</StyledP>
+                </StyledFuture>
+            </StyledMetaFuture>
+
+        // START OF PLANET VERSION
+        // <StyledFuture className="planet">
+        //             <StyledBrownPlanet2 src={brown_planet2} onClick={toggleFutureModal} alt="brown planet"/>
+        //             <Button variant="text" onClick={toggleFutureModal}>Future Projects</Button>
+        //             {futureModal && (
+        //                 <StyledFutureModal>
+        //                     {/* <StyledFutureOverlay onClick={toggleFutureModal}/> */}
+        //                     <StyledFutureModalContent>
+        //                         <h2>Future Projects Modal!</h2>
+        //                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+        //                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+        //                         <StyledFutureCloseButton onClick={toggleFutureModal}>CLOSE</StyledFutureCloseButton>
+        //                     </StyledFutureModalContent>
+        //                 </StyledFutureModal>
+        //             )}
+        //             </StyledFuture>
     );
 };
 
+const StyledMetaFuture = styled.div`
+    display: flex;
+`;
+
+const StyledP = styled.p`
+    padding: 50px;
+`;
+
+const StyledFuture = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+// START OF PLANET VERSION
 // STYLED BROWN PLANET 2
 const StyledBrownPlanet2 = styled.img`
     width: 17vh;
@@ -42,21 +66,21 @@ const StyledBrownPlanet2 = styled.img`
 `;
 
 // FUTURE PROJECTS
-const StyledFuture = styled.div`
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    /* flex-wrap: wrap; */
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    z-index: 1;
-`;
+// const StyledFuture = styled.div`
+//     display: flex;
+//     /* flex-direction: row; */
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     /* flex-wrap: wrap; */
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     z-index: 1;
+// `;
 
 // const StyledFutureOnButton = styled.button`
 //     display: block;

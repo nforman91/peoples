@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import white_planet from "../img/white_planet.jpg";
 import { Button } from "@mui/material";
+import Meta_Nav from "../components/Meta_Nav";
 
 const HisStory = () => {
     const [storyModal, setStoryModal] = useState(false);
@@ -11,23 +12,46 @@ const HisStory = () => {
     }
 
     return (
-        <StyledStory>
-                    <Button variant="text" onClick={toggleStoryModal}>His Story</Button>
-                    {storyModal && (
-                        <StyledStoryModal>
-                            {/* <StyledStoryOverlay onClick={toggleStoryModal}/> */}
-                            <StyledStoryModalContent>
-                                <h2>Hello Modal!</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
-                                <StyledStoryCloseButton onClick={toggleStoryModal}>CLOSE</StyledStoryCloseButton>
-                            </StyledStoryModalContent>
-                        </StyledStoryModal>
-                    )}
-                    <StyledWhitePlanet src={white_planet} onClick={toggleStoryModal} alt="white planet"/>
+        <StyledMetaStory>
+                <Meta_Nav/>
+                <StyledStory>
+                <StyledP>Story</StyledP>
+                <StyledP>***NEEDS COPY***</StyledP>
                 </StyledStory>
+            </StyledMetaStory>
+
+        // START OF PLANET VERSION
+        // <StyledStory>
+        //             <Button variant="text" onClick={toggleStoryModal}>His Story</Button>
+        //             {storyModal && (
+        //                 <StyledStoryModal>
+        //                     {/* <StyledStoryOverlay onClick={toggleStoryModal}/> */}
+        //                     <StyledStoryModalContent>
+        //                         <h2>Hello Modal!</h2>
+        //                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+        //                         <StyledStoryCloseButton onClick={toggleStoryModal}>CLOSE</StyledStoryCloseButton>
+        //                     </StyledStoryModalContent>
+        //                 </StyledStoryModal>
+        //             )}
+        //             <StyledWhitePlanet src={white_planet} onClick={toggleStoryModal} alt="white planet"/>
+        //         </StyledStory>
     );
 };
 
+const StyledMetaStory = styled.div`
+    display: flex;
+`;
+
+const StyledP = styled.p`
+    padding: 50px;
+`;
+
+const StyledStory = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+// START OF PLANET VERSION
 // STYLED WHITE PLANET
 const StyledWhitePlanet = styled.img`
     width: 17vh;
@@ -41,22 +65,22 @@ const StyledWhitePlanet = styled.img`
 `;
 
 // HIS STORY
-const StyledStory = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    padding-right: 20vh;
-    /* border: 1px solid white; */
-    z-index: 1;
-    margin-bottom: 50px;
-`;
+// const StyledStory = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     padding-right: 20vh;
+//     /* border: 1px solid white; */
+//     z-index: 1;
+//     margin-bottom: 50px;
+// `;
 
 // const StyledStoryOnButton = styled.button`
 //     display: block;

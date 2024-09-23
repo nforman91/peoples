@@ -50,7 +50,7 @@ function App() {
             <Route path="/festivals" element={<Festivals/>}/>
             <Route path="/merch" element={<Merch/>}/>
             <Route path="/future" element={<Future/>}/>
-            <Route path="/foosball" element={<HumanFoosball/>}/>
+            <Route path="/humanfoosball" element={<HumanFoosball/>}/>
             <Route path="/hisstory" element={<HisStory/>}/>
             <Route path="/contact" element={<Contact/>}/>
 

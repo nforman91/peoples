@@ -16,10 +16,17 @@ const HUSH = () => {
         <StyledMetaHush>
                 <Meta_Nav/>
                 <StyledHush>
-                <StyledP>Hush</StyledP>
-                <StyledP>SILENT DISCO’S are the entertainment / party events sweeping the globe. This new sensation is a dance party with 3 DJ’s at the same time who are playing to a packed crowd in what appears to be total silence.  Participants all wear high-quality noise cancelling headphones and can choose between which DJ they like the best at any given moment.  It’s a spectacle to witness and an even bigger experience to participate in.  Think a packed room of people all grooving to their own beat or singing their favorite song at the top of their lungs with absolutely NO SOUND being played over amplified speakers.  This revolution started in Europe when creative rave organizers needed a solution to their late night parties being constantly shut down due to noise problems.  So they came up with this amazing idea of being able to throw dance parties with no amplified sound and it was an immediate smash hit.  It came to the United States via the festival circuit and it is now a staple part of many many music festivals around the county. We are very excited that we are now able to bring this technology to you at any location.  We do everything from large 15,000 person festivals to back yard / basement or office parties and everything in between.  We have never experienced anything so satisfying that is always a 100% home run with guests and neither will you.</StyledP>
+                    <StyledP>Hush</StyledP>
+                    <StyledP>SILENT DISCO’S are the entertainment / party events sweeping the globe. This new sensation is a dance party with 3 DJ’s at the same time who are playing to a packed crowd in what appears to be total silence.  Participants all wear high-quality noise cancelling headphones and can choose between which DJ they like the best at any given moment.  It’s a spectacle to witness and an even bigger experience to participate in.  Think a packed room of people all grooving to their own beat or singing their favorite song at the top of their lungs with absolutely NO SOUND being played over amplified speakers.  This revolution started in Europe when creative rave organizers needed a solution to their late night parties being constantly shut down due to noise problems.  So they came up with this amazing idea of being able to throw dance parties with no amplified sound and it was an immediate smash hit.  It came to the United States via the festival circuit and it is now a staple part of many many music festivals around the county. We are very excited that we are now able to bring this technology to you at any location.  We do everything from large 15,000 person festivals to back yard / basement or office parties and everything in between.  We have never experienced anything so satisfying that is always a 100% home run with guests and neither will you. Contact us at
+                    <br/>
+                    <a href="mailto:HUSHDSM@GMAIL.COM">hushdsm@gmail.com</a>
+                    <br/>
+                    for more details or a quote for your next unforgettable party.<br/><br/>Enough words …  Silent Discos are best described with video evidence
+                    <br/>
+                    <ReactPlayer url="https://www.youtube.com/watch?v=elAWsTOl0kM"/>
+                    </StyledP>
                 </StyledHush>
-            </StyledMetaHush>
+        </StyledMetaHush>
 
         // START OF PLANET VERSION
         // <StyledHush className="planet">

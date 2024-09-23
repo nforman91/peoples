@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ring_planet from "../img/ring_planet.jpg";
 import { Button } from "@mui/material";
+import Meta_Nav from "../components/Meta_Nav";
 
 const Merch = () => {
     const [merchModal, setMerchModal] = useState(false);
@@ -11,24 +12,47 @@ const Merch = () => {
     }
 
     return (
-        <StyledMerch className="planet">
-                    
-                    <Button variant="text" onClick={toggleMerchModal}>Merch</Button>
-                    <StyledRingPlanet src={ring_planet} onClick={toggleMerchModal} alt="ring planet"/>
-                    {merchModal && (
-                        <StyledMerchModal>
-                            {/* <StyledMerchOverlay onClick={toggleMerchModal}/> */}
-                            <StyledMerchModalContent>
-                                <h2>Merch Modal!</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
-                                <StyledMerchCloseButton onClick={toggleMerchModal}>CLOSE</StyledMerchCloseButton>
-                            </StyledMerchModalContent>
-                        </StyledMerchModal>
-                    )}
+        <StyledMetaMerch>
+                <Meta_Nav/>
+                <StyledMerch>
+                <StyledP>Merch</StyledP>
+                <StyledP>***NEEDS COPY***</StyledP>
                 </StyledMerch>
+            </StyledMetaMerch>
+
+        // START OF PLANET VERSION
+        // <StyledMerch className="planet">
+                    
+        //             <Button variant="text" onClick={toggleMerchModal}>Merch</Button>
+        //             <StyledRingPlanet src={ring_planet} onClick={toggleMerchModal} alt="ring planet"/>
+        //             {merchModal && (
+        //                 <StyledMerchModal>
+        //                     {/* <StyledMerchOverlay onClick={toggleMerchModal}/> */}
+        //                     <StyledMerchModalContent>
+        //                         <h2>Merch Modal!</h2>
+        //                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo inventore quasi expedita cumque labore, esse dolore dolorem aliquid animi quibusdam quae a quia eaque, quam illo soluta minima debitis, et architecto accusantium. Saepe ipsam officia nobis sint, voluptate reprehenderit beatae, commodi inventore nam animi libero quaerat dolores eveniet molestiae unde!</p>
+        //                         <StyledMerchCloseButton onClick={toggleMerchModal}>CLOSE</StyledMerchCloseButton>
+        //                     </StyledMerchModalContent>
+        //                 </StyledMerchModal>
+        //             )}
+        //         </StyledMerch>
     );
 };
 
+const StyledMetaMerch = styled.div`
+    display: flex;
+`;
+
+const StyledP = styled.p`
+    padding: 50px;
+`;
+
+const StyledMerch = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+// START OF PLANET VERSION
 // STYLED RING PLANET
 const StyledRingPlanet = styled.img`
     width: 17vh;
@@ -42,20 +66,20 @@ const StyledRingPlanet = styled.img`
 `;
 
 // MERCH
-const StyledMerch = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17vh;
-    height: 17vh;
-    line-height: 5vh;
-    font-size: 20px;
-    flex-wrap: wrap;
-    border-radius: 50%;
-    text-align: center;
-    /* border: 1px solid white; */
-    z-index: 3;
-`;
+// const StyledMerch = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 17vh;
+//     height: 17vh;
+//     line-height: 5vh;
+//     font-size: 20px;
+//     flex-wrap: wrap;
+//     border-radius: 50%;
+//     text-align: center;
+//     /* border: 1px solid white; */
+//     z-index: 3;
+// `;
 
 // const StyledMerchOnButton = styled.button`
 //     display: block;
