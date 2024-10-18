@@ -39,7 +39,7 @@ const Contact = () => {
 };
 
 const StyledMetaContact = styled.div`
-    display: flex;
+    /* display: flex; */
 `;
 
 const StyledP = styled.p`

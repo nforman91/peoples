@@ -54,7 +54,7 @@ const HUSH = () => {
 };
 
 const StyledMetaHush = styled.div`
-    display: flex;
+    /* display: flex; */
 `;
 
 const StyledP = styled.p`

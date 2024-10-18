@@ -39,7 +39,7 @@ const Services = () => {
 };
 
 const StyledMetaServices = styled.div`
-    display: flex;
+    /* display: flex; */
 `;
 
 const StyledP = styled.p`

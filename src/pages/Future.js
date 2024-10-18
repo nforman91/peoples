@@ -40,7 +40,7 @@ const Future = () => {
 };
 
 const StyledMetaFuture = styled.div`
-    display: flex;
+    /* display: flex; */
 `;
 
 const StyledP = styled.p`

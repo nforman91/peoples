@@ -70,7 +70,7 @@ const Home = () => {
 };
 
 const StyledHome = styled.div`
-    display: flex;
+    /* display: flex; */
 `;
 
 const StyledPeoplesLogo = styled.img`

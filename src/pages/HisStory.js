@@ -39,7 +39,7 @@ const HisStory = () => {
 };
 
 const StyledMetaStory = styled.div`
-    display: flex;
+    /* display: flex; */
 `;
 
 const StyledP = styled.p`

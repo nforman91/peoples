@@ -40,7 +40,7 @@ const Merch = () => {
 };
 
 const StyledMetaMerch = styled.div`
-    display: flex;
+    /* display: flex; */
 `;
 
 const StyledP = styled.p`

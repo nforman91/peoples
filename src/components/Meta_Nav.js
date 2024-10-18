@@ -46,8 +46,9 @@ const Meta_Nav = () => {
 
 const StyledNav = styled.div`
     min-width: 30vh;
-    max-width: 30vh;
+    /* max-width: 30vh; */
     display: flex;
+    /* flex-direction: column; */
     height: 100%;
     padding-left: 1rem;
     background: #282828;
@@ -59,7 +60,7 @@ const StyledNav = styled.div`
     }
     ul{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         list-style: none;
     }
     li{

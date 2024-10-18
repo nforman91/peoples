@@ -50,7 +50,7 @@ const HumanFoosball = () => {
 };
 
 const StyledMetaHuman = styled.div`
-    display: flex;
+    /* display: flex; */
 `;
 
 const StyledP = styled.p`
