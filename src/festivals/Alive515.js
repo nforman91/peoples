@@ -14,6 +14,7 @@ const Alive515 = () => {
 
 const StyledAlive515 = styled.div`
     display: flex;
+    flex-direction: column;
     height: 100%;
 `;
 

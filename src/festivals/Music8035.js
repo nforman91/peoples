@@ -14,6 +14,7 @@ const Music8035 = () => {
 
 const StyledMusic8035 = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100%;
 `;
 

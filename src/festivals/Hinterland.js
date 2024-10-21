@@ -14,6 +14,7 @@ const Hinterland = () => {
 
 const StyledHinterland = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100%;
 `;
 

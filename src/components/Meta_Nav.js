@@ -1,13 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import peoples_logo_white from "../img/Peoples_transparent_white.png";
 
 const Meta_Nav = () => {
     return (
         <StyledNav>
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/">
+                        <StyledNavLogo src={peoples_logo_white} alt="people's logo"/>
+                        Home
+                    </Link>
                 </li>
                 <li>
                     <Link to="/WaterWorks">Water Works Amphitheater</Link>
@@ -67,6 +71,12 @@ const StyledNav = styled.div`
         padding: 1rem 1rem 1rem 0;
         position: relative;
     }
+`;
+
+const StyledNavLogo = styled.img`
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
 `;
 
 export default Meta_Nav;

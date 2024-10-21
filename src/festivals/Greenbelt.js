@@ -14,6 +14,7 @@ const Greenbelt = () => {
 
 const StyledGreenbelt = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100%;
 `;
 

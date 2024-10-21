@@ -57,7 +57,7 @@ const Nav = () => {
 
 const StyledNav = styled.div`
     /* min-height: 5vh; */
-    max-width: 30vh;
+    /* max-width: 30vh; */
     display: flex;
     /* flex-direction: column; */
     /* margin: auto; */
@@ -78,7 +78,7 @@ const StyledNav = styled.div`
     }
     ul{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         list-style: none;
         /* border: 1px solid green; */
     }

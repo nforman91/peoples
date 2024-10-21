@@ -14,6 +14,7 @@ const Truckin = () => {
 
 const StyledTruckin = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100%;
 `;
 

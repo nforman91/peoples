@@ -14,6 +14,7 @@ const BlueRibbon = () => {
 
 const StyledBlueRibbon = styled.div`
     display: flex;
+    flex-direction: column;
     height: 100%;
 `;
 
