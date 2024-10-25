@@ -14,7 +14,7 @@ const Nav = () => {
                 <li>
                     <Link to="/Festivals">Back To Festivals</Link>
                 </li>
-                <StyledLine/>
+                {/* <StyledLine/> */}
                 <li>
                     <Link to="/blueribbon">Blue Ribbon Bacon Fest</Link>
                 </li>
@@ -65,6 +65,7 @@ const StyledNav = styled.div`
     /* justify-content: space-between; */
     /* align-items: center; */
     height: 100%;
+    /* width: 100%; */
     margin-bottom: 1rem;
     padding-left: 1rem;
     /* padding: 1rem 5rem 1rem 1rem; */
@@ -80,6 +81,7 @@ const StyledNav = styled.div`
     }
     ul{
         display: flex;
+        width: 100%;
         /* flex-direction: column; */
         list-style: none;
         /* border: 1px solid green; */
@@ -92,10 +94,10 @@ const StyledNav = styled.div`
     }
 `;
 
-const StyledLine = styled.div`
-    height: 2rem;
-    width: 1rem;
-    border: white;
-`;
+// const StyledLine = styled.div`
+//     height: 2rem;
+//     width: 1rem;
+//     border: white;
+// `;
 
 export default Nav;
