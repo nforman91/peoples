@@ -74,14 +74,18 @@ const StyledNav = styled.div`
     top: 0;
     z-index: 10;
     /* border: 1px solid orange; */
+    overflow: auto;
+    white-space: nowrap;
     a{
         color: white;
         text-decoration: none;
         /* border: 1px solid white; */
+        display: inline-block;
+        text-align: center;
     }
     ul{
         display: flex;
-        width: 100%;
+        /* width: 100%; */
         /* flex-direction: column; */
         list-style: none;
         /* border: 1px solid green; */
