@@ -58,9 +58,13 @@ const StyledNav = styled.div`
     background: #282828;
     top: 0;
     z-index: 10;
+    overflow: auto;
+    white-space: nowrap;
     a{
         color: white;
         text-decoration: none;
+        display: inline-block;
+        text-align: center;
     }
     ul{
         display: flex;
