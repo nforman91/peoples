@@ -4,11 +4,13 @@ import styled from 'styled-components';
 
 const Ragbrai = () => {
   return (
-    <StyledRagbrai>
+    <>
       <Nav/>
-      <p>Ragbrai</p>
-      <a href="ragbrai.com" target="_blank">Ragbrai Website</a>
-    </StyledRagbrai>
+      <StyledRagbrai>
+        <p>Ragbrai</p>
+        <a href="ragbrai.com" target="_blank">Ragbrai Website</a>
+      </StyledRagbrai>
+    </>
   );
 };
 
@@ -16,6 +18,7 @@ const StyledRagbrai = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-left: 1rem;
 `;
 
 export default Ragbrai;
